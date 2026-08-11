@@ -1,0 +1,26 @@
+name: validate
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  offline-validation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate publishable package
+        run: python scripts/validate_package.py --package-root .
+      - name: Validate Seedance skill collection
+        working-directory: skills/seedance-20
+        run: |
+          python scripts/validate_skills.py
+          python scripts/behavior_contract_check.py
+          python scripts/prompt_lint.py --self-test
+
