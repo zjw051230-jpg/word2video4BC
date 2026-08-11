@@ -1,0 +1,4 @@
+interface:
+  display_name: "Video Production Workflow"
+  short_description: "Manage projects, snapshots, submissions, and lessons"
+  default_prompt: "Use $manage-video-production to run this video task with versioned snapshots and review checks."

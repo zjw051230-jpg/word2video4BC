@@ -1,0 +1,42 @@
+﻿{
+    "base_url":  "https://chat-test.q1.com",
+    "model":  "doubao-seedance-2.0",
+    "upload_image":  {
+                         "path":  "/api/upload/image",
+                         "file_field":  "file",
+                         "extra_fields":  {
+
+                                          },
+                         "response_path":  "filename"
+                     },
+    "create":  {
+                   "path":  "/v1/videos",
+                   "prompt_field":  "prompt",
+                   "images_field":  "input_reference",
+                   "model_field":  "model",
+                   "response_id_path":  "id",
+                   "response_status_path":  "status",
+                   "fixed_payload":  {
+                                         "n":  1,
+                                         "size":  "1280x720",
+                                         "seconds":  "12",
+                                         "aspect_ratio":  "16:9",
+                                         "quality":  "720p",
+                                         "generate_audio":  true
+                                     }
+               },
+    "query":  {
+                  "path_template":  "/v1/videos/{id}",
+                  "status_path":  "status",
+                  "error_path":  "error",
+                  "completed_values":  [
+                                           "completed"
+                                       ],
+                  "failed_values":  [
+                                        "failed"
+                                    ]
+              },
+    "download":  {
+                     "path_template":  "/v1/videos/{id}/content"
+                 }
+}

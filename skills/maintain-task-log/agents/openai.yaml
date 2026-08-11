@@ -1,0 +1,4 @@
+interface:
+  display_name: "维护任务日志"
+  short_description: "记录每个任务的开始、结束、产物位置、评价及复盘备注"
+  default_prompt: "Use $maintain-task-log to read and update the global task log for this task."
