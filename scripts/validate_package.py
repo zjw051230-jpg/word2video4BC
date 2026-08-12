@@ -12,6 +12,8 @@ REQUIRED = (
     "manifest.json",
     "install.ps1",
     "New-VideoProject.ps1",
+    "scripts/Resolve-Env4BC.ps1",
+    "scripts/Update-Toolkit.ps1",
     "README.md",
     "skills/maintain-task-log/SKILL.md",
     "skills/manage-video-production/SKILL.md",
@@ -75,8 +77,16 @@ def validate_package(root: Path) -> list[str]:
             errors.append("manifest version is empty")
         if manifest.get("environment_dependency") != "env4BC":
             errors.append("environment dependency must be env4BC")
+        if manifest.get("version") != "2.0.0":
+            errors.append("manifest version must be 2.0.0")
     except (OSError, json.JSONDecodeError) as exc:
         errors.append(f"invalid manifest: {exc}")
+    resolver = (root / "scripts/Resolve-Env4BC.ps1").read_text(encoding="utf-8-sig", errors="ignore")
+    updater = (root / "scripts/Update-Toolkit.ps1").read_text(encoding="utf-8-sig", errors="ignore")
+    if "zjw051230-jpg/env4BC" not in resolver or "SHA-256" not in resolver or "联系维护人员" not in resolver:
+        errors.append("env4BC trust/stop contract is incomplete")
+    if "zjw051230-jpg/word2video4BC" not in updater or "SHA-256" not in updater or "-UpdateOnly" not in updater:
+        errors.append("GitHub update contract is incomplete")
     return errors
 
 

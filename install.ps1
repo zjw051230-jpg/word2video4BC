@@ -3,6 +3,10 @@ param(
   [string]$WorkspaceRoot = 'D:\视频生成',
   [string]$ProjectName = '',
   [string]$CodexHome = '',
+  [string]$Env4BCRoot = '',
+  [string]$Env4BCPackage = '',
+  [switch]$Offline,
+  [switch]$UpdateOnly,
   [switch]$Force
 )
 
@@ -11,7 +15,9 @@ $packageRoot = $PSScriptRoot
 $manifestPath = Join-Path $packageRoot 'manifest.json'
 if (-not (Test-Path -LiteralPath $manifestPath)) { throw "安装包缺少 manifest.json。" }
 $manifest = Get-Content -LiteralPath $manifestPath -Raw -Encoding UTF8 | ConvertFrom-Json
-if (-not (Get-Command py -ErrorAction SilentlyContinue)) { throw '未找到 Python 启动器 py，请先安装 Python 3.10 或更高版本。' }
+& (Join-Path $packageRoot 'scripts\Resolve-Env4BC.ps1') -InstallRoot $Env4BCRoot -LocalPackage $Env4BCPackage -Offline:$Offline
+if ($LASTEXITCODE -ne 0) { throw 'env4BC 环境资源钩子失败。' }
+if (-not (Get-Command py -ErrorAction SilentlyContinue)) { throw 'env4BC 未能提供 Python，已停止，请联系维护人员处理。' }
 
 $WorkspaceRoot = [IO.Path]::GetFullPath($WorkspaceRoot)
 if ([string]::IsNullOrWhiteSpace($CodexHome)) {
@@ -20,11 +26,10 @@ if ([string]::IsNullOrWhiteSpace($CodexHome)) {
 $CodexHome = [IO.Path]::GetFullPath($CodexHome)
 
 $workspaceDirs = @('1.projects','2.submission','3.skills\global','4.apis\seedance','5.summary\global','6.snapshot')
-foreach ($dir in $workspaceDirs) { New-Item -ItemType Directory -Force -Path (Join-Path $WorkspaceRoot $dir) | Out-Null }
-
-$envState = Join-Path $env:LOCALAPPDATA 'env4BC\install-state.json'
-if (-not (Test-Path -LiteralPath $envState)) {
-  Write-Warning '未检测到 env4BC。视频业务文件仍可安装，但生成前请先安装 env4BC，以配置 CC Switch、Seedance API、Python 和 ffmpeg。'
+if (-not $UpdateOnly) {
+  foreach ($dir in $workspaceDirs) { New-Item -ItemType Directory -Force -Path (Join-Path $WorkspaceRoot $dir) | Out-Null }
+} else {
+  New-Item -ItemType Directory -Force -Path (Join-Path $WorkspaceRoot '3.skills\global') | Out-Null
 }
 
 function Copy-VersionedDirectory {
@@ -72,13 +77,13 @@ foreach ($scriptName in @('New-VideoProject.ps1')) {
 }
 
 $globalLessons = Join-Path $WorkspaceRoot '5.summary\global\lessons.md'
-if (-not (Test-Path -LiteralPath $globalLessons)) {
+if (-not $UpdateOnly -and -not (Test-Path -LiteralPath $globalLessons)) {
   [IO.File]::WriteAllText($globalLessons, "# Global production lessons`r`n", [Text.UTF8Encoding]::new($false))
 }
 $taskLog = Join-Path $WorkspaceRoot 'task-log.jsonl'
-if (-not (Test-Path -LiteralPath $taskLog)) { [IO.File]::WriteAllText($taskLog, '', [Text.UTF8Encoding]::new($false)) }
+if (-not $UpdateOnly -and -not (Test-Path -LiteralPath $taskLog)) { [IO.File]::WriteAllText($taskLog, '', [Text.UTF8Encoding]::new($false)) }
 
-if (-not [string]::IsNullOrWhiteSpace($ProjectName)) {
+if (-not $UpdateOnly -and -not [string]::IsNullOrWhiteSpace($ProjectName)) {
   & (Join-Path $WorkspaceRoot 'New-VideoProject.ps1') -WorkspaceRoot $WorkspaceRoot -ProjectName $ProjectName -Force:$Force
 }
 
@@ -89,3 +94,9 @@ Write-Output "安装完成。工作区：$WorkspaceRoot"
 Write-Output "Codex 技能目录：$codexSkillRoot"
 if ($ProjectName) { Write-Output "初始项目：$ProjectName" }
 if (-not (Get-Command ffmpeg -ErrorAction SilentlyContinue)) { Write-Warning '未找到 ffmpeg；提示词与项目管理可用，但抽帧、转码和拼接功能需要另行安装 ffmpeg。' }
+
+$toolStateRoot = Join-Path $WorkspaceRoot '.word2video4BC'
+New-Item -ItemType Directory -Force -Path $toolStateRoot | Out-Null
+Copy-Item -LiteralPath (Join-Path $packageRoot 'scripts\Update-Toolkit.ps1') -Destination (Join-Path $toolStateRoot 'Update-Toolkit.ps1') -Force
+[ordered]@{schema_version=1;repository='https://github.com/zjw051230-jpg/word2video4BC';installed_version=$manifest.version;update_command="powershell -ExecutionPolicy Bypass -File `"$toolStateRoot\Update-Toolkit.ps1`" -WorkspaceRoot `"$WorkspaceRoot`"";managed_scope=@('3.skills/global','Codex skills','New-VideoProject.ps1');protected_scope=@('1.projects','2.submission','4.apis','5.summary','6.snapshot','task-log.jsonl');updated_at=(Get-Date).ToString('o')} | ConvertTo-Json -Depth 6 | Set-Content -Encoding UTF8 -LiteralPath (Join-Path $toolStateRoot 'update-source.json')
+attrib +h $toolStateRoot | Out-Null

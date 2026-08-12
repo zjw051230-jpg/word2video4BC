@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.0.0
+
+- 首次安装记录固定官方 GitHub 源；以后 Codex 只需收到“更新视频工具”即可执行无损更新。
+- 更新只处理 tools 白名单，不读取或修改项目、素材、成品、API、日志、复盘和快照。
+- 增加 env4BC 三级环境钩子：已安装环境、本机带 SHA-256 的可信包、官方 GitHub Release；均失败时停止并联系维护人员。
+
 ## 1.1.0 environment split
 
 - CC Switch、Seedance API 配置界面、模型路由和环境扫描已迁移至独立的 `env4BC`。
