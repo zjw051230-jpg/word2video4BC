@@ -12,16 +12,25 @@ REQUIRED = (
     "manifest.json",
     "install.ps1",
     "New-VideoProject.ps1",
-    "Configure-SeedanceApi.ps1",
+    "scripts/Resolve-Env4BC.ps1",
+    "scripts/Update-Toolkit.ps1",
     "README.md",
     "skills/maintain-task-log/SKILL.md",
     "skills/manage-video-production/SKILL.md",
+    "skills/manage-video-production/references/chat-workflow.md",
+    "skills/manage-video-production/scripts/manage_chat_workflow.py",
+    "skills/manage-video-production/scripts/init_video_chat_workflow.py",
     "skills/seedance-20/SKILL.md",
 )
 FORBIDDEN_NAMES = {
     "credentials.json",
     "doubao_api_config.json",
     "task-log.jsonl",
+    "Configure-SeedanceApi.ps1",
+    "Configure-SeedanceApi-GUI.pyw",
+    "VideoToolkitSetup.pyw",
+    "Seedance API配置工具.exe",
+    "cc-switch.exe",
 }
 FORBIDDEN_SUFFIXES = {
     ".db", ".sqlite", ".sqlite3", ".mp4", ".mov", ".mkv", ".avi", ".mp3", ".wav"
@@ -66,8 +75,18 @@ def validate_package(root: Path) -> list[str]:
             errors.append("manifest name must be word2video4BC")
         if not manifest.get("version"):
             errors.append("manifest version is empty")
+        if manifest.get("environment_dependency") != "env4BC":
+            errors.append("environment dependency must be env4BC")
+        if manifest.get("version") != "2.0.0":
+            errors.append("manifest version must be 2.0.0")
     except (OSError, json.JSONDecodeError) as exc:
         errors.append(f"invalid manifest: {exc}")
+    resolver = (root / "scripts/Resolve-Env4BC.ps1").read_text(encoding="utf-8-sig", errors="ignore")
+    updater = (root / "scripts/Update-Toolkit.ps1").read_text(encoding="utf-8-sig", errors="ignore")
+    if "zjw051230-jpg/env4BC" not in resolver or "SHA-256" not in resolver or "联系维护人员" not in resolver:
+        errors.append("env4BC trust/stop contract is incomplete")
+    if "zjw051230-jpg/word2video4BC" not in updater or "SHA-256" not in updater or "-UpdateOnly" not in updater:
+        errors.append("GitHub update contract is incomplete")
     return errors
 
 

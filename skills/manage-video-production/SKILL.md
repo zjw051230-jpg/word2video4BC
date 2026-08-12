@@ -34,6 +34,12 @@ Keep the same task identity through all revisions of one task.
 
 ## Run every task in this order
 
+### -1. Bootstrap the video Chat workflow
+
+For every project, read `references/chat-workflow.md` and run `scripts/manage_chat_workflow.py --project-root <project> bootstrap-status` before business work. The entry Chat must be named `视频生成 | 任务理解与镜头规划`; it must create and register the other six fixed video-production Chats with the exact model and reasoning contracts returned by the script. Do not execute the whole pipeline in one Chat.
+
+Use the same atomic status, unique thread ID, lease, feedback, and five-minute busy retry contracts defined in that reference. Automatic contracts must never exceed `gpt-5.6-sol / medium`. `sol/high` is user-only and temporary; restore the contract model and `medium` before handoff or completion. The final `视频生成 | 交付与复盘` Chat uses `gpt-5.5 / medium`, routed by CC Switch to `deepseek-v4-pro`, and is one-way.
+
 ### 0. Read and maintain the global task log
 
 Invoke `$maintain-task-log` for every task under `D:\视频生成`, regardless of task type. Before task actions, read `D:\视频生成\task-log.jsonl`, determine whether the request continues an existing task or starts a new one, and append a start record. Before the final response, read that task's records again and append an end record with work performed, artifact locations, evaluation if any, review/复盘 locations, and notes or annotations. Append progress records for meaningful intermediate artifacts, feedback, failures, or decisions.
