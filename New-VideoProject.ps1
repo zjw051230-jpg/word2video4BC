@@ -55,4 +55,9 @@ $readme = @"
 这是项目的当前工作版本。素材按类型放入 0-3 目录，原始任务放入 4.rawtask，审核后的提示词放入 5.提示词包，生成结果放入 6.生成结果。
 "@
 [IO.File]::WriteAllText((Join-Path $projectRoot 'README.md'), $readme, [Text.UTF8Encoding]::new($false))
+$chatInitializer = Join-Path $WorkspaceRoot '3.skills\global\manage-video-production\scripts\init_video_chat_workflow.py'
+if (Test-Path -LiteralPath $chatInitializer) {
+  & py -3 -B -X utf8 $chatInitializer --project-root $projectRoot
+  if ($LASTEXITCODE -ne 0) { throw "视频多Chat工作流初始化失败：$LASTEXITCODE" }
+}
 Write-Output $projectRoot

@@ -2,6 +2,9 @@
 
 ## 1.1.0 - 2026-08-12
 
+- 增加七个符合视频生产流程的固定 Chat，统一命名为 `视频生成 | XXX`，保存独立 thread ID、状态和租约。
+- 固定每个 Chat 的模型和思考程度；自动最高为 sol/medium，多数为 terra/medium，交付复盘使用 5.5 映射 deepseek-v4-pro。
+- 用户手动启用 sol/high 后必须恢复合同模型和 medium，脚本阻止 high 状态交接或完成。
 - 明确 Codex 是日常生产的唯一主入口；GUI 只处理安装扫描和涉密 API 配置。
 - 增加双击启动的图形化安装器，无需客户打开终端。
 - 安装前扫描 Python、ffmpeg、Codex 视频技能、已有配音技能和工作区。

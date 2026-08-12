@@ -16,6 +16,9 @@ REQUIRED = (
     "README.md",
     "skills/maintain-task-log/SKILL.md",
     "skills/manage-video-production/SKILL.md",
+    "skills/manage-video-production/references/chat-workflow.md",
+    "skills/manage-video-production/scripts/manage_chat_workflow.py",
+    "skills/manage-video-production/scripts/init_video_chat_workflow.py",
     "skills/seedance-20/SKILL.md",
 )
 FORBIDDEN_NAMES = {

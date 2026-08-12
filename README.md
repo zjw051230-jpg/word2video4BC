@@ -41,6 +41,10 @@ Set-ExecutionPolicy -Scope Process Bypass
 
 ## Codex 主入口
 
+首次进入每个项目时，Codex 会建立七个独立会话：任务理解与镜头规划、背景与关键帧、视频提示词、生成提交、监控、拉回、交付与复盘。显示名称统一为 `视频生成 | XXX`，并在项目隐藏 `.codex` 目录保存真实 thread ID、固定模型、0/1 状态和交接租约。
+
+自动会话最高使用 `gpt-5.6-sol / medium`，大部分阶段使用 `gpt-5.6-terra / medium`；交付与复盘使用 `gpt-5.5 / medium`，由 CC Switch 精确映射到 `deepseek-v4-pro`。`sol/high` 只能由用户手动临时开启，完成后必须恢复合同模型和 `medium`。
+
 可直接对 Codex 说：
 
 ```text

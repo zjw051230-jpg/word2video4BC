@@ -34,8 +34,15 @@ if ($LASTEXITCODE -ne 0 -or (($logOutput -join "`n").Trim() -ne '[]')) {
 }
 
 $project = Join-Path $workspace '1.projects\测试项目'
-foreach ($required in @('project.json','0.背景参考','4.rawtask','5.提示词包','6.生成结果')) {
+foreach ($required in @('project.json','0.背景参考','4.rawtask','5.提示词包','6.生成结果','.codex\03_codexchat对应表.json')) {
   if (-not (Test-Path -LiteralPath (Join-Path $project $required))) { throw "测试项目缺少：$required" }
 }
+$chatTable = Get-Content -LiteralPath (Join-Path $project '.codex\03_codexchat对应表.json') -Raw -Encoding UTF8 | ConvertFrom-Json
+$chatProperties = @($chatTable.chats.PSObject.Properties)
+if ($chatProperties.Count -ne 7) { throw "视频Chat数量错误：$($chatProperties.Count)" }
+if (@($chatProperties | Where-Object { $_.Value.reasoning_effort -eq 'high' }).Count -ne 0) { throw '自动Chat合同不得包含high。' }
+$delivery = $chatTable.chats.'视频生成 | 交付与复盘'
+if ($delivery.model -ne 'gpt-5.5' -or $delivery.reasoning_effort -ne 'medium') { throw '交付与复盘模型合同错误。' }
+$owner = $chatTable.chats.'视频生成 | 任务理解与镜头规划'
+if ($owner.model -ne 'gpt-5.6-sol' -or $owner.reasoning_effort -ne 'medium') { throw '入口Chat模型合同错误。' }
 Write-Output "TEST PASSED: $TestRoot"
-
