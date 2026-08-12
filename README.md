@@ -4,7 +4,9 @@
 
 ## 安装
 
-Windows PowerShell：
+推荐直接双击 `VideoToolkitSetup.pyw`。安装器会先扫描本机环境，再显示每项“已存在，跳过”或“缺失，需要补充”。如果检测到配音工具的 Codex 技能或音频程序，视频工具不会重复安装、覆盖或修改它们。
+
+若需要脚本方式，Windows PowerShell：
 
 ```powershell
 Set-ExecutionPolicy -Scope Process Bypass
@@ -18,6 +20,8 @@ Set-ExecutionPolicy -Scope Process Bypass
 ```
 
 配置 Seedance API：
+
+安装完成后双击工作区中的 `Seedance API配置.pyw`，在窗口中填写 API Key。客户不需要打开终端。
 
 ```powershell
 & "D:\视频生成\Configure-SeedanceApi.ps1"
@@ -36,4 +40,3 @@ Set-ExecutionPolicy -Scope Process Bypass
 生产项目、成片、API 密钥、快照、历史任务日志和本机缓存均不发布。
 
 详见 [首次安装与使用](docs/首次安装与使用.md) 和 [发布边界](docs/发布边界.md)。
-

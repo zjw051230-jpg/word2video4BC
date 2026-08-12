@@ -61,6 +61,8 @@ foreach ($root in $installedSkillRoots) {
 
 Copy-Item -LiteralPath (Join-Path $packageRoot 'New-VideoProject.ps1') -Destination (Join-Path $WorkspaceRoot 'New-VideoProject.ps1') -Force
 Copy-Item -LiteralPath (Join-Path $packageRoot 'Configure-SeedanceApi.ps1') -Destination (Join-Path $WorkspaceRoot 'Configure-SeedanceApi.ps1') -Force
+Copy-Item -LiteralPath (Join-Path $packageRoot 'Configure-SeedanceApi-GUI.pyw') -Destination (Join-Path $WorkspaceRoot 'Seedance API配置.pyw') -Force
+Copy-Item -LiteralPath (Join-Path $packageRoot 'VideoToolkitSetup.pyw') -Destination (Join-Path $WorkspaceRoot '视频生成工具安装器.pyw') -Force
 Copy-Item -LiteralPath (Join-Path $packageRoot 'templates\api\seedance\provider.json') -Destination (Join-Path $WorkspaceRoot '4.apis\seedance\provider.json') -Force
 Copy-Item -LiteralPath (Join-Path $packageRoot 'docs\Seedance-API操作规范.md') -Destination (Join-Path $WorkspaceRoot '4.apis\seedance\Seedance-API操作规范.md') -Force
 foreach ($scriptName in @('New-VideoProject.ps1', 'Configure-SeedanceApi.ps1')) {
