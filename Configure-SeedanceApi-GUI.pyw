@@ -19,7 +19,8 @@ class ApiConfig(tk.Tk):
     def _build(self):
         frame = ttk.Frame(self, padding=24)
         frame.pack(fill="both", expand=True)
-        ttk.Label(frame, text="Seedance API 配置", font=("Segoe UI", 18, "bold")).grid(row=0, column=0, columnspan=3, sticky="w", pady=(0, 16))
+        ttk.Label(frame, text="Seedance API 密钥配置", font=("Segoe UI", 18, "bold")).grid(row=0, column=0, columnspan=3, sticky="w", pady=(0, 6))
+        ttk.Label(frame, text="仅用于输入涉密信息；普通任务请在 Codex 中操作。", font=("Segoe UI", 9)).grid(row=0, column=1, columnspan=2, sticky="e", pady=(0, 6))
         rows = [("工作区", self.workspace), ("API Key", self.key), ("Base URL", self.base_url), ("模型", self.model)]
         for i, (label, value) in enumerate(rows, 1):
             ttk.Label(frame, text=label).grid(row=i, column=0, sticky="w", pady=6)
@@ -46,4 +47,3 @@ class ApiConfig(tk.Tk):
 
 if __name__ == "__main__":
     ApiConfig().mainloop()
-

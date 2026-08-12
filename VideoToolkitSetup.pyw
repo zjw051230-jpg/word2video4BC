@@ -27,7 +27,6 @@ class Setup(tk.Tk):
         self.minsize(680, 500)
         self.configure(bg="#f5f7fa")
         self.workspace = tk.StringVar(value=r"D:\视频生成")
-        self.project = tk.StringVar()
         self.status = tk.StringVar(value="正在扫描本机环境...")
         self._build()
         self.after(100, self.scan)
@@ -36,14 +35,14 @@ class Setup(tk.Tk):
         outer = ttk.Frame(self, padding=24)
         outer.pack(fill="both", expand=True)
         ttk.Label(outer, text="word2video4BC", font=("Segoe UI", 23, "bold")).pack(anchor="w")
-        ttk.Label(outer, text="文字转视频工作区安装器 v1.1.0", font=("Segoe UI", 11)).pack(anchor="w", pady=(2, 18))
+        ttk.Label(outer, text="Codex 主入口 · 仅安装扫描使用此程序", font=("Segoe UI", 11)).pack(anchor="w", pady=(2, 18))
         form = ttk.LabelFrame(outer, text="安装位置", padding=12)
         form.pack(fill="x")
         ttk.Label(form, text="工作区").grid(row=0, column=0, sticky="w", padx=(0, 8), pady=5)
         ttk.Entry(form, textvariable=self.workspace).grid(row=0, column=1, sticky="ew", pady=5)
         ttk.Button(form, text="选择...", command=self.choose_workspace).grid(row=0, column=2, padx=(8, 0))
-        ttk.Label(form, text="首次项目（可留空）").grid(row=1, column=0, sticky="w", padx=(0, 8), pady=5)
-        ttk.Entry(form, textvariable=self.project).grid(row=1, column=1, sticky="ew", pady=5)
+        ttk.Label(form, text="项目创建").grid(row=1, column=0, sticky="w", padx=(0, 8), pady=5)
+        ttk.Label(form, text="安装后请直接告诉 Codex 创建项目").grid(row=1, column=1, columnspan=2, sticky="w", pady=5)
         form.columnconfigure(1, weight=1)
         scan = ttk.LabelFrame(outer, text="安装前扫描", padding=10)
         scan.pack(fill="both", expand=True, pady=14)
@@ -81,7 +80,7 @@ class Setup(tk.Tk):
         ]
         for name, exists, detail in checks:
             self.tree.insert("", "end", values=("已存在，跳过" if exists else "缺失，需要补充", f"{name}：{detail}"))
-        self.status.set("扫描完成。配音工具只检测，不会重复安装或覆盖；Python/ffmpeg缺失时请按提示补充。")
+        self.status.set("扫描完成。日常生产请回到 Codex；配音工具只检测，不会重复安装或覆盖。")
 
     @staticmethod
     def _which(command):
@@ -97,8 +96,6 @@ class Setup(tk.Tk):
 
     def _install(self):
         args = ["-WorkspaceRoot", self.workspace.get().strip()]
-        if self.project.get().strip():
-            args += ["-ProjectName", self.project.get().strip()]
         result = powershell(ROOT / "install.ps1", args)
         if result.returncode == 0:
             self.after(0, lambda: (self.status.set("安装完成。可以关闭窗口并重启 Codex。"), messagebox.showinfo("安装完成", "视频生成工具已安装。已有配音工具未重复安装。")))

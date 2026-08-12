@@ -4,7 +4,9 @@
 
 ## 安装
 
-推荐直接双击 `VideoToolkitSetup.pyw`。安装器会先扫描本机环境，再显示每项“已存在，跳过”或“缺失，需要补充”。如果检测到配音工具的 Codex 技能或音频程序，视频工具不会重复安装、覆盖或修改它们。
+本工具的主要操作入口是 Codex。安装后直接告诉 Codex 要创建项目、整理素材、写提示词、生成、监控或拉回；Codex 会按技能和任务记录完成工作。只有安装扫描和 API Key 等涉密配置使用本机程序。
+
+首次安装时双击 `VideoToolkitSetup.pyw`。安装器只负责扫描本机环境并安装缺失的视频技能；如果检测到配音工具的 Codex 技能或音频程序，视频工具不会重复安装、覆盖或修改它们。
 
 若需要脚本方式，Windows PowerShell：
 
@@ -19,9 +21,9 @@ Set-ExecutionPolicy -Scope Process Bypass
 我要创建项目，名字叫 项目1。请使用 manage-video-production 管理整个视频生产流程。
 ```
 
-配置 Seedance API：
+配置 Seedance API（仅涉密信息使用程序）：
 
-安装完成后双击工作区中的 `Seedance API配置.pyw`，在窗口中填写 API Key。客户不需要打开终端。
+安装完成后双击工作区中的 `Seedance API配置.pyw`，仅在窗口中填写 API Key。密钥配置完成后，回到 Codex 继续所有非涉密操作。
 
 ```powershell
 & "D:\视频生成\Configure-SeedanceApi.ps1"
@@ -36,6 +38,26 @@ Set-ExecutionPolicy -Scope Process Bypass
 - `seedance-20`：Seedance 2.0 提示词、镜头、动作、音频、连续性和排错技能集。
 - `New-VideoProject.ps1`：创建多个相互隔离的项目。
 - `validate_package.py`：检查安装包结构、路径替换和敏感数据。
+
+## Codex 主入口
+
+可直接对 Codex 说：
+
+```text
+我要创建项目，名字叫 项目1。
+```
+
+```text
+在项目1中整理这批素材，先生成提示词并停下来让我审核，不要提交付费任务。
+```
+
+```text
+提交已审核的任务，拿到远程ID后停止，不要监控和拉回。
+```
+
+```text
+监控项目1的全部任务，等全部成功或失败后统一拉回，并记录结果。
+```
 
 生产项目、成片、API 密钥、快照、历史任务日志和本机缓存均不发布。
 
