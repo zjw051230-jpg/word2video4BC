@@ -6,7 +6,9 @@
 
 本工具的主要操作入口是 Codex。安装后直接告诉 Codex 要创建项目、整理素材、写提示词、生成、监控或拉回；Codex 会按技能和任务记录完成工作。只有安装扫描和 API Key 等涉密配置使用本机程序。
 
-首次安装时双击 `VideoToolkitSetup.pyw`。安装器只负责扫描本机环境并安装缺失的视频技能；如果检测到配音工具的 Codex 技能或音频程序，视频工具不会重复安装、覆盖或修改它们。
+环境工具已独立到 `env4BC`。先安装 `env4BC`，再运行本仓库的 `install.ps1` 安装视频工作区和视频 skills。本包不再携带或修改 CC Switch、模型路由、Seedance API 录入工具、Python 或 ffmpeg。
+
+安装与更新始终遵守“缺什么改什么”：只处理清单声明的程序文件，不扫描、不整理、不移动、不改名、不覆盖、不删除项目素材、生成结果、交付文件、快照、日志或隐藏任务记录。
 
 若需要脚本方式，Windows PowerShell：
 
@@ -21,15 +23,7 @@ Set-ExecutionPolicy -Scope Process Bypass
 我要创建项目，名字叫 项目1。请使用 manage-video-production 管理整个视频生产流程。
 ```
 
-配置 Seedance API（仅涉密信息使用程序）：
-
-安装完成后双击工作区中的 `Seedance API配置.pyw`，仅在窗口中填写 API Key。密钥配置完成后，回到 Codex 继续所有非涉密操作。
-
-```powershell
-& "D:\视频生成\Configure-SeedanceApi.ps1"
-```
-
-密钥只写入本机工作区 `4.apis`，不会进入本仓库。
+Seedance API、CC Switch 和精确模型路由统一通过 `env4BC` 配置。密钥只在 env4BC 的本机界面录入，不进入聊天或本仓库。视频流程只读取已经配置好的本机 API 文件。
 
 ## 包含内容
 

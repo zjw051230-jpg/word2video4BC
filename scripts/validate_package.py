@@ -12,7 +12,6 @@ REQUIRED = (
     "manifest.json",
     "install.ps1",
     "New-VideoProject.ps1",
-    "Configure-SeedanceApi.ps1",
     "README.md",
     "skills/maintain-task-log/SKILL.md",
     "skills/manage-video-production/SKILL.md",
@@ -25,6 +24,11 @@ FORBIDDEN_NAMES = {
     "credentials.json",
     "doubao_api_config.json",
     "task-log.jsonl",
+    "Configure-SeedanceApi.ps1",
+    "Configure-SeedanceApi-GUI.pyw",
+    "VideoToolkitSetup.pyw",
+    "Seedance API配置工具.exe",
+    "cc-switch.exe",
 }
 FORBIDDEN_SUFFIXES = {
     ".db", ".sqlite", ".sqlite3", ".mp4", ".mov", ".mkv", ".avi", ".mp3", ".wav"
@@ -69,6 +73,8 @@ def validate_package(root: Path) -> list[str]:
             errors.append("manifest name must be word2video4BC")
         if not manifest.get("version"):
             errors.append("manifest version is empty")
+        if manifest.get("environment_dependency") != "env4BC":
+            errors.append("environment dependency must be env4BC")
     except (OSError, json.JSONDecodeError) as exc:
         errors.append(f"invalid manifest: {exc}")
     return errors

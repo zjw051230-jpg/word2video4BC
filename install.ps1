@@ -22,6 +22,11 @@ $CodexHome = [IO.Path]::GetFullPath($CodexHome)
 $workspaceDirs = @('1.projects','2.submission','3.skills\global','4.apis\seedance','5.summary\global','6.snapshot')
 foreach ($dir in $workspaceDirs) { New-Item -ItemType Directory -Force -Path (Join-Path $WorkspaceRoot $dir) | Out-Null }
 
+$envState = Join-Path $env:LOCALAPPDATA 'env4BC\install-state.json'
+if (-not (Test-Path -LiteralPath $envState)) {
+  Write-Warning '未检测到 env4BC。视频业务文件仍可安装，但生成前请先安装 env4BC，以配置 CC Switch、Seedance API、Python 和 ffmpeg。'
+}
+
 function Copy-VersionedDirectory {
   param([string]$Source, [string]$Target)
   if (Test-Path -LiteralPath $Target) {
@@ -60,12 +65,7 @@ foreach ($root in $installedSkillRoots) {
 }
 
 Copy-Item -LiteralPath (Join-Path $packageRoot 'New-VideoProject.ps1') -Destination (Join-Path $WorkspaceRoot 'New-VideoProject.ps1') -Force
-Copy-Item -LiteralPath (Join-Path $packageRoot 'Configure-SeedanceApi.ps1') -Destination (Join-Path $WorkspaceRoot 'Configure-SeedanceApi.ps1') -Force
-Copy-Item -LiteralPath (Join-Path $packageRoot 'Configure-SeedanceApi-GUI.pyw') -Destination (Join-Path $WorkspaceRoot 'Seedance API配置.pyw') -Force
-Copy-Item -LiteralPath (Join-Path $packageRoot 'VideoToolkitSetup.pyw') -Destination (Join-Path $WorkspaceRoot '视频生成工具安装器.pyw') -Force
-Copy-Item -LiteralPath (Join-Path $packageRoot 'templates\api\seedance\provider.json') -Destination (Join-Path $WorkspaceRoot '4.apis\seedance\provider.json') -Force
-Copy-Item -LiteralPath (Join-Path $packageRoot 'docs\Seedance-API操作规范.md') -Destination (Join-Path $WorkspaceRoot '4.apis\seedance\Seedance-API操作规范.md') -Force
-foreach ($scriptName in @('New-VideoProject.ps1', 'Configure-SeedanceApi.ps1')) {
+foreach ($scriptName in @('New-VideoProject.ps1')) {
   $scriptPath = Join-Path $WorkspaceRoot $scriptName
   $content = [IO.File]::ReadAllText($scriptPath)
   [IO.File]::WriteAllText($scriptPath, $content.Replace('D:\视频生成', $WorkspaceRoot), [Text.UTF8Encoding]::new($true))

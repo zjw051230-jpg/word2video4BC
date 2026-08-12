@@ -1,8 +1,7 @@
 {
   "name": "word2video4BC",
   "version": "1.1.0",
-  "gui_entrypoint": "VideoToolkitSetup.pyw",
-  "api_gui_entrypoint": "Configure-SeedanceApi-GUI.pyw",
+  "environment_dependency": "env4BC",
   "workspace_schema": 1,
   "skills": [
     "maintain-task-log",
