@@ -1,9 +1,0 @@
-{
-  "repair_id": "upload_repair_v002",
-  "version": "V010",
-  "shot_id": "V010-R06",
-  "status": "success",
-  "timestamp_utc": "2026-08-14T15:57:17.544561+00:00",
-  "sha256_verified": true,
-  "asset_id_is_returned_filename": true
-}
