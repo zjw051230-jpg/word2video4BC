@@ -12,6 +12,7 @@ REQUIRED = (
     "manifest.json",
     "install.ps1",
     "New-VideoProject.ps1",
+    "scripts/Initialize-BodyResourceLayout.ps1",
     "scripts/Resolve-Env4BC.ps1",
     "scripts/Update-Toolkit.ps1",
     "README.md",
@@ -77,8 +78,10 @@ def validate_package(root: Path) -> list[str]:
             errors.append("manifest version is empty")
         if manifest.get("environment_dependency") != "env4BC":
             errors.append("environment dependency must be env4BC")
-        if manifest.get("version") != "2.1.0":
-            errors.append("manifest version must be 2.1.0")
+        if manifest.get("version") != "2.2.0":
+            errors.append("manifest version must be 2.2.0")
+        if manifest.get("workspace_schema") != 2:
+            errors.append("workspace schema must be 2")
     except (OSError, json.JSONDecodeError) as exc:
         errors.append(f"invalid manifest: {exc}")
 
@@ -98,9 +101,26 @@ def validate_package(root: Path) -> list[str]:
 
 def validate_install(workspace: Path, codex_home: Path) -> list[str]:
     errors: list[str] = []
-    for relative in ("1.projects", "2.submission", "3.skills/global", "4.apis/seedance", "5.summary/global", "6.snapshot"):
+    canonical = (
+        "视频本体/01_程序与工具/3.skills/global",
+        "视频本体/02_任务索引",
+        "视频本体/03_运行日志/task-log.jsonl",
+        "视频本体/04_模板与规范",
+        "项目资源/1.projects",
+        "项目资源/2.submission",
+        "项目资源/3.skills",
+        "项目资源/4.apis/seedance",
+        "项目资源/5.summary",
+        "项目资源/6.snapshot",
+        "项目资源/00_本机缓存与测试",
+    )
+    for relative in canonical:
         if not (workspace / relative).is_dir():
-            errors.append(f"installed directory missing: {workspace / relative}")
+            if not (relative.endswith("task-log.jsonl") and (workspace / relative).is_file()):
+                errors.append(f"installed canonical path missing: {workspace / relative}")
+    for relative in ("1.projects", "2.submission", "3.skills/global", "4.apis/seedance", "5.summary/global", "6.snapshot", "task-log.jsonl", "New-VideoProject.ps1"):
+        if not (workspace / relative).exists():
+            errors.append(f"legacy compatibility path missing: {workspace / relative}")
     for skill in ("maintain-task-log", "manage-video-production", "seedance-20"):
         if not (codex_home / "skills" / skill / "SKILL.md").is_file():
             errors.append(f"installed Codex skill missing: {skill}")

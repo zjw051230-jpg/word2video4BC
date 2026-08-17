@@ -6,7 +6,12 @@ import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-LOG_PATH = Path(r"D:\视频生成\task-log.jsonl")
+WORKSPACE_ROOT = Path(r"D:\视频生成")
+CANONICAL_LOG_PATH = WORKSPACE_ROOT / "视频本体" / "03_运行日志" / "task-log.jsonl"
+LEGACY_LOG_PATH = WORKSPACE_ROOT / "task-log.jsonl"
+# v2.2.0 installs the canonical body path. The fallback keeps this skill usable
+# while an older workspace is awaiting its one-time layout migration.
+LOG_PATH = CANONICAL_LOG_PATH if CANONICAL_LOG_PATH.parent.exists() else LEGACY_LOG_PATH
 TZ = timezone(timedelta(hours=8), name="Asia/Shanghai")
 PHASES = ("开始", "进展", "结束")
 
@@ -73,7 +78,7 @@ def command_append(args):
 
 
 def build_parser():
-    parser = argparse.ArgumentParser(description="Read or append the global D:\\视频生成 task log.")
+    parser = argparse.ArgumentParser(description="Read or append the global video-workspace task log.")
     subparsers = parser.add_subparsers(dest="command", required=True)
 
     read_parser = subparsers.add_parser("read")

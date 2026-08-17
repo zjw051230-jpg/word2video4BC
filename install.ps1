@@ -25,12 +25,16 @@ if ([string]::IsNullOrWhiteSpace($CodexHome)) {
 }
 $CodexHome = [IO.Path]::GetFullPath($CodexHome)
 
-$workspaceDirs = @('1.projects','2.submission','3.skills\global','4.apis\seedance','5.summary\global','6.snapshot')
-if (-not $UpdateOnly) {
-  foreach ($dir in $workspaceDirs) { New-Item -ItemType Directory -Force -Path (Join-Path $WorkspaceRoot $dir) | Out-Null }
-} else {
-  New-Item -ItemType Directory -Force -Path (Join-Path $WorkspaceRoot '3.skills\global') | Out-Null
-}
+$layoutScript = Join-Path $packageRoot 'scripts\Initialize-BodyResourceLayout.ps1'
+if (-not (Test-Path -LiteralPath $layoutScript -PathType Leaf)) { throw "安装包缺少本体/资源分层器：$layoutScript" }
+& $layoutScript -WorkspaceRoot $WorkspaceRoot -MigrateLegacy
+if ($LASTEXITCODE -ne 0) { throw '本体/资源分层初始化失败。' }
+
+$bodyRoot = Join-Path $WorkspaceRoot '视频本体'
+$bodyToolsRoot = Join-Path $bodyRoot '01_程序与工具'
+$workspaceSkillRoot = Join-Path $bodyToolsRoot '3.skills\global'
+$bodyLogRoot = Join-Path $bodyRoot '03_运行日志'
+$bodyGlobalLessons = Join-Path $bodyLogRoot '全局复盘\lessons.md'
 
 function Copy-VersionedDirectory {
   param([string]$Source, [string]$Target)
@@ -42,7 +46,6 @@ function Copy-VersionedDirectory {
   Copy-Item -LiteralPath $Source -Destination $Target -Recurse
 }
 
-$workspaceSkillRoot = Join-Path $WorkspaceRoot '3.skills\global'
 $codexSkillRoot = Join-Path $CodexHome 'skills'
 New-Item -ItemType Directory -Force -Path $codexSkillRoot | Out-Null
 $installedSkillRoots = @()
@@ -69,18 +72,20 @@ foreach ($root in $installedSkillRoots) {
   }
 }
 
-Copy-Item -LiteralPath (Join-Path $packageRoot 'New-VideoProject.ps1') -Destination (Join-Path $WorkspaceRoot 'New-VideoProject.ps1') -Force
-foreach ($scriptName in @('New-VideoProject.ps1')) {
-  $scriptPath = Join-Path $WorkspaceRoot $scriptName
-  $content = [IO.File]::ReadAllText($scriptPath)
-  [IO.File]::WriteAllText($scriptPath, $content.Replace('D:\视频生成', $WorkspaceRoot), [Text.UTF8Encoding]::new($true))
-}
+$newProjectTarget = Join-Path $bodyToolsRoot 'New-VideoProject.ps1'
+Copy-Item -LiteralPath (Join-Path $packageRoot 'New-VideoProject.ps1') -Destination $newProjectTarget -Force
+$newProjectContent = [IO.File]::ReadAllText($newProjectTarget)
+[IO.File]::WriteAllText($newProjectTarget, $newProjectContent.Replace('D:\视频生成', $WorkspaceRoot), [Text.UTF8Encoding]::new($true))
+$legacyNewProject = Join-Path $WorkspaceRoot 'New-VideoProject.ps1'
+if (Test-Path -LiteralPath $legacyNewProject) { Remove-Item -LiteralPath $legacyNewProject -Force }
+New-Item -ItemType HardLink -Path $legacyNewProject -Target $newProjectTarget | Out-Null
+attrib +h $legacyNewProject | Out-Null
 
-$globalLessons = Join-Path $WorkspaceRoot '5.summary\global\lessons.md'
+$globalLessons = $bodyGlobalLessons
 if (-not $UpdateOnly -and -not (Test-Path -LiteralPath $globalLessons)) {
   [IO.File]::WriteAllText($globalLessons, "# Global production lessons`r`n", [Text.UTF8Encoding]::new($false))
 }
-$taskLog = Join-Path $WorkspaceRoot 'task-log.jsonl'
+$taskLog = Join-Path $bodyLogRoot 'task-log.jsonl'
 if (-not $UpdateOnly -and -not (Test-Path -LiteralPath $taskLog)) { [IO.File]::WriteAllText($taskLog, '', [Text.UTF8Encoding]::new($false)) }
 
 if (-not $UpdateOnly -and -not [string]::IsNullOrWhiteSpace($ProjectName)) {
@@ -98,5 +103,5 @@ if (-not (Get-Command ffmpeg -ErrorAction SilentlyContinue)) { Write-Warning '�
 $toolStateRoot = Join-Path $WorkspaceRoot '.word2video4BC'
 New-Item -ItemType Directory -Force -Path $toolStateRoot | Out-Null
 Copy-Item -LiteralPath (Join-Path $packageRoot 'scripts\Update-Toolkit.ps1') -Destination (Join-Path $toolStateRoot 'Update-Toolkit.ps1') -Force
-[ordered]@{schema_version=2;repository='https://github.com/zjw051230-jpg/word2video4BC';main_branch='main';checkout_root=$packageRoot;update_transport='git-pull';installed_version=$manifest.version;update_command="powershell -ExecutionPolicy Bypass -File `"$toolStateRoot\Update-Toolkit.ps1`" -WorkspaceRoot `"$WorkspaceRoot`"";managed_scope=@('3.skills/global','Codex skills','New-VideoProject.ps1');protected_scope=@('1.projects','2.submission','4.apis','5.summary','6.snapshot','task-log.jsonl');updated_at=(Get-Date).ToString('o')} | ConvertTo-Json -Depth 6 | Set-Content -Encoding UTF8 -LiteralPath (Join-Path $toolStateRoot 'update-source.json')
+[ordered]@{schema_version=3;repository='https://github.com/zjw051230-jpg/word2video4BC';main_branch='main';checkout_root=$packageRoot;update_transport='git-pull';installed_version=$manifest.version;update_command="powershell -ExecutionPolicy Bypass -File `"$toolStateRoot\Update-Toolkit.ps1`" -WorkspaceRoot `"$WorkspaceRoot`"";managed_scope=@('视频本体\01_程序与工具\3.skills\global','Codex skills','视频本体\01_程序与工具\New-VideoProject.ps1');protected_scope=@('项目资源','项目与素材','生成结果','交付','快照','私有 API','缓存','项目复盘');legacy_compatibility=@('1.projects','2.submission','3.skills','4.apis','5.summary','6.snapshot','tmp','task-log.jsonl','New-VideoProject.ps1');updated_at=(Get-Date).ToString('o')} | ConvertTo-Json -Depth 6 | Set-Content -Encoding UTF8 -LiteralPath (Join-Path $toolStateRoot 'update-source.json')
 attrib +h $toolStateRoot | Out-Null
