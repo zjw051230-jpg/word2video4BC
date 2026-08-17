@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.1.0
+
+- 工具更新统一改为已登记 Git 工作副本的 `git pull --ff-only origin main`；不再下载、校验或安装发布压缩包。
+- `env4BC` 仅使用已安装环境或带 SHA-256 的经批准本地安装包；缺失时安全停止并联系维护人员。
+- 删除 GitHub 发布条目后，所有新电脑由 Codex 直接 clone/pull `main`。
+
 ## 2.0.0
 
 - 首次安装记录固定官方 GitHub 源；以后 Codex 只需收到“更新视频工具”即可执行无损更新。

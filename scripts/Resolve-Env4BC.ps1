@@ -6,7 +6,6 @@ param(
 )
 
 $ErrorActionPreference = 'Stop'
-$officialRepo = 'zjw051230-jpg/env4BC'
 $stateRoot = if ($InstallRoot) { [IO.Path]::GetFullPath($InstallRoot) } else { Join-Path $env:LOCALAPPDATA 'env4BC' }
 $statePath = Join-Path $stateRoot 'install-state.json'
 
@@ -27,15 +26,6 @@ function Get-ExpectedHash([string]$HashFile) {
   return $null
 }
 
-function Save-TrustedDownload([string]$Uri,[string]$Destination) {
-  if (Get-Command curl.exe -ErrorAction SilentlyContinue) {
-    & curl.exe --fail --location --silent --show-error --retry 3 --retry-delay 2 --connect-timeout 20 --max-time 600 --output $Destination $Uri
-    if ($LASTEXITCODE -ne 0 -or -not (Test-Path -LiteralPath $Destination -PathType Leaf)) { throw "官方文件下载失败：$Uri" }
-  } else {
-    Invoke-WebRequest -Headers @{'User-Agent'='BC-toolkit'} -UseBasicParsing -TimeoutSec 600 -Uri $Uri -OutFile $Destination
-  }
-}
-
 function Install-TrustedPackage([string]$ZipPath,[string]$HashPath) {
   $expected = Get-ExpectedHash $HashPath
   if (-not $expected) { throw 'env4BC 安装包缺少有效 SHA-256，拒绝安装。' }
@@ -52,8 +42,8 @@ function Install-TrustedPackage([string]$ZipPath,[string]$HashPath) {
     if ($manifest.name -ne 'env4BC' -or $manifest.update_policy -ne 'repair-missing-only' -or $manifest.material_policy -ne 'never-touch-user-materials') { throw 'env4BC 安全清单无效。' }
     $forbidden = Get-ChildItem -Recurse -Force -File $temp | Where-Object { $_.Name -match '(?i)cc-switch\.db|credentials\.json|doubao_api_config\.json|providers\.json|\.env$|\.sqlite|\.db-(wal|shm)$' }
     if ($forbidden) { throw 'env4BC 包含用户数据或密钥文件，拒绝安装。' }
-    $installArgs=@('-NoProfile','-ExecutionPolicy','Bypass','-File',$installer,'-InstallRoot',$stateRoot)
-    if($InstallRoot){$installArgs+=@('-CcSwitchRoot',(Join-Path $stateRoot 'cc-switch'),'-ShortcutRoot',(Join-Path $stateRoot 'shortcuts'))}
+    $installArgs = @('-NoProfile','-ExecutionPolicy','Bypass','-File',$installer,'-InstallRoot',$stateRoot)
+    if ($InstallRoot) { $installArgs += @('-CcSwitchRoot',(Join-Path $stateRoot 'cc-switch'),'-ShortcutRoot',(Join-Path $stateRoot 'shortcuts')) }
     & powershell.exe @installArgs
     if ($LASTEXITCODE -ne 0) { throw 'env4BC 安装失败。' }
   } finally {
@@ -78,25 +68,4 @@ foreach ($candidate in $candidates | Select-Object -Unique) {
   try { Install-TrustedPackage $candidate $hash; if (Test-EnvironmentReady) { Write-Output "ENV4BC_READY:local:$candidate"; exit 0 } } catch { Write-Warning $_.Exception.Message }
 }
 
-if (($LocalPackage -or $env:ENV4BC_PACKAGE) -and -not (Test-EnvironmentReady)) {
-  throw '显式指定的 env4BC 安装包无法通过安全校验或安装。流程已停止，请联系维护人员处理。'
-}
-
-if (-not $Offline) {
-  $tempDownload = Join-Path ([IO.Path]::GetTempPath()) ('env4BC-release-' + [guid]::NewGuid().ToString('N'))
-  New-Item -ItemType Directory -Path $tempDownload | Out-Null
-  try {
-    $release = Invoke-RestMethod -Headers @{Accept='application/vnd.github+json';'User-Agent'='BC-toolkit'} -Uri "https://api.github.com/repos/$officialRepo/releases/latest"
-    $zipAsset = @($release.assets | Where-Object {$_.name -match '^env4BC-v.+\.zip$'}) | Select-Object -First 1
-    $hashAsset = @($release.assets | Where-Object {$_.name -eq ($zipAsset.name + '.sha256')}) | Select-Object -First 1
-    if (-not $zipAsset -or -not $hashAsset) { throw '官方 Release 缺少 ZIP 或 SHA-256。' }
-    $zip = Join-Path $tempDownload $zipAsset.name
-    $hash = "$zip.sha256"
-    Save-TrustedDownload $zipAsset.browser_download_url $zip
-    Save-TrustedDownload $hashAsset.browser_download_url $hash
-    Install-TrustedPackage $zip $hash
-    if (Test-EnvironmentReady) { Write-Output "ENV4BC_READY:github:$($release.tag_name)"; exit 0 }
-  } catch { Write-Warning $_.Exception.Message } finally { if (Test-Path $tempDownload) { Remove-Item $tempDownload -Recurse -Force } }
-}
-
-throw '环境资源不足，未找到可验证的 env4BC 或安全安装失败。流程已停止，请联系维护人员处理。'
+throw '环境资源不足，未找到已安装或经批准的本地 env4BC 安装包。流程已停止，请联系维护人员处理。'

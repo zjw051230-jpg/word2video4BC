@@ -1,6 +1,6 @@
 {
   "name": "word2video4BC",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "environment_dependency": "env4BC",
   "workspace_schema": 1,
   "skills": [

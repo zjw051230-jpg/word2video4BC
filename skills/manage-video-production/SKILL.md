@@ -7,7 +7,7 @@ description: Manage the D:\视频生成 production workspace, including project 
 
 ## Handle toolkit update requests
 
-When the user says `更新视频工具`, `视频工具需要更新`, or an equivalent request, do not run Git against the workspace. Read `<WorkspaceRoot>\.word2video4BC\update-source.json`, verify its repository is exactly `https://github.com/zjw051230-jpg/word2video4BC`, and run the recorded local `Update-Toolkit.ps1`. The updater may modify only the declared tool scope. It must never scan, sync, move, rename, overwrite, or delete projects, materials, submissions, API configuration, summaries, snapshots, or task logs. Ask for the official repository link only when the hidden update record does not exist; after the first verified installation the link must not be needed again.
+When the user says `更新视频工具`, `视频工具需要更新`, or an equivalent request, use the registered Git checkout only—not a downloaded archive. Read `<WorkspaceRoot>\.word2video4BC\update-source.json`; verify `repository` is exactly `https://github.com/zjw051230-jpg/word2video4BC`, `main_branch` is `main`, and `checkout_root` is an existing clean Git checkout whose `origin` is that repository. Then run `git -C <checkout_root> pull --ff-only origin main` and run that checkout's `install.ps1 -UpdateOnly -Force` (or the recorded local `Update-Toolkit.ps1`, which performs those same steps). The updater may modify only the declared tool scope. It must never scan, sync, move, rename, overwrite, or delete projects, materials, submissions, API configuration, summaries, snapshots, or task logs. Ask for the official repository link only when the hidden update record does not exist; after the first verified installation the link must not be needed again.
 
 ## Honor the workspace contract
 

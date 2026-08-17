@@ -77,16 +77,22 @@ def validate_package(root: Path) -> list[str]:
             errors.append("manifest version is empty")
         if manifest.get("environment_dependency") != "env4BC":
             errors.append("environment dependency must be env4BC")
-        if manifest.get("version") != "2.0.0":
-            errors.append("manifest version must be 2.0.0")
+        if manifest.get("version") != "2.1.0":
+            errors.append("manifest version must be 2.1.0")
     except (OSError, json.JSONDecodeError) as exc:
         errors.append(f"invalid manifest: {exc}")
+
     resolver = (root / "scripts/Resolve-Env4BC.ps1").read_text(encoding="utf-8-sig", errors="ignore")
     updater = (root / "scripts/Update-Toolkit.ps1").read_text(encoding="utf-8-sig", errors="ignore")
-    if "zjw051230-jpg/env4BC" not in resolver or "SHA-256" not in resolver or "联系维护人员" not in resolver:
-        errors.append("env4BC trust/stop contract is incomplete")
-    if "zjw051230-jpg/word2video4BC" not in updater or "SHA-256" not in updater or "-UpdateOnly" not in updater:
-        errors.append("GitHub update contract is incomplete")
+    if "SHA-256" not in resolver or "联系维护人员" not in resolver or "releases/latest" in resolver:
+        errors.append("env4BC local trust/stop contract is incomplete")
+    if (
+        "zjw051230-jpg/word2video4BC" not in updater
+        or "pull --ff-only" not in updater
+        or "-UpdateOnly" not in updater
+        or "releases/latest" in updater
+    ):
+        errors.append("direct Git update contract is incomplete")
     return errors
 
 
