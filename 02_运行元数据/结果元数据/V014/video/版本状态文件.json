@@ -1,0 +1,208 @@
+{
+  "task_id": "T20260812-144226",
+  "batch": "ol3d_minigame_ads_15versions",
+  "version": "V014",
+  "stage": "video_prompt_static",
+  "status": "waiting_for_entry_review",
+  "model_registration": {
+    "thread_id": "01a00043-8776-73e1-aabd-2a430bc2905a",
+    "model": "gpt-5.6-luna",
+    "reasoning": "high",
+    "verify_access": "passed",
+    "register": "passed",
+    "bootstrap_status": "ready",
+    "subagent_used": false
+  },
+  "task_count": 11,
+  "target_duration_sec": 44.0,
+  "accepted_keyframes": {
+    "count": 11,
+    "technical": 11,
+    "semantic": 11,
+    "state_machine": 11
+  },
+  "execution_flags": {
+    "keyframes_generated": false,
+    "prompt_written": false,
+    "uploaded": false,
+    "submitted": false,
+    "generated": false,
+    "monitoring": false,
+    "pulled_back": false,
+    "accepted": false,
+    "rough_cut": false
+  },
+  "gates": {
+    "video_stage_gate": "waiting_for_entry_review",
+    "rough_cut_gate": false,
+    "all_keyframes_accepted": true,
+    "binding_gate": true,
+    "state_machine_gate": true
+  },
+  "output_files": [
+    "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V014\\video\\最终视频提示词.md",
+    "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V014\\video\\结构化提交计划.json",
+    "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V014\\video\\验证清单.md"
+  ],
+  "source_paths": {
+    "plan_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\1.任务策划\\T20260812-144226_抢滩登陆视频策划\\ol3d_minigame_ads_15versions\\V014\\V014_production_plan.json",
+    "storyboard_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\1.任务策划\\T20260812-144226_抢滩登陆视频策划\\ol3d_minigame_ads_15versions\\V014\\V014_策划.md",
+    "img2_acceptance_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V014\\img2\\keyframe_acceptance.json",
+    "binding_manifest_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\img2_binding_manifest.json",
+    "accepted_frames": {
+      "V014-R01": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V014\\img2\\V014-R01.png",
+        "sha256": "20a516449540cb966ecfe46003794b35ec9cd97d61679f6ae868e70fd76d180a",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "V014-R02": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V014\\img2\\V014-R02.png",
+        "sha256": "4987e992a1c8ae78a76da40fc72068fa9b8494eb5de735ae157b9b4cb5a08e1e",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "V014-R03": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V014\\img2\\V014-R03.png",
+        "sha256": "a1d21149df9da1922c5e6f46e77a5e3d3a3f27331a1f2cf2ece3866f1408039c",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "V014-R04": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V014\\img2\\V014-R04.png",
+        "sha256": "f8e7a553be59ef28e4990f101dee5fed54648ee4765f2d2e50f4b0bd25becff9",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "V014-R05": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V014\\img2\\V014-R05.png",
+        "sha256": "b6a2ddf49b1495009c23b3e3b1ab9fad5ddcd67744624acc0c5aaff0f00930bf",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "V014-R06": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V014\\img2\\V014-R06.png",
+        "sha256": "0566d22d98341aa9acd83efae1854c7f4816062660813b4fee15d5d60b4a3a85",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "V014-R07": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V014\\img2\\V014-R07.png",
+        "sha256": "bf0ab5e601b5f24b62502cafcac3faec1fa682e9683997cc33fe187c688afb1c",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "V014-R08": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V014\\img2\\V014-R08.png",
+        "sha256": "7ef33f5f77219f2dfa8270e4eeac7328b4ee49f84e2c5d072d7035b3d5c9aa86",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "V014-R09": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V014\\img2\\V014-R09.png",
+        "sha256": "68bc7e4c9d6bf917cc691b52c13c494991007c5773d210d18314080997427e1f",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "V014-R10": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V014\\img2\\V014-R10.png",
+        "sha256": "a38acecb95aa3fa73ac79572f0197d9928eae72d98adcbb85df2e6617be9a91b",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "V014-R11": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V014\\img2\\V014-R11.png",
+        "sha256": "b3fed0a682d782ccb438089f96290a8d425b8832f26ad83fdb1a8db197222146",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      }
+    },
+    "real_assets": [
+      {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\backgrounds\\OL3D\\T20260812-144226_BG_AUTUMNCAMP_OL3D_master_v001.png",
+        "exists": true,
+        "sha256": "4ae6b20e7280df254cdb0afb7c46a34d85160575292018f0a93750313f53a14d"
+      },
+      {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_ROAD_OL3D_sheet_v001.png",
+        "exists": true,
+        "sha256": "0bdc2e269136c289554a57e6076694dfc59a18d3f05e1c7b3ad9c6f8ceb83c35"
+      },
+      {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_RIFLE_OL3D_turn_v001.png",
+        "exists": true,
+        "sha256": "9e0b58c584dad6ba8a9f5dcc13589fda6e903ca82ce4bfa4fc7cb5fcec4da67a"
+      },
+      {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SHIELD_OL3D_turn_v001.png",
+        "exists": true,
+        "sha256": "0d9f5b7325665f21e32be71063d834e958fe6cb1cfe90667374183c24dea0382"
+      },
+      {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SNIPER_OL3D_turn_v001.png",
+        "exists": true,
+        "sha256": "67a9ba0cc4a93f0941f83f559cc27509036ea0af877006845976b77a555713c6"
+      },
+      {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_CORE_OL3D_turn_v001.png",
+        "exists": true,
+        "sha256": "133a254dfab836265ba0f35c9a24f8a8c7afdd7f26e08c4325a20134b3efc943"
+      },
+      {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_MGBUNKER_OL3D_turn_v001.png",
+        "exists": true,
+        "sha256": "720af7d29680602752edd3e81995a97a9decc235a4b5f9ff66bf2a7717b18601"
+      },
+      {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_ARTILLERY_OL3D_turn_v001.png",
+        "exists": true,
+        "sha256": "436236362d286ad3590d7484d9b43580098f3f3d67fe149316b208cdf24a42f4"
+      },
+      {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_TRAP_OL3D_turn_v001.png",
+        "exists": true,
+        "sha256": "1095e3955164d7502447c57d49dca112fa6489b900d2928933381e3db30347c8"
+      },
+      {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_BUILD_OL3D_atlas_v001.png",
+        "exists": true,
+        "sha256": "0691d911822ecc6e3f8f1dd3048b9e6ae31297772cb897f46a5119bc83de4804"
+      },
+      {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_COMBAT_OL3D_atlas_v001.png",
+        "exists": true,
+        "sha256": "a3ce69dbe7b37b721931049422fe8a4742041197d9d3bb35be1534db8f92212f"
+      },
+      {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_RESULT_OL3D_atlas_v001.png",
+        "exists": true,
+        "sha256": "bfbdfff60866c380deeaa0c3755614bb525df0f5a7282c60d9e9d3687adc8bd2"
+      }
+    ],
+    "cross_version_media_allowed": false
+  },
+  "no_upload_no_submit_no_generate": true,
+  "no_remote_tasks_created": true
+}

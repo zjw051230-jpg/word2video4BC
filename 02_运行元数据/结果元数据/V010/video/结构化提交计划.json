@@ -1,0 +1,1300 @@
+{
+  "task_id": "T20260812-144226",
+  "batch": "ol3d_minigame_ads_15versions",
+  "version": "V010",
+  "stage": "video_prompt_static",
+  "planning_only": true,
+  "model_registration": {
+    "thread_id": "01a00043-8776-73e1-aabd-2a430bc2905a",
+    "model": "gpt-5.6-luna",
+    "reasoning": "high",
+    "verify_access": "passed",
+    "register": "passed",
+    "bootstrap_status": "ready",
+    "subagent_used": false
+  },
+  "variant": {
+    "concept": "Heavy-shield capture puzzle",
+    "title": "Trigger a falling-rock chain",
+    "arc": "Tap the first obstacle rock, stop the heavy shield enemy, let the second rock chain into the lane, patch the remaining gap with a trap, and end on a clear core line with visible chain-reaction proof."
+  },
+  "input_contract": {
+    "mode": "I2V",
+    "aspect_ratio": "9:16",
+    "resolution": "720x1280",
+    "quality": "720p",
+    "reference_video": null,
+    "reference_video_allowed": false,
+    "reference_video_role": "none",
+    "accepted_png_endpoints_only": true
+  },
+  "audio_contract": {
+    "generate_audio": true,
+    "external_tts_blocked": true,
+    "narration_claim": false
+  },
+  "gates": {
+    "video_stage_gate": "waiting_for_entry_review",
+    "rough_cut_gate": false,
+    "all_keyframes_accepted": true,
+    "binding_gate": true,
+    "state_machine_gate": true
+  },
+  "execution_flags": {
+    "keyframes_generated": false,
+    "prompt_written": false,
+    "uploaded": false,
+    "submitted": false,
+    "generated": false,
+    "monitoring": false,
+    "pulled_back": false,
+    "accepted": false,
+    "rough_cut": false
+  },
+  "source_authority": {
+    "plan_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\1.任务策划\\T20260812-144226_抢滩登陆视频策划\\ol3d_minigame_ads_15versions\\V010\\V010_production_plan.json",
+    "storyboard_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\1.任务策划\\T20260812-144226_抢滩登陆视频策划\\ol3d_minigame_ads_15versions\\V010\\V010_策划.md",
+    "img2_acceptance_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V010\\img2\\keyframe_acceptance.json",
+    "binding_manifest_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\img2_binding_manifest.json",
+    "accepted_frames": {
+      "V010-R01": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V010\\img2\\V010-R01.png",
+        "sha256": "086237813dd75c0d8b180272b6f0ba14097aa78c1d03b18c1053f79574d3bf7c",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "V010-R02": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V010\\img2\\V010-R02.png",
+        "sha256": "803b519749e343f2c62c1a1ae5edf1b44d0d44b4402e10e16b50a05c8b28830e",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "V010-R03": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V010\\img2\\V010-R03.png",
+        "sha256": "9b705f5466b2f6e7e27bf54d2e591a2749adbdad8379851987e5ae85c3d37c7f",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "V010-R04": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V010\\img2\\V010-R04.png",
+        "sha256": "f04541040583affea6dcff2a88e788b309cc4f303b0985b077e4648716cbf3c1",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "V010-R05": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V010\\img2\\V010-R05.png",
+        "sha256": "ca8b054e91d56b689d904c19684fce4bfa87bb33044431c0c67162c891e90062",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "V010-R06": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V010\\img2\\V010-R06.png",
+        "sha256": "8098d41455264f7a6ba854faf9b6b5af776c7b69eb6395c66974500dc8858bb1",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "V010-R07": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V010\\img2\\V010-R07.png",
+        "sha256": "0d62af867fe54a9928edab1e63bb692c1347c9862ea926bb31a2ebcff8dcc51c",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "V010-R08": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V010\\img2\\V010-R08.png",
+        "sha256": "294d5ba513c4d3dca88c9119f736b30ece9c8582bfd6684b37335b04848c5b0f",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "V010-R09": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V010\\img2\\V010-R09.png",
+        "sha256": "5083d42e054309fa1e063a0dd2ad54e41622407248902539cea1f4a22dead7b5",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "V010-R10": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V010\\img2\\V010-R10.png",
+        "sha256": "4ed802cdcfdcc45ca288f8942c394b0555a904fb289747facd5687206beacf67",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "V010-R11": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V010\\img2\\V010-R11.png",
+        "sha256": "8ca826821b19063b70a3929ccf40bcdcb6cad5940ba8cb2039b931fa323c2cee",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      }
+    },
+    "real_assets": [
+      {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\backgrounds\\OL3D\\T20260812-144226_BG_AUTUMNCAMP_OL3D_master_v001.png",
+        "exists": true,
+        "sha256": "4ae6b20e7280df254cdb0afb7c46a34d85160575292018f0a93750313f53a14d"
+      },
+      {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_ROAD_OL3D_sheet_v001.png",
+        "exists": true,
+        "sha256": "0bdc2e269136c289554a57e6076694dfc59a18d3f05e1c7b3ad9c6f8ceb83c35"
+      },
+      {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_OBSTACLE_OL3D_sheet_v001.png",
+        "exists": true,
+        "sha256": "07489586d30c446e427e59fea4fc98823013c8b35abed0e8904220206ad3b5e6"
+      },
+      {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_RIFLE_OL3D_turn_v001.png",
+        "exists": true,
+        "sha256": "9e0b58c584dad6ba8a9f5dcc13589fda6e903ca82ce4bfa4fc7cb5fcec4da67a"
+      },
+      {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SHIELD_OL3D_turn_v001.png",
+        "exists": true,
+        "sha256": "0d9f5b7325665f21e32be71063d834e958fe6cb1cfe90667374183c24dea0382"
+      },
+      {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SNIPER_OL3D_turn_v001.png",
+        "exists": true,
+        "sha256": "67a9ba0cc4a93f0941f83f559cc27509036ea0af877006845976b77a555713c6"
+      },
+      {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_CORE_OL3D_turn_v001.png",
+        "exists": true,
+        "sha256": "133a254dfab836265ba0f35c9a24f8a8c7afdd7f26e08c4325a20134b3efc943"
+      },
+      {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_TRAP_OL3D_turn_v001.png",
+        "exists": true,
+        "sha256": "1095e3955164d7502447c57d49dca112fa6489b900d2928933381e3db30347c8"
+      },
+      {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_ARTILLERY_OL3D_turn_v001.png",
+        "exists": true,
+        "sha256": "436236362d286ad3590d7484d9b43580098f3f3d67fe149316b208cdf24a42f4"
+      },
+      {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_COMBAT_OL3D_atlas_v001.png",
+        "exists": true,
+        "sha256": "a3ce69dbe7b37b721931049422fe8a4742041197d9d3bb35be1534db8f92212f"
+      },
+      {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_SKILL_OL3D_atlas_v001.png",
+        "exists": true,
+        "sha256": "75d333d5dfa7122299a3f35f11fccdedb131b07948904a62ad080caa220a971b"
+      },
+      {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_RESULT_OL3D_atlas_v001.png",
+        "exists": true,
+        "sha256": "bfbdfff60866c380deeaa0c3755614bb525df0f5a7282c60d9e9d3687adc8bd2"
+      }
+    ],
+    "cross_version_media_allowed": false
+  },
+  "task_count": 11,
+  "target_duration_sec": 44.0,
+  "tasks": [
+    {
+      "task_id": "V010-R01",
+      "sequence_index": 1,
+      "duration_sec": 4.0,
+      "mode": "I2V",
+      "aspect_ratio": "9:16",
+      "resolution": "720x1280",
+      "quality": "720p",
+      "generate_audio": true,
+      "external_tts_blocked": true,
+      "reference_video": null,
+      "start_frame": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V010\\img2\\V010-R01.png",
+        "sha256": "086237813dd75c0d8b180272b6f0ba14097aa78c1d03b18c1053f79574d3bf7c",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "end_frame": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V010\\img2\\V010-R02.png",
+        "sha256": "803b519749e343f2c62c1a1ae5edf1b44d0d44b4402e10e16b50a05c8b28830e",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "source_asset_binding": [
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\backgrounds\\OL3D\\T20260812-144226_BG_AUTUMNCAMP_OL3D_master_v001.png",
+          "exists": true,
+          "sha256": "4ae6b20e7280df254cdb0afb7c46a34d85160575292018f0a93750313f53a14d"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_ROAD_OL3D_sheet_v001.png",
+          "exists": true,
+          "sha256": "0bdc2e269136c289554a57e6076694dfc59a18d3f05e1c7b3ad9c6f8ceb83c35"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_OBSTACLE_OL3D_sheet_v001.png",
+          "exists": true,
+          "sha256": "07489586d30c446e427e59fea4fc98823013c8b35abed0e8904220206ad3b5e6"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_RIFLE_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "9e0b58c584dad6ba8a9f5dcc13589fda6e903ca82ce4bfa4fc7cb5fcec4da67a"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SHIELD_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "0d9f5b7325665f21e32be71063d834e958fe6cb1cfe90667374183c24dea0382"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SNIPER_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "67a9ba0cc4a93f0941f83f559cc27509036ea0af877006845976b77a555713c6"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_CORE_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "133a254dfab836265ba0f35c9a24f8a8c7afdd7f26e08c4325a20134b3efc943"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_TRAP_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "1095e3955164d7502447c57d49dca112fa6489b900d2928933381e3db30347c8"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_ARTILLERY_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "436236362d286ad3590d7484d9b43580098f3f3d67fe149316b208cdf24a42f4"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_COMBAT_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "a3ce69dbe7b37b721931049422fe8a4742041197d9d3bb35be1534db8f92212f"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_SKILL_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "75d333d5dfa7122299a3f35f11fccdedb131b07948904a62ad080caa220a971b"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_RESULT_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "bfbdfff60866c380deeaa0c3755614bb525df0f5a7282c60d9e9d3687adc8bd2"
+        }
+      ],
+      "prompt": "Generate one continuous 4.0-second I2V gameplay shot from the supplied accepted endpoint frames. Use the autumn OL3D assets as the identity and environment authority. Keep a close-range oblique top-down view of one small playable local board: the entrance stays near the top, the core stays near the bottom, and the active lane, target ring, units, facility and immediate feedback remain large enough to read. The viewer must see a tactile mini-game operation, not a zoomed-out SLG map. Animate at most one clear player input and exactly one immediate mechanical feedback, then hold the result. The first frame must match the supplied accepted start frame exactly; the last frame must match the supplied accepted end frame and become the next task's start state. Preserve unit coordinates, facility state, damage or cracks, target-ring color and shape, and abstract resource color blocks unless this shot explicitly changes one. Keep character identity, terrain geometry, camera scale and lighting stable. No readable words, numbers, labels, buttons, health bars, subtitles, logos, watermarks, phone UI, reference_video input, identity transfer from video, motion transfer from video, distant overview, aerial view, zoom-out, tiny subjects, board reset, identity drift, cross-version assets, horizontal banding, scanlines or glitch. Audio generation is enabled for the container, but external TTS is blocked: do not invent narration, dialogue or a voice identity. Variant V010: Heavy-shield capture puzzle. Narrative route: Tap the first obstacle rock, stop the heavy shield enemy, let the second rock chain into the lane, patch the remaining gap with a trap, and end on a clear core line with visible chain-reaction proof. This shot is beat 1 of 11, 'Heavy unit enters'. Input rule: No player input; let the established board state breathe. State continuity: begin from the accepted opening state; end on Heavy unit enters as the only planned state change. Bind start to accepted V010-R01 and end to accepted V010-R02; do not synthesize a replacement frame. Use only this version's listed asset binding.",
+      "execution": {
+        "upload": false,
+        "submit": false,
+        "generate": false,
+        "monitor": false,
+        "pull_back": false
+      }
+    },
+    {
+      "task_id": "V010-R02",
+      "sequence_index": 2,
+      "duration_sec": 4.0,
+      "mode": "I2V",
+      "aspect_ratio": "9:16",
+      "resolution": "720x1280",
+      "quality": "720p",
+      "generate_audio": true,
+      "external_tts_blocked": true,
+      "reference_video": null,
+      "start_frame": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V010\\img2\\V010-R02.png",
+        "sha256": "803b519749e343f2c62c1a1ae5edf1b44d0d44b4402e10e16b50a05c8b28830e",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "end_frame": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V010\\img2\\V010-R03.png",
+        "sha256": "9b705f5466b2f6e7e27bf54d2e591a2749adbdad8379851987e5ae85c3d37c7f",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "source_asset_binding": [
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\backgrounds\\OL3D\\T20260812-144226_BG_AUTUMNCAMP_OL3D_master_v001.png",
+          "exists": true,
+          "sha256": "4ae6b20e7280df254cdb0afb7c46a34d85160575292018f0a93750313f53a14d"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_ROAD_OL3D_sheet_v001.png",
+          "exists": true,
+          "sha256": "0bdc2e269136c289554a57e6076694dfc59a18d3f05e1c7b3ad9c6f8ceb83c35"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_OBSTACLE_OL3D_sheet_v001.png",
+          "exists": true,
+          "sha256": "07489586d30c446e427e59fea4fc98823013c8b35abed0e8904220206ad3b5e6"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_RIFLE_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "9e0b58c584dad6ba8a9f5dcc13589fda6e903ca82ce4bfa4fc7cb5fcec4da67a"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SHIELD_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "0d9f5b7325665f21e32be71063d834e958fe6cb1cfe90667374183c24dea0382"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SNIPER_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "67a9ba0cc4a93f0941f83f559cc27509036ea0af877006845976b77a555713c6"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_CORE_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "133a254dfab836265ba0f35c9a24f8a8c7afdd7f26e08c4325a20134b3efc943"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_TRAP_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "1095e3955164d7502447c57d49dca112fa6489b900d2928933381e3db30347c8"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_ARTILLERY_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "436236362d286ad3590d7484d9b43580098f3f3d67fe149316b208cdf24a42f4"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_COMBAT_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "a3ce69dbe7b37b721931049422fe8a4742041197d9d3bb35be1534db8f92212f"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_SKILL_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "75d333d5dfa7122299a3f35f11fccdedb131b07948904a62ad080caa220a971b"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_RESULT_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "bfbdfff60866c380deeaa0c3755614bb525df0f5a7282c60d9e9d3687adc8bd2"
+        }
+      ],
+      "prompt": "Generate one continuous 4.0-second I2V gameplay shot from the supplied accepted endpoint frames. Use the autumn OL3D assets as the identity and environment authority. Keep a close-range oblique top-down view of one small playable local board: the entrance stays near the top, the core stays near the bottom, and the active lane, target ring, units, facility and immediate feedback remain large enough to read. The viewer must see a tactile mini-game operation, not a zoomed-out SLG map. Animate at most one clear player input and exactly one immediate mechanical feedback, then hold the result. The first frame must match the supplied accepted start frame exactly; the last frame must match the supplied accepted end frame and become the next task's start state. Preserve unit coordinates, facility state, damage or cracks, target-ring color and shape, and abstract resource color blocks unless this shot explicitly changes one. Keep character identity, terrain geometry, camera scale and lighting stable. No readable words, numbers, labels, buttons, health bars, subtitles, logos, watermarks, phone UI, reference_video input, identity transfer from video, motion transfer from video, distant overview, aerial view, zoom-out, tiny subjects, board reset, identity drift, cross-version assets, horizontal banding, scanlines or glitch. Audio generation is enabled for the container, but external TTS is blocked: do not invent narration, dialogue or a voice identity. Variant V010: Heavy-shield capture puzzle. Narrative route: Tap the first obstacle rock, stop the heavy shield enemy, let the second rock chain into the lane, patch the remaining gap with a trap, and end on a clear core line with visible chain-reaction proof. This shot is beat 2 of 11, 'Tap the first rock'. Input rule: No player input; let the established board state breathe. State continuity: begin from the accepted end state of V010-R01; end on Tap the first rock as the only planned state change. Bind start to accepted V010-R02 and end to accepted V010-R03; do not synthesize a replacement frame. Use only this version's listed asset binding.",
+      "execution": {
+        "upload": false,
+        "submit": false,
+        "generate": false,
+        "monitor": false,
+        "pull_back": false
+      }
+    },
+    {
+      "task_id": "V010-R03",
+      "sequence_index": 3,
+      "duration_sec": 4.0,
+      "mode": "I2V",
+      "aspect_ratio": "9:16",
+      "resolution": "720x1280",
+      "quality": "720p",
+      "generate_audio": true,
+      "external_tts_blocked": true,
+      "reference_video": null,
+      "start_frame": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V010\\img2\\V010-R03.png",
+        "sha256": "9b705f5466b2f6e7e27bf54d2e591a2749adbdad8379851987e5ae85c3d37c7f",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "end_frame": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V010\\img2\\V010-R04.png",
+        "sha256": "f04541040583affea6dcff2a88e788b309cc4f303b0985b077e4648716cbf3c1",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "source_asset_binding": [
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\backgrounds\\OL3D\\T20260812-144226_BG_AUTUMNCAMP_OL3D_master_v001.png",
+          "exists": true,
+          "sha256": "4ae6b20e7280df254cdb0afb7c46a34d85160575292018f0a93750313f53a14d"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_ROAD_OL3D_sheet_v001.png",
+          "exists": true,
+          "sha256": "0bdc2e269136c289554a57e6076694dfc59a18d3f05e1c7b3ad9c6f8ceb83c35"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_OBSTACLE_OL3D_sheet_v001.png",
+          "exists": true,
+          "sha256": "07489586d30c446e427e59fea4fc98823013c8b35abed0e8904220206ad3b5e6"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_RIFLE_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "9e0b58c584dad6ba8a9f5dcc13589fda6e903ca82ce4bfa4fc7cb5fcec4da67a"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SHIELD_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "0d9f5b7325665f21e32be71063d834e958fe6cb1cfe90667374183c24dea0382"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SNIPER_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "67a9ba0cc4a93f0941f83f559cc27509036ea0af877006845976b77a555713c6"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_CORE_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "133a254dfab836265ba0f35c9a24f8a8c7afdd7f26e08c4325a20134b3efc943"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_TRAP_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "1095e3955164d7502447c57d49dca112fa6489b900d2928933381e3db30347c8"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_ARTILLERY_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "436236362d286ad3590d7484d9b43580098f3f3d67fe149316b208cdf24a42f4"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_COMBAT_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "a3ce69dbe7b37b721931049422fe8a4742041197d9d3bb35be1534db8f92212f"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_SKILL_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "75d333d5dfa7122299a3f35f11fccdedb131b07948904a62ad080caa220a971b"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_RESULT_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "bfbdfff60866c380deeaa0c3755614bb525df0f5a7282c60d9e9d3687adc8bd2"
+        }
+      ],
+      "prompt": "Generate one continuous 4.0-second I2V gameplay shot from the supplied accepted endpoint frames. Use the autumn OL3D assets as the identity and environment authority. Keep a close-range oblique top-down view of one small playable local board: the entrance stays near the top, the core stays near the bottom, and the active lane, target ring, units, facility and immediate feedback remain large enough to read. The viewer must see a tactile mini-game operation, not a zoomed-out SLG map. Animate at most one clear player input and exactly one immediate mechanical feedback, then hold the result. The first frame must match the supplied accepted start frame exactly; the last frame must match the supplied accepted end frame and become the next task's start state. Preserve unit coordinates, facility state, damage or cracks, target-ring color and shape, and abstract resource color blocks unless this shot explicitly changes one. Keep character identity, terrain geometry, camera scale and lighting stable. No readable words, numbers, labels, buttons, health bars, subtitles, logos, watermarks, phone UI, reference_video input, identity transfer from video, motion transfer from video, distant overview, aerial view, zoom-out, tiny subjects, board reset, identity drift, cross-version assets, horizontal banding, scanlines or glitch. Audio generation is enabled for the container, but external TTS is blocked: do not invent narration, dialogue or a voice identity. Variant V010: Heavy-shield capture puzzle. Narrative route: Tap the first obstacle rock, stop the heavy shield enemy, let the second rock chain into the lane, patch the remaining gap with a trap, and end on a clear core line with visible chain-reaction proof. This shot is beat 3 of 11, 'Shield armor stops'. Input rule: One tap or short drag on the single named target only; no second input. State continuity: begin from the accepted end state of V010-R02; end on Shield armor stops as the only planned state change. Bind start to accepted V010-R03 and end to accepted V010-R04; do not synthesize a replacement frame. Use only this version's listed asset binding.",
+      "execution": {
+        "upload": false,
+        "submit": false,
+        "generate": false,
+        "monitor": false,
+        "pull_back": false
+      }
+    },
+    {
+      "task_id": "V010-R04",
+      "sequence_index": 4,
+      "duration_sec": 4.0,
+      "mode": "I2V",
+      "aspect_ratio": "9:16",
+      "resolution": "720x1280",
+      "quality": "720p",
+      "generate_audio": true,
+      "external_tts_blocked": true,
+      "reference_video": null,
+      "start_frame": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V010\\img2\\V010-R04.png",
+        "sha256": "f04541040583affea6dcff2a88e788b309cc4f303b0985b077e4648716cbf3c1",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "end_frame": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V010\\img2\\V010-R05.png",
+        "sha256": "ca8b054e91d56b689d904c19684fce4bfa87bb33044431c0c67162c891e90062",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "source_asset_binding": [
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\backgrounds\\OL3D\\T20260812-144226_BG_AUTUMNCAMP_OL3D_master_v001.png",
+          "exists": true,
+          "sha256": "4ae6b20e7280df254cdb0afb7c46a34d85160575292018f0a93750313f53a14d"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_ROAD_OL3D_sheet_v001.png",
+          "exists": true,
+          "sha256": "0bdc2e269136c289554a57e6076694dfc59a18d3f05e1c7b3ad9c6f8ceb83c35"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_OBSTACLE_OL3D_sheet_v001.png",
+          "exists": true,
+          "sha256": "07489586d30c446e427e59fea4fc98823013c8b35abed0e8904220206ad3b5e6"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_RIFLE_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "9e0b58c584dad6ba8a9f5dcc13589fda6e903ca82ce4bfa4fc7cb5fcec4da67a"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SHIELD_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "0d9f5b7325665f21e32be71063d834e958fe6cb1cfe90667374183c24dea0382"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SNIPER_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "67a9ba0cc4a93f0941f83f559cc27509036ea0af877006845976b77a555713c6"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_CORE_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "133a254dfab836265ba0f35c9a24f8a8c7afdd7f26e08c4325a20134b3efc943"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_TRAP_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "1095e3955164d7502447c57d49dca112fa6489b900d2928933381e3db30347c8"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_ARTILLERY_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "436236362d286ad3590d7484d9b43580098f3f3d67fe149316b208cdf24a42f4"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_COMBAT_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "a3ce69dbe7b37b721931049422fe8a4742041197d9d3bb35be1534db8f92212f"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_SKILL_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "75d333d5dfa7122299a3f35f11fccdedb131b07948904a62ad080caa220a971b"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_RESULT_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "bfbdfff60866c380deeaa0c3755614bb525df0f5a7282c60d9e9d3687adc8bd2"
+        }
+      ],
+      "prompt": "Generate one continuous 4.0-second I2V gameplay shot from the supplied accepted endpoint frames. Use the autumn OL3D assets as the identity and environment authority. Keep a close-range oblique top-down view of one small playable local board: the entrance stays near the top, the core stays near the bottom, and the active lane, target ring, units, facility and immediate feedback remain large enough to read. The viewer must see a tactile mini-game operation, not a zoomed-out SLG map. Animate at most one clear player input and exactly one immediate mechanical feedback, then hold the result. The first frame must match the supplied accepted start frame exactly; the last frame must match the supplied accepted end frame and become the next task's start state. Preserve unit coordinates, facility state, damage or cracks, target-ring color and shape, and abstract resource color blocks unless this shot explicitly changes one. Keep character identity, terrain geometry, camera scale and lighting stable. No readable words, numbers, labels, buttons, health bars, subtitles, logos, watermarks, phone UI, reference_video input, identity transfer from video, motion transfer from video, distant overview, aerial view, zoom-out, tiny subjects, board reset, identity drift, cross-version assets, horizontal banding, scanlines or glitch. Audio generation is enabled for the container, but external TTS is blocked: do not invent narration, dialogue or a voice identity. Variant V010: Heavy-shield capture puzzle. Narrative route: Tap the first obstacle rock, stop the heavy shield enemy, let the second rock chain into the lane, patch the remaining gap with a trap, and end on a clear core line with visible chain-reaction proof. This shot is beat 4 of 11, 'Second rock chains'. Input rule: No player input; let the established board state breathe. State continuity: begin from the accepted end state of V010-R03; end on Second rock chains as the only planned state change. Bind start to accepted V010-R04 and end to accepted V010-R05; do not synthesize a replacement frame. Use only this version's listed asset binding.",
+      "execution": {
+        "upload": false,
+        "submit": false,
+        "generate": false,
+        "monitor": false,
+        "pull_back": false
+      }
+    },
+    {
+      "task_id": "V010-R05",
+      "sequence_index": 5,
+      "duration_sec": 4.0,
+      "mode": "I2V",
+      "aspect_ratio": "9:16",
+      "resolution": "720x1280",
+      "quality": "720p",
+      "generate_audio": true,
+      "external_tts_blocked": true,
+      "reference_video": null,
+      "start_frame": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V010\\img2\\V010-R05.png",
+        "sha256": "ca8b054e91d56b689d904c19684fce4bfa87bb33044431c0c67162c891e90062",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "end_frame": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V010\\img2\\V010-R06.png",
+        "sha256": "8098d41455264f7a6ba854faf9b6b5af776c7b69eb6395c66974500dc8858bb1",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "source_asset_binding": [
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\backgrounds\\OL3D\\T20260812-144226_BG_AUTUMNCAMP_OL3D_master_v001.png",
+          "exists": true,
+          "sha256": "4ae6b20e7280df254cdb0afb7c46a34d85160575292018f0a93750313f53a14d"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_ROAD_OL3D_sheet_v001.png",
+          "exists": true,
+          "sha256": "0bdc2e269136c289554a57e6076694dfc59a18d3f05e1c7b3ad9c6f8ceb83c35"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_OBSTACLE_OL3D_sheet_v001.png",
+          "exists": true,
+          "sha256": "07489586d30c446e427e59fea4fc98823013c8b35abed0e8904220206ad3b5e6"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_RIFLE_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "9e0b58c584dad6ba8a9f5dcc13589fda6e903ca82ce4bfa4fc7cb5fcec4da67a"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SHIELD_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "0d9f5b7325665f21e32be71063d834e958fe6cb1cfe90667374183c24dea0382"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SNIPER_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "67a9ba0cc4a93f0941f83f559cc27509036ea0af877006845976b77a555713c6"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_CORE_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "133a254dfab836265ba0f35c9a24f8a8c7afdd7f26e08c4325a20134b3efc943"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_TRAP_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "1095e3955164d7502447c57d49dca112fa6489b900d2928933381e3db30347c8"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_ARTILLERY_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "436236362d286ad3590d7484d9b43580098f3f3d67fe149316b208cdf24a42f4"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_COMBAT_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "a3ce69dbe7b37b721931049422fe8a4742041197d9d3bb35be1534db8f92212f"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_SKILL_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "75d333d5dfa7122299a3f35f11fccdedb131b07948904a62ad080caa220a971b"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_RESULT_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "bfbdfff60866c380deeaa0c3755614bb525df0f5a7282c60d9e9d3687adc8bd2"
+        }
+      ],
+      "prompt": "Generate one continuous 4.0-second I2V gameplay shot from the supplied accepted endpoint frames. Use the autumn OL3D assets as the identity and environment authority. Keep a close-range oblique top-down view of one small playable local board: the entrance stays near the top, the core stays near the bottom, and the active lane, target ring, units, facility and immediate feedback remain large enough to read. The viewer must see a tactile mini-game operation, not a zoomed-out SLG map. Animate at most one clear player input and exactly one immediate mechanical feedback, then hold the result. The first frame must match the supplied accepted start frame exactly; the last frame must match the supplied accepted end frame and become the next task's start state. Preserve unit coordinates, facility state, damage or cracks, target-ring color and shape, and abstract resource color blocks unless this shot explicitly changes one. Keep character identity, terrain geometry, camera scale and lighting stable. No readable words, numbers, labels, buttons, health bars, subtitles, logos, watermarks, phone UI, reference_video input, identity transfer from video, motion transfer from video, distant overview, aerial view, zoom-out, tiny subjects, board reset, identity drift, cross-version assets, horizontal banding, scanlines or glitch. Audio generation is enabled for the container, but external TTS is blocked: do not invent narration, dialogue or a voice identity. Variant V010: Heavy-shield capture puzzle. Narrative route: Tap the first obstacle rock, stop the heavy shield enemy, let the second rock chain into the lane, patch the remaining gap with a trap, and end on a clear core line with visible chain-reaction proof. This shot is beat 5 of 11, 'Small units detour'. Input rule: One tap or short drag on the single named target only; no second input. State continuity: begin from the accepted end state of V010-R04; end on Small units detour as the only planned state change. Bind start to accepted V010-R05 and end to accepted V010-R06; do not synthesize a replacement frame. Use only this version's listed asset binding.",
+      "execution": {
+        "upload": false,
+        "submit": false,
+        "generate": false,
+        "monitor": false,
+        "pull_back": false
+      }
+    },
+    {
+      "task_id": "V010-R06",
+      "sequence_index": 6,
+      "duration_sec": 4.0,
+      "mode": "I2V",
+      "aspect_ratio": "9:16",
+      "resolution": "720x1280",
+      "quality": "720p",
+      "generate_audio": true,
+      "external_tts_blocked": true,
+      "reference_video": null,
+      "start_frame": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V010\\img2\\V010-R06.png",
+        "sha256": "8098d41455264f7a6ba854faf9b6b5af776c7b69eb6395c66974500dc8858bb1",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "end_frame": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V010\\img2\\V010-R07.png",
+        "sha256": "0d62af867fe54a9928edab1e63bb692c1347c9862ea926bb31a2ebcff8dcc51c",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "source_asset_binding": [
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\backgrounds\\OL3D\\T20260812-144226_BG_AUTUMNCAMP_OL3D_master_v001.png",
+          "exists": true,
+          "sha256": "4ae6b20e7280df254cdb0afb7c46a34d85160575292018f0a93750313f53a14d"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_ROAD_OL3D_sheet_v001.png",
+          "exists": true,
+          "sha256": "0bdc2e269136c289554a57e6076694dfc59a18d3f05e1c7b3ad9c6f8ceb83c35"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_OBSTACLE_OL3D_sheet_v001.png",
+          "exists": true,
+          "sha256": "07489586d30c446e427e59fea4fc98823013c8b35abed0e8904220206ad3b5e6"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_RIFLE_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "9e0b58c584dad6ba8a9f5dcc13589fda6e903ca82ce4bfa4fc7cb5fcec4da67a"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SHIELD_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "0d9f5b7325665f21e32be71063d834e958fe6cb1cfe90667374183c24dea0382"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SNIPER_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "67a9ba0cc4a93f0941f83f559cc27509036ea0af877006845976b77a555713c6"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_CORE_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "133a254dfab836265ba0f35c9a24f8a8c7afdd7f26e08c4325a20134b3efc943"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_TRAP_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "1095e3955164d7502447c57d49dca112fa6489b900d2928933381e3db30347c8"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_ARTILLERY_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "436236362d286ad3590d7484d9b43580098f3f3d67fe149316b208cdf24a42f4"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_COMBAT_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "a3ce69dbe7b37b721931049422fe8a4742041197d9d3bb35be1534db8f92212f"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_SKILL_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "75d333d5dfa7122299a3f35f11fccdedb131b07948904a62ad080caa220a971b"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_RESULT_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "bfbdfff60866c380deeaa0c3755614bb525df0f5a7282c60d9e9d3687adc8bd2"
+        }
+      ],
+      "prompt": "Generate one continuous 4.0-second I2V gameplay shot from the supplied accepted endpoint frames. Use the autumn OL3D assets as the identity and environment authority. Keep a close-range oblique top-down view of one small playable local board: the entrance stays near the top, the core stays near the bottom, and the active lane, target ring, units, facility and immediate feedback remain large enough to read. The viewer must see a tactile mini-game operation, not a zoomed-out SLG map. Animate at most one clear player input and exactly one immediate mechanical feedback, then hold the result. The first frame must match the supplied accepted start frame exactly; the last frame must match the supplied accepted end frame and become the next task's start state. Preserve unit coordinates, facility state, damage or cracks, target-ring color and shape, and abstract resource color blocks unless this shot explicitly changes one. Keep character identity, terrain geometry, camera scale and lighting stable. No readable words, numbers, labels, buttons, health bars, subtitles, logos, watermarks, phone UI, reference_video input, identity transfer from video, motion transfer from video, distant overview, aerial view, zoom-out, tiny subjects, board reset, identity drift, cross-version assets, horizontal banding, scanlines or glitch. Audio generation is enabled for the container, but external TTS is blocked: do not invent narration, dialogue or a voice identity. Variant V010: Heavy-shield capture puzzle. Narrative route: Tap the first obstacle rock, stop the heavy shield enemy, let the second rock chain into the lane, patch the remaining gap with a trap, and end on a clear core line with visible chain-reaction proof. This shot is beat 6 of 11, 'Trap patches the gap'. Input rule: No player input; let the established board state breathe. State continuity: begin from the accepted end state of V010-R05; end on Trap patches the gap as the only planned state change. Bind start to accepted V010-R06 and end to accepted V010-R07; do not synthesize a replacement frame. Use only this version's listed asset binding.",
+      "execution": {
+        "upload": false,
+        "submit": false,
+        "generate": false,
+        "monitor": false,
+        "pull_back": false
+      }
+    },
+    {
+      "task_id": "V010-R07",
+      "sequence_index": 7,
+      "duration_sec": 4.0,
+      "mode": "I2V",
+      "aspect_ratio": "9:16",
+      "resolution": "720x1280",
+      "quality": "720p",
+      "generate_audio": true,
+      "external_tts_blocked": true,
+      "reference_video": null,
+      "start_frame": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V010\\img2\\V010-R07.png",
+        "sha256": "0d62af867fe54a9928edab1e63bb692c1347c9862ea926bb31a2ebcff8dcc51c",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "end_frame": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V010\\img2\\V010-R08.png",
+        "sha256": "294d5ba513c4d3dca88c9119f736b30ece9c8582bfd6684b37335b04848c5b0f",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "source_asset_binding": [
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\backgrounds\\OL3D\\T20260812-144226_BG_AUTUMNCAMP_OL3D_master_v001.png",
+          "exists": true,
+          "sha256": "4ae6b20e7280df254cdb0afb7c46a34d85160575292018f0a93750313f53a14d"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_ROAD_OL3D_sheet_v001.png",
+          "exists": true,
+          "sha256": "0bdc2e269136c289554a57e6076694dfc59a18d3f05e1c7b3ad9c6f8ceb83c35"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_OBSTACLE_OL3D_sheet_v001.png",
+          "exists": true,
+          "sha256": "07489586d30c446e427e59fea4fc98823013c8b35abed0e8904220206ad3b5e6"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_RIFLE_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "9e0b58c584dad6ba8a9f5dcc13589fda6e903ca82ce4bfa4fc7cb5fcec4da67a"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SHIELD_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "0d9f5b7325665f21e32be71063d834e958fe6cb1cfe90667374183c24dea0382"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SNIPER_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "67a9ba0cc4a93f0941f83f559cc27509036ea0af877006845976b77a555713c6"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_CORE_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "133a254dfab836265ba0f35c9a24f8a8c7afdd7f26e08c4325a20134b3efc943"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_TRAP_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "1095e3955164d7502447c57d49dca112fa6489b900d2928933381e3db30347c8"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_ARTILLERY_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "436236362d286ad3590d7484d9b43580098f3f3d67fe149316b208cdf24a42f4"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_COMBAT_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "a3ce69dbe7b37b721931049422fe8a4742041197d9d3bb35be1534db8f92212f"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_SKILL_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "75d333d5dfa7122299a3f35f11fccdedb131b07948904a62ad080caa220a971b"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_RESULT_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "bfbdfff60866c380deeaa0c3755614bb525df0f5a7282c60d9e9d3687adc8bd2"
+        }
+      ],
+      "prompt": "Generate one continuous 4.0-second I2V gameplay shot from the supplied accepted endpoint frames. Use the autumn OL3D assets as the identity and environment authority. Keep a close-range oblique top-down view of one small playable local board: the entrance stays near the top, the core stays near the bottom, and the active lane, target ring, units, facility and immediate feedback remain large enough to read. The viewer must see a tactile mini-game operation, not a zoomed-out SLG map. Animate at most one clear player input and exactly one immediate mechanical feedback, then hold the result. The first frame must match the supplied accepted start frame exactly; the last frame must match the supplied accepted end frame and become the next task's start state. Preserve unit coordinates, facility state, damage or cracks, target-ring color and shape, and abstract resource color blocks unless this shot explicitly changes one. Keep character identity, terrain geometry, camera scale and lighting stable. No readable words, numbers, labels, buttons, health bars, subtitles, logos, watermarks, phone UI, reference_video input, identity transfer from video, motion transfer from video, distant overview, aerial view, zoom-out, tiny subjects, board reset, identity drift, cross-version assets, horizontal banding, scanlines or glitch. Audio generation is enabled for the container, but external TTS is blocked: do not invent narration, dialogue or a voice identity. Variant V010: Heavy-shield capture puzzle. Narrative route: Tap the first obstacle rock, stop the heavy shield enemy, let the second rock chain into the lane, patch the remaining gap with a trap, and end on a clear core line with visible chain-reaction proof. This shot is beat 7 of 11, 'Heavy unit hits the obstacle'. Input rule: One tap or short drag on the single named target only; no second input. State continuity: begin from the accepted end state of V010-R06; end on Heavy unit hits the obstacle as the only planned state change. Bind start to accepted V010-R07 and end to accepted V010-R08; do not synthesize a replacement frame. Use only this version's listed asset binding.",
+      "execution": {
+        "upload": false,
+        "submit": false,
+        "generate": false,
+        "monitor": false,
+        "pull_back": false
+      }
+    },
+    {
+      "task_id": "V010-R08",
+      "sequence_index": 8,
+      "duration_sec": 4.0,
+      "mode": "I2V",
+      "aspect_ratio": "9:16",
+      "resolution": "720x1280",
+      "quality": "720p",
+      "generate_audio": true,
+      "external_tts_blocked": true,
+      "reference_video": null,
+      "start_frame": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V010\\img2\\V010-R08.png",
+        "sha256": "294d5ba513c4d3dca88c9119f736b30ece9c8582bfd6684b37335b04848c5b0f",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "end_frame": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V010\\img2\\V010-R09.png",
+        "sha256": "5083d42e054309fa1e063a0dd2ad54e41622407248902539cea1f4a22dead7b5",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "source_asset_binding": [
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\backgrounds\\OL3D\\T20260812-144226_BG_AUTUMNCAMP_OL3D_master_v001.png",
+          "exists": true,
+          "sha256": "4ae6b20e7280df254cdb0afb7c46a34d85160575292018f0a93750313f53a14d"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_ROAD_OL3D_sheet_v001.png",
+          "exists": true,
+          "sha256": "0bdc2e269136c289554a57e6076694dfc59a18d3f05e1c7b3ad9c6f8ceb83c35"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_OBSTACLE_OL3D_sheet_v001.png",
+          "exists": true,
+          "sha256": "07489586d30c446e427e59fea4fc98823013c8b35abed0e8904220206ad3b5e6"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_RIFLE_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "9e0b58c584dad6ba8a9f5dcc13589fda6e903ca82ce4bfa4fc7cb5fcec4da67a"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SHIELD_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "0d9f5b7325665f21e32be71063d834e958fe6cb1cfe90667374183c24dea0382"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SNIPER_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "67a9ba0cc4a93f0941f83f559cc27509036ea0af877006845976b77a555713c6"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_CORE_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "133a254dfab836265ba0f35c9a24f8a8c7afdd7f26e08c4325a20134b3efc943"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_TRAP_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "1095e3955164d7502447c57d49dca112fa6489b900d2928933381e3db30347c8"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_ARTILLERY_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "436236362d286ad3590d7484d9b43580098f3f3d67fe149316b208cdf24a42f4"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_COMBAT_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "a3ce69dbe7b37b721931049422fe8a4742041197d9d3bb35be1534db8f92212f"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_SKILL_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "75d333d5dfa7122299a3f35f11fccdedb131b07948904a62ad080caa220a971b"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_RESULT_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "bfbdfff60866c380deeaa0c3755614bb525df0f5a7282c60d9e9d3687adc8bd2"
+        }
+      ],
+      "prompt": "Generate one continuous 4.0-second I2V gameplay shot from the supplied accepted endpoint frames. Use the autumn OL3D assets as the identity and environment authority. Keep a close-range oblique top-down view of one small playable local board: the entrance stays near the top, the core stays near the bottom, and the active lane, target ring, units, facility and immediate feedback remain large enough to read. The viewer must see a tactile mini-game operation, not a zoomed-out SLG map. Animate at most one clear player input and exactly one immediate mechanical feedback, then hold the result. The first frame must match the supplied accepted start frame exactly; the last frame must match the supplied accepted end frame and become the next task's start state. Preserve unit coordinates, facility state, damage or cracks, target-ring color and shape, and abstract resource color blocks unless this shot explicitly changes one. Keep character identity, terrain geometry, camera scale and lighting stable. No readable words, numbers, labels, buttons, health bars, subtitles, logos, watermarks, phone UI, reference_video input, identity transfer from video, motion transfer from video, distant overview, aerial view, zoom-out, tiny subjects, board reset, identity drift, cross-version assets, horizontal banding, scanlines or glitch. Audio generation is enabled for the container, but external TTS is blocked: do not invent narration, dialogue or a voice identity. Variant V010: Heavy-shield capture puzzle. Narrative route: Tap the first obstacle rock, stop the heavy shield enemy, let the second rock chain into the lane, patch the remaining gap with a trap, and end on a clear core line with visible chain-reaction proof. This shot is beat 8 of 11, 'Artillery marks the landing'. Input rule: No player input; let the established board state breathe. State continuity: begin from the accepted end state of V010-R07; end on Artillery marks the landing as the only planned state change. Bind start to accepted V010-R08 and end to accepted V010-R09; do not synthesize a replacement frame. Use only this version's listed asset binding.",
+      "execution": {
+        "upload": false,
+        "submit": false,
+        "generate": false,
+        "monitor": false,
+        "pull_back": false
+      }
+    },
+    {
+      "task_id": "V010-R09",
+      "sequence_index": 9,
+      "duration_sec": 4.0,
+      "mode": "I2V",
+      "aspect_ratio": "9:16",
+      "resolution": "720x1280",
+      "quality": "720p",
+      "generate_audio": true,
+      "external_tts_blocked": true,
+      "reference_video": null,
+      "start_frame": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V010\\img2\\V010-R09.png",
+        "sha256": "5083d42e054309fa1e063a0dd2ad54e41622407248902539cea1f4a22dead7b5",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "end_frame": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V010\\img2\\V010-R10.png",
+        "sha256": "4ed802cdcfdcc45ca288f8942c394b0555a904fb289747facd5687206beacf67",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "source_asset_binding": [
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\backgrounds\\OL3D\\T20260812-144226_BG_AUTUMNCAMP_OL3D_master_v001.png",
+          "exists": true,
+          "sha256": "4ae6b20e7280df254cdb0afb7c46a34d85160575292018f0a93750313f53a14d"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_ROAD_OL3D_sheet_v001.png",
+          "exists": true,
+          "sha256": "0bdc2e269136c289554a57e6076694dfc59a18d3f05e1c7b3ad9c6f8ceb83c35"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_OBSTACLE_OL3D_sheet_v001.png",
+          "exists": true,
+          "sha256": "07489586d30c446e427e59fea4fc98823013c8b35abed0e8904220206ad3b5e6"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_RIFLE_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "9e0b58c584dad6ba8a9f5dcc13589fda6e903ca82ce4bfa4fc7cb5fcec4da67a"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SHIELD_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "0d9f5b7325665f21e32be71063d834e958fe6cb1cfe90667374183c24dea0382"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SNIPER_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "67a9ba0cc4a93f0941f83f559cc27509036ea0af877006845976b77a555713c6"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_CORE_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "133a254dfab836265ba0f35c9a24f8a8c7afdd7f26e08c4325a20134b3efc943"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_TRAP_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "1095e3955164d7502447c57d49dca112fa6489b900d2928933381e3db30347c8"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_ARTILLERY_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "436236362d286ad3590d7484d9b43580098f3f3d67fe149316b208cdf24a42f4"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_COMBAT_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "a3ce69dbe7b37b721931049422fe8a4742041197d9d3bb35be1534db8f92212f"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_SKILL_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "75d333d5dfa7122299a3f35f11fccdedb131b07948904a62ad080caa220a971b"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_RESULT_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "bfbdfff60866c380deeaa0c3755614bb525df0f5a7282c60d9e9d3687adc8bd2"
+        }
+      ],
+      "prompt": "Generate one continuous 4.0-second I2V gameplay shot from the supplied accepted endpoint frames. Use the autumn OL3D assets as the identity and environment authority. Keep a close-range oblique top-down view of one small playable local board: the entrance stays near the top, the core stays near the bottom, and the active lane, target ring, units, facility and immediate feedback remain large enough to read. The viewer must see a tactile mini-game operation, not a zoomed-out SLG map. Animate at most one clear player input and exactly one immediate mechanical feedback, then hold the result. The first frame must match the supplied accepted start frame exactly; the last frame must match the supplied accepted end frame and become the next task's start state. Preserve unit coordinates, facility state, damage or cracks, target-ring color and shape, and abstract resource color blocks unless this shot explicitly changes one. Keep character identity, terrain geometry, camera scale and lighting stable. No readable words, numbers, labels, buttons, health bars, subtitles, logos, watermarks, phone UI, reference_video input, identity transfer from video, motion transfer from video, distant overview, aerial view, zoom-out, tiny subjects, board reset, identity drift, cross-version assets, horizontal banding, scanlines or glitch. Audio generation is enabled for the container, but external TTS is blocked: do not invent narration, dialogue or a voice identity. Variant V010: Heavy-shield capture puzzle. Narrative route: Tap the first obstacle rock, stop the heavy shield enemy, let the second rock chain into the lane, patch the remaining gap with a trap, and end on a clear core line with visible chain-reaction proof. This shot is beat 9 of 11, 'Route clears'. Input rule: One tap or short drag on the single named target only; no second input. State continuity: begin from the accepted end state of V010-R08; end on Route clears as the only planned state change. Bind start to accepted V010-R09 and end to accepted V010-R10; do not synthesize a replacement frame. Use only this version's listed asset binding.",
+      "execution": {
+        "upload": false,
+        "submit": false,
+        "generate": false,
+        "monitor": false,
+        "pull_back": false
+      }
+    },
+    {
+      "task_id": "V010-R10",
+      "sequence_index": 10,
+      "duration_sec": 4.0,
+      "mode": "I2V",
+      "aspect_ratio": "9:16",
+      "resolution": "720x1280",
+      "quality": "720p",
+      "generate_audio": true,
+      "external_tts_blocked": true,
+      "reference_video": null,
+      "start_frame": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V010\\img2\\V010-R10.png",
+        "sha256": "4ed802cdcfdcc45ca288f8942c394b0555a904fb289747facd5687206beacf67",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "end_frame": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V010\\img2\\V010-R11.png",
+        "sha256": "8ca826821b19063b70a3929ccf40bcdcb6cad5940ba8cb2039b931fa323c2cee",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "source_asset_binding": [
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\backgrounds\\OL3D\\T20260812-144226_BG_AUTUMNCAMP_OL3D_master_v001.png",
+          "exists": true,
+          "sha256": "4ae6b20e7280df254cdb0afb7c46a34d85160575292018f0a93750313f53a14d"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_ROAD_OL3D_sheet_v001.png",
+          "exists": true,
+          "sha256": "0bdc2e269136c289554a57e6076694dfc59a18d3f05e1c7b3ad9c6f8ceb83c35"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_OBSTACLE_OL3D_sheet_v001.png",
+          "exists": true,
+          "sha256": "07489586d30c446e427e59fea4fc98823013c8b35abed0e8904220206ad3b5e6"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_RIFLE_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "9e0b58c584dad6ba8a9f5dcc13589fda6e903ca82ce4bfa4fc7cb5fcec4da67a"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SHIELD_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "0d9f5b7325665f21e32be71063d834e958fe6cb1cfe90667374183c24dea0382"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SNIPER_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "67a9ba0cc4a93f0941f83f559cc27509036ea0af877006845976b77a555713c6"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_CORE_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "133a254dfab836265ba0f35c9a24f8a8c7afdd7f26e08c4325a20134b3efc943"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_TRAP_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "1095e3955164d7502447c57d49dca112fa6489b900d2928933381e3db30347c8"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_ARTILLERY_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "436236362d286ad3590d7484d9b43580098f3f3d67fe149316b208cdf24a42f4"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_COMBAT_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "a3ce69dbe7b37b721931049422fe8a4742041197d9d3bb35be1534db8f92212f"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_SKILL_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "75d333d5dfa7122299a3f35f11fccdedb131b07948904a62ad080caa220a971b"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_RESULT_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "bfbdfff60866c380deeaa0c3755614bb525df0f5a7282c60d9e9d3687adc8bd2"
+        }
+      ],
+      "prompt": "Generate one continuous 4.0-second I2V gameplay shot from the supplied accepted endpoint frames. Use the autumn OL3D assets as the identity and environment authority. Keep a close-range oblique top-down view of one small playable local board: the entrance stays near the top, the core stays near the bottom, and the active lane, target ring, units, facility and immediate feedback remain large enough to read. The viewer must see a tactile mini-game operation, not a zoomed-out SLG map. Animate at most one clear player input and exactly one immediate mechanical feedback, then hold the result. The first frame must match the supplied accepted start frame exactly; the last frame must match the supplied accepted end frame and become the next task's start state. Preserve unit coordinates, facility state, damage or cracks, target-ring color and shape, and abstract resource color blocks unless this shot explicitly changes one. Keep character identity, terrain geometry, camera scale and lighting stable. No readable words, numbers, labels, buttons, health bars, subtitles, logos, watermarks, phone UI, reference_video input, identity transfer from video, motion transfer from video, distant overview, aerial view, zoom-out, tiny subjects, board reset, identity drift, cross-version assets, horizontal banding, scanlines or glitch. Audio generation is enabled for the container, but external TTS is blocked: do not invent narration, dialogue or a voice identity. Variant V010: Heavy-shield capture puzzle. Narrative route: Tap the first obstacle rock, stop the heavy shield enemy, let the second rock chain into the lane, patch the remaining gap with a trap, and end on a clear core line with visible chain-reaction proof. This shot is beat 10 of 11, 'Core steadies'. Input rule: No player input; let the established board state breathe. State continuity: begin from the accepted end state of V010-R09; end on Core steadies as the only planned state change. Bind start to accepted V010-R10 and end to accepted V010-R11; do not synthesize a replacement frame. Use only this version's listed asset binding.",
+      "execution": {
+        "upload": false,
+        "submit": false,
+        "generate": false,
+        "monitor": false,
+        "pull_back": false
+      }
+    },
+    {
+      "task_id": "V010-R11",
+      "sequence_index": 11,
+      "duration_sec": 4.0,
+      "mode": "I2V",
+      "aspect_ratio": "9:16",
+      "resolution": "720x1280",
+      "quality": "720p",
+      "generate_audio": true,
+      "external_tts_blocked": true,
+      "reference_video": null,
+      "start_frame": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V010\\img2\\V010-R11.png",
+        "sha256": "8ca826821b19063b70a3929ccf40bcdcb6cad5940ba8cb2039b931fa323c2cee",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "end_frame": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V010\\img2\\V010-R11.png",
+        "sha256": "8ca826821b19063b70a3929ccf40bcdcb6cad5940ba8cb2039b931fa323c2cee",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "source_asset_binding": [
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\backgrounds\\OL3D\\T20260812-144226_BG_AUTUMNCAMP_OL3D_master_v001.png",
+          "exists": true,
+          "sha256": "4ae6b20e7280df254cdb0afb7c46a34d85160575292018f0a93750313f53a14d"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_ROAD_OL3D_sheet_v001.png",
+          "exists": true,
+          "sha256": "0bdc2e269136c289554a57e6076694dfc59a18d3f05e1c7b3ad9c6f8ceb83c35"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_OBSTACLE_OL3D_sheet_v001.png",
+          "exists": true,
+          "sha256": "07489586d30c446e427e59fea4fc98823013c8b35abed0e8904220206ad3b5e6"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_RIFLE_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "9e0b58c584dad6ba8a9f5dcc13589fda6e903ca82ce4bfa4fc7cb5fcec4da67a"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SHIELD_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "0d9f5b7325665f21e32be71063d834e958fe6cb1cfe90667374183c24dea0382"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SNIPER_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "67a9ba0cc4a93f0941f83f559cc27509036ea0af877006845976b77a555713c6"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_CORE_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "133a254dfab836265ba0f35c9a24f8a8c7afdd7f26e08c4325a20134b3efc943"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_TRAP_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "1095e3955164d7502447c57d49dca112fa6489b900d2928933381e3db30347c8"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_ARTILLERY_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "436236362d286ad3590d7484d9b43580098f3f3d67fe149316b208cdf24a42f4"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_COMBAT_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "a3ce69dbe7b37b721931049422fe8a4742041197d9d3bb35be1534db8f92212f"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_SKILL_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "75d333d5dfa7122299a3f35f11fccdedb131b07948904a62ad080caa220a971b"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_RESULT_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "bfbdfff60866c380deeaa0c3755614bb525df0f5a7282c60d9e9d3687adc8bd2"
+        }
+      ],
+      "prompt": "Generate one continuous 4.0-second I2V gameplay shot from the supplied accepted endpoint frames. Use the autumn OL3D assets as the identity and environment authority. Keep a close-range oblique top-down view of one small playable local board: the entrance stays near the top, the core stays near the bottom, and the active lane, target ring, units, facility and immediate feedback remain large enough to read. The viewer must see a tactile mini-game operation, not a zoomed-out SLG map. Animate at most one clear player input and exactly one immediate mechanical feedback, then hold the result. The first frame must match the supplied accepted start frame exactly; the last frame must match the supplied accepted end frame and become the next task's start state. Preserve unit coordinates, facility state, damage or cracks, target-ring color and shape, and abstract resource color blocks unless this shot explicitly changes one. Keep character identity, terrain geometry, camera scale and lighting stable. No readable words, numbers, labels, buttons, health bars, subtitles, logos, watermarks, phone UI, reference_video input, identity transfer from video, motion transfer from video, distant overview, aerial view, zoom-out, tiny subjects, board reset, identity drift, cross-version assets, horizontal banding, scanlines or glitch. Audio generation is enabled for the container, but external TTS is blocked: do not invent narration, dialogue or a voice identity. Variant V010: Heavy-shield capture puzzle. Narrative route: Tap the first obstacle rock, stop the heavy shield enemy, let the second rock chain into the lane, patch the remaining gap with a trap, and end on a clear core line with visible chain-reaction proof. This shot is beat 11 of 11, 'Chain three-star result'. Input rule: No player input; let the established board state breathe. State continuity: begin from the accepted end state of V010-R10; end on Chain three-star result as the only planned state change. Bind start to accepted V010-R11 and end to accepted V010-R11; do not synthesize a replacement frame. Use only this version's listed asset binding.",
+      "execution": {
+        "upload": false,
+        "submit": false,
+        "generate": false,
+        "monitor": false,
+        "pull_back": false
+      }
+    }
+  ],
+  "submission_boundary": {
+    "static_plan_only": true,
+    "submit_ready": false,
+    "requires_entry_review": true
+  }
+}

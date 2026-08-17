@@ -1,20 +1,48 @@
+# Local Python and tool state
 __pycache__/
 *.py[cod]
+.DS_Store
+Thumbs.db
+*.tmp
+*.db
+*.sqlite*
+test-output/
+release/
+
+# Local credentials and API configuration — never commit
 .env
 .env.*
 !.env.example
 credentials.json
 doubao_api_config.json
+api_config*.json
+*credential*.json
+*secret*.json
+*.key
+*.pem
+*.pfx
 task-log.jsonl
-*.db
-*.sqlite*
+
+# Material package and local junction — never commit
+/materials/
+
+# Generated media and media evidence — never commit
 *.mp4
 *.mov
 *.mkv
 *.avi
-*.mp3
+*.webm
+*.png
+*.jpg
+*.jpeg
+*.webp
 *.wav
+*.mp3
+*.flac
+*.aac
 *.zip
-release/
-test-output/
-
+/01_策划与分镜/**/img2/*.png
+/02_运行元数据/**/frames/
+/02_运行元数据/**/five_frames/
+/02_运行元数据/**/frame_evidence/
+/02_运行元数据/**/boundary_frames/

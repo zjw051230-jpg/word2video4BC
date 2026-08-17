@@ -1,0 +1,107 @@
+{
+  "version": "V014",
+  "continuity_pass": true,
+  "success_jobs": 11,
+  "continuity_acceptance": 11,
+  "jobs": [
+    {
+      "shot_id": "V014-R01",
+      "remote_id": "video-de881db2abde425992177a42",
+      "status": "success",
+      "original_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V014\\original\\V014-R01.mp4",
+      "technical_pass": true,
+      "continuity_pass": true,
+      "frame_count": 5
+    },
+    {
+      "shot_id": "V014-R02",
+      "remote_id": "video-52e020600d12459c890c322f",
+      "status": "success",
+      "original_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V014\\original\\V014-R02.mp4",
+      "technical_pass": true,
+      "continuity_pass": true,
+      "frame_count": 5
+    },
+    {
+      "shot_id": "V014-R03",
+      "remote_id": "video-eac34ff58fcf4a6eae71befe",
+      "status": "success",
+      "original_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V014\\original\\V014-R03.mp4",
+      "technical_pass": true,
+      "continuity_pass": true,
+      "frame_count": 5
+    },
+    {
+      "shot_id": "V014-R04",
+      "remote_id": "video-fcbb23d09f434097aad3c37a",
+      "status": "success",
+      "original_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V014\\original\\V014-R04.mp4",
+      "technical_pass": true,
+      "continuity_pass": true,
+      "frame_count": 5
+    },
+    {
+      "shot_id": "V014-R05",
+      "remote_id": "video-0bc0863e4d0f41ad8da80726",
+      "status": "success",
+      "original_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V014\\original\\V014-R05.mp4",
+      "technical_pass": true,
+      "continuity_pass": true,
+      "frame_count": 5
+    },
+    {
+      "shot_id": "V014-R06",
+      "remote_id": "video-1ec60698e5104b179352b42b",
+      "status": "success",
+      "original_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V014\\original\\V014-R06.mp4",
+      "technical_pass": true,
+      "continuity_pass": true,
+      "frame_count": 5
+    },
+    {
+      "shot_id": "V014-R07",
+      "remote_id": "video-08edc0b39648424785afccf7",
+      "status": "success",
+      "original_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V014\\original\\V014-R07.mp4",
+      "technical_pass": true,
+      "continuity_pass": true,
+      "frame_count": 5
+    },
+    {
+      "shot_id": "V014-R08",
+      "remote_id": "video-7cfa0c1542de40b0a3283f42",
+      "status": "success",
+      "original_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V014\\original\\V014-R08.mp4",
+      "technical_pass": true,
+      "continuity_pass": true,
+      "frame_count": 5
+    },
+    {
+      "shot_id": "V014-R09",
+      "remote_id": "video-70d120b700744ca3bd1f2bab",
+      "status": "success",
+      "original_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V014\\original\\V014-R09.mp4",
+      "technical_pass": true,
+      "continuity_pass": true,
+      "frame_count": 5
+    },
+    {
+      "shot_id": "V014-R10",
+      "remote_id": "video-28437bfb55d5412581ffdf26",
+      "status": "success",
+      "original_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V014\\original\\V014-R10.mp4",
+      "technical_pass": true,
+      "continuity_pass": true,
+      "frame_count": 5
+    },
+    {
+      "shot_id": "V014-R11",
+      "remote_id": "video-888d0752280f4ca69c66807f",
+      "status": "success",
+      "original_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V014\\original\\V014-R11.mp4",
+      "technical_pass": true,
+      "continuity_pass": true,
+      "frame_count": 5
+    }
+  ]
+}

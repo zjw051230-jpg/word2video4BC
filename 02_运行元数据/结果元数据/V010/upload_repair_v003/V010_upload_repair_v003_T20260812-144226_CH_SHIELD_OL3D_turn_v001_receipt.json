@@ -1,0 +1,13 @@
+{
+  "repair_id": "upload_repair_v003",
+  "version": "V010",
+  "asset_name": "T20260812-144226_CH_SHIELD_OL3D_turn_v001",
+  "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SHIELD_OL3D_turn_v001.png",
+  "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/0013f540ac45d52cf8d8d956d3401236.png",
+  "returned_filename": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/0013f540ac45d52cf8d8d956d3401236.png",
+  "sha256": "0d9f5b7325665f21e32be71063d834e958fe6cb1cfe90667374183c24dea0382",
+  "planned_sha256": "0d9f5b7325665f21e32be71063d834e958fe6cb1cfe90667374183c24dea0382",
+  "byte_size": 882132,
+  "status": "success",
+  "timestamp_utc": "2026-08-14T16:04:53.554928+00:00"
+}

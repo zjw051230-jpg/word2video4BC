@@ -1,0 +1,809 @@
+{
+  "version": "V013",
+  "cross_version_asset_mix": false,
+  "bindings": [
+    {
+      "shot_id": "V013-R01",
+      "start_frame": {
+        "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V013\\img2\\V013-R01.png",
+        "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/f8330e49c136e50c5cd6df5ea7514674.png"
+      },
+      "end_frame": {
+        "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V013\\img2\\V013-R02.png",
+        "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/d8936d175e94d38ad72c3623fb892367.png"
+      },
+      "source_asset_binding": [
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\backgrounds\\OL3D\\T20260812-144226_BG_AUTUMNCAMP_OL3D_master_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/c7a5b86c634ef83dfdb4272c78a7e6f8.png",
+          "sha256": "4ae6b20e7280df254cdb0afb7c46a34d85160575292018f0a93750313f53a14d"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_ROAD_OL3D_sheet_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/9d678a4cf338d189c4dcf5ab6c489960.png",
+          "sha256": "0bdc2e269136c289554a57e6076694dfc59a18d3f05e1c7b3ad9c6f8ceb83c35"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_RIFLE_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/c5a216649145c32aee2868b8d9619305.png",
+          "sha256": "9e0b58c584dad6ba8a9f5dcc13589fda6e903ca82ce4bfa4fc7cb5fcec4da67a"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SHIELD_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/0013f540ac45d52cf8d8d956d3401236.png",
+          "sha256": "0d9f5b7325665f21e32be71063d834e958fe6cb1cfe90667374183c24dea0382"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SNIPER_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/563639081455d7306d9d9645789bccac.png",
+          "sha256": "67a9ba0cc4a93f0941f83f559cc27509036ea0af877006845976b77a555713c6"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_CORE_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/b3752fb2db29e4683ad570172197f6ca.png",
+          "sha256": "133a254dfab836265ba0f35c9a24f8a8c7afdd7f26e08c4325a20134b3efc943"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_MGBUNKER_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/cc17d13ff7a83d0f0bb36410a1c30991.png",
+          "sha256": "720af7d29680602752edd3e81995a97a9decc235a4b5f9ff66bf2a7717b18601"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_ARTILLERY_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/4ea562c01d527a7680a3403381884417.png",
+          "sha256": "436236362d286ad3590d7484d9b43580098f3f3d67fe149316b208cdf24a42f4"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_TRAP_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/a12210297d779ddf422ad24d227b6dae.png",
+          "sha256": "1095e3955164d7502447c57d49dca112fa6489b900d2928933381e3db30347c8"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_BUILD_OL3D_atlas_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/a42697675bbc3f73d0e17a7679677532.png",
+          "sha256": "0691d911822ecc6e3f8f1dd3048b9e6ae31297772cb897f46a5119bc83de4804"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_COMBAT_OL3D_atlas_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/c212a5fc1082baee7bc7df261f85c210.png",
+          "sha256": "a3ce69dbe7b37b721931049422fe8a4742041197d9d3bb35be1534db8f92212f"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_RESULT_OL3D_atlas_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/035ec820330b9a0d99b68ca7e56ce0c8.png",
+          "sha256": "bfbdfff60866c380deeaa0c3755614bb525df0f5a7282c60d9e9d3687adc8bd2"
+        }
+      ]
+    },
+    {
+      "shot_id": "V013-R02",
+      "start_frame": {
+        "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V013\\img2\\V013-R02.png",
+        "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/d8936d175e94d38ad72c3623fb892367.png"
+      },
+      "end_frame": {
+        "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V013\\img2\\V013-R03.png",
+        "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/43b60498c97e26ca9d20ed5e9ae9521c.png"
+      },
+      "source_asset_binding": [
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\backgrounds\\OL3D\\T20260812-144226_BG_AUTUMNCAMP_OL3D_master_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/c7a5b86c634ef83dfdb4272c78a7e6f8.png",
+          "sha256": "4ae6b20e7280df254cdb0afb7c46a34d85160575292018f0a93750313f53a14d"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_ROAD_OL3D_sheet_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/9d678a4cf338d189c4dcf5ab6c489960.png",
+          "sha256": "0bdc2e269136c289554a57e6076694dfc59a18d3f05e1c7b3ad9c6f8ceb83c35"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_RIFLE_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/c5a216649145c32aee2868b8d9619305.png",
+          "sha256": "9e0b58c584dad6ba8a9f5dcc13589fda6e903ca82ce4bfa4fc7cb5fcec4da67a"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SHIELD_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/0013f540ac45d52cf8d8d956d3401236.png",
+          "sha256": "0d9f5b7325665f21e32be71063d834e958fe6cb1cfe90667374183c24dea0382"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SNIPER_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/563639081455d7306d9d9645789bccac.png",
+          "sha256": "67a9ba0cc4a93f0941f83f559cc27509036ea0af877006845976b77a555713c6"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_CORE_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/b3752fb2db29e4683ad570172197f6ca.png",
+          "sha256": "133a254dfab836265ba0f35c9a24f8a8c7afdd7f26e08c4325a20134b3efc943"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_MGBUNKER_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/cc17d13ff7a83d0f0bb36410a1c30991.png",
+          "sha256": "720af7d29680602752edd3e81995a97a9decc235a4b5f9ff66bf2a7717b18601"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_ARTILLERY_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/4ea562c01d527a7680a3403381884417.png",
+          "sha256": "436236362d286ad3590d7484d9b43580098f3f3d67fe149316b208cdf24a42f4"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_TRAP_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/a12210297d779ddf422ad24d227b6dae.png",
+          "sha256": "1095e3955164d7502447c57d49dca112fa6489b900d2928933381e3db30347c8"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_BUILD_OL3D_atlas_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/a42697675bbc3f73d0e17a7679677532.png",
+          "sha256": "0691d911822ecc6e3f8f1dd3048b9e6ae31297772cb897f46a5119bc83de4804"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_COMBAT_OL3D_atlas_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/c212a5fc1082baee7bc7df261f85c210.png",
+          "sha256": "a3ce69dbe7b37b721931049422fe8a4742041197d9d3bb35be1534db8f92212f"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_RESULT_OL3D_atlas_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/035ec820330b9a0d99b68ca7e56ce0c8.png",
+          "sha256": "bfbdfff60866c380deeaa0c3755614bb525df0f5a7282c60d9e9d3687adc8bd2"
+        }
+      ]
+    },
+    {
+      "shot_id": "V013-R03",
+      "start_frame": {
+        "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V013\\img2\\V013-R03.png",
+        "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/43b60498c97e26ca9d20ed5e9ae9521c.png"
+      },
+      "end_frame": {
+        "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V013\\img2\\V013-R04.png",
+        "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/81ab5fe8da4aca64fc17fefd3243cf2a.png"
+      },
+      "source_asset_binding": [
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\backgrounds\\OL3D\\T20260812-144226_BG_AUTUMNCAMP_OL3D_master_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/c7a5b86c634ef83dfdb4272c78a7e6f8.png",
+          "sha256": "4ae6b20e7280df254cdb0afb7c46a34d85160575292018f0a93750313f53a14d"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_ROAD_OL3D_sheet_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/9d678a4cf338d189c4dcf5ab6c489960.png",
+          "sha256": "0bdc2e269136c289554a57e6076694dfc59a18d3f05e1c7b3ad9c6f8ceb83c35"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_RIFLE_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/c5a216649145c32aee2868b8d9619305.png",
+          "sha256": "9e0b58c584dad6ba8a9f5dcc13589fda6e903ca82ce4bfa4fc7cb5fcec4da67a"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SHIELD_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/0013f540ac45d52cf8d8d956d3401236.png",
+          "sha256": "0d9f5b7325665f21e32be71063d834e958fe6cb1cfe90667374183c24dea0382"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SNIPER_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/563639081455d7306d9d9645789bccac.png",
+          "sha256": "67a9ba0cc4a93f0941f83f559cc27509036ea0af877006845976b77a555713c6"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_CORE_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/b3752fb2db29e4683ad570172197f6ca.png",
+          "sha256": "133a254dfab836265ba0f35c9a24f8a8c7afdd7f26e08c4325a20134b3efc943"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_MGBUNKER_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/cc17d13ff7a83d0f0bb36410a1c30991.png",
+          "sha256": "720af7d29680602752edd3e81995a97a9decc235a4b5f9ff66bf2a7717b18601"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_ARTILLERY_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/4ea562c01d527a7680a3403381884417.png",
+          "sha256": "436236362d286ad3590d7484d9b43580098f3f3d67fe149316b208cdf24a42f4"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_TRAP_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/a12210297d779ddf422ad24d227b6dae.png",
+          "sha256": "1095e3955164d7502447c57d49dca112fa6489b900d2928933381e3db30347c8"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_BUILD_OL3D_atlas_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/a42697675bbc3f73d0e17a7679677532.png",
+          "sha256": "0691d911822ecc6e3f8f1dd3048b9e6ae31297772cb897f46a5119bc83de4804"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_COMBAT_OL3D_atlas_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/c212a5fc1082baee7bc7df261f85c210.png",
+          "sha256": "a3ce69dbe7b37b721931049422fe8a4742041197d9d3bb35be1534db8f92212f"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_RESULT_OL3D_atlas_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/035ec820330b9a0d99b68ca7e56ce0c8.png",
+          "sha256": "bfbdfff60866c380deeaa0c3755614bb525df0f5a7282c60d9e9d3687adc8bd2"
+        }
+      ]
+    },
+    {
+      "shot_id": "V013-R04",
+      "start_frame": {
+        "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V013\\img2\\V013-R04.png",
+        "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/81ab5fe8da4aca64fc17fefd3243cf2a.png"
+      },
+      "end_frame": {
+        "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V013\\img2\\V013-R05.png",
+        "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/7d63a7f561061ddcd35ea165634c88cb.png"
+      },
+      "source_asset_binding": [
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\backgrounds\\OL3D\\T20260812-144226_BG_AUTUMNCAMP_OL3D_master_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/c7a5b86c634ef83dfdb4272c78a7e6f8.png",
+          "sha256": "4ae6b20e7280df254cdb0afb7c46a34d85160575292018f0a93750313f53a14d"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_ROAD_OL3D_sheet_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/9d678a4cf338d189c4dcf5ab6c489960.png",
+          "sha256": "0bdc2e269136c289554a57e6076694dfc59a18d3f05e1c7b3ad9c6f8ceb83c35"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_RIFLE_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/c5a216649145c32aee2868b8d9619305.png",
+          "sha256": "9e0b58c584dad6ba8a9f5dcc13589fda6e903ca82ce4bfa4fc7cb5fcec4da67a"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SHIELD_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/0013f540ac45d52cf8d8d956d3401236.png",
+          "sha256": "0d9f5b7325665f21e32be71063d834e958fe6cb1cfe90667374183c24dea0382"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SNIPER_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/563639081455d7306d9d9645789bccac.png",
+          "sha256": "67a9ba0cc4a93f0941f83f559cc27509036ea0af877006845976b77a555713c6"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_CORE_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/b3752fb2db29e4683ad570172197f6ca.png",
+          "sha256": "133a254dfab836265ba0f35c9a24f8a8c7afdd7f26e08c4325a20134b3efc943"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_MGBUNKER_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/cc17d13ff7a83d0f0bb36410a1c30991.png",
+          "sha256": "720af7d29680602752edd3e81995a97a9decc235a4b5f9ff66bf2a7717b18601"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_ARTILLERY_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/4ea562c01d527a7680a3403381884417.png",
+          "sha256": "436236362d286ad3590d7484d9b43580098f3f3d67fe149316b208cdf24a42f4"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_TRAP_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/a12210297d779ddf422ad24d227b6dae.png",
+          "sha256": "1095e3955164d7502447c57d49dca112fa6489b900d2928933381e3db30347c8"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_BUILD_OL3D_atlas_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/a42697675bbc3f73d0e17a7679677532.png",
+          "sha256": "0691d911822ecc6e3f8f1dd3048b9e6ae31297772cb897f46a5119bc83de4804"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_COMBAT_OL3D_atlas_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/c212a5fc1082baee7bc7df261f85c210.png",
+          "sha256": "a3ce69dbe7b37b721931049422fe8a4742041197d9d3bb35be1534db8f92212f"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_RESULT_OL3D_atlas_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/035ec820330b9a0d99b68ca7e56ce0c8.png",
+          "sha256": "bfbdfff60866c380deeaa0c3755614bb525df0f5a7282c60d9e9d3687adc8bd2"
+        }
+      ]
+    },
+    {
+      "shot_id": "V013-R05",
+      "start_frame": {
+        "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V013\\img2\\V013-R05.png",
+        "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/7d63a7f561061ddcd35ea165634c88cb.png"
+      },
+      "end_frame": {
+        "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V013\\img2\\V013-R06.png",
+        "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/0cf5bbc3791385c7a7a712a2a2e32e1b.png"
+      },
+      "source_asset_binding": [
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\backgrounds\\OL3D\\T20260812-144226_BG_AUTUMNCAMP_OL3D_master_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/c7a5b86c634ef83dfdb4272c78a7e6f8.png",
+          "sha256": "4ae6b20e7280df254cdb0afb7c46a34d85160575292018f0a93750313f53a14d"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_ROAD_OL3D_sheet_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/9d678a4cf338d189c4dcf5ab6c489960.png",
+          "sha256": "0bdc2e269136c289554a57e6076694dfc59a18d3f05e1c7b3ad9c6f8ceb83c35"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_RIFLE_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/c5a216649145c32aee2868b8d9619305.png",
+          "sha256": "9e0b58c584dad6ba8a9f5dcc13589fda6e903ca82ce4bfa4fc7cb5fcec4da67a"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SHIELD_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/0013f540ac45d52cf8d8d956d3401236.png",
+          "sha256": "0d9f5b7325665f21e32be71063d834e958fe6cb1cfe90667374183c24dea0382"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SNIPER_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/563639081455d7306d9d9645789bccac.png",
+          "sha256": "67a9ba0cc4a93f0941f83f559cc27509036ea0af877006845976b77a555713c6"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_CORE_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/b3752fb2db29e4683ad570172197f6ca.png",
+          "sha256": "133a254dfab836265ba0f35c9a24f8a8c7afdd7f26e08c4325a20134b3efc943"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_MGBUNKER_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/cc17d13ff7a83d0f0bb36410a1c30991.png",
+          "sha256": "720af7d29680602752edd3e81995a97a9decc235a4b5f9ff66bf2a7717b18601"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_ARTILLERY_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/4ea562c01d527a7680a3403381884417.png",
+          "sha256": "436236362d286ad3590d7484d9b43580098f3f3d67fe149316b208cdf24a42f4"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_TRAP_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/a12210297d779ddf422ad24d227b6dae.png",
+          "sha256": "1095e3955164d7502447c57d49dca112fa6489b900d2928933381e3db30347c8"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_BUILD_OL3D_atlas_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/a42697675bbc3f73d0e17a7679677532.png",
+          "sha256": "0691d911822ecc6e3f8f1dd3048b9e6ae31297772cb897f46a5119bc83de4804"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_COMBAT_OL3D_atlas_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/c212a5fc1082baee7bc7df261f85c210.png",
+          "sha256": "a3ce69dbe7b37b721931049422fe8a4742041197d9d3bb35be1534db8f92212f"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_RESULT_OL3D_atlas_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/035ec820330b9a0d99b68ca7e56ce0c8.png",
+          "sha256": "bfbdfff60866c380deeaa0c3755614bb525df0f5a7282c60d9e9d3687adc8bd2"
+        }
+      ]
+    },
+    {
+      "shot_id": "V013-R06",
+      "start_frame": {
+        "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V013\\img2\\V013-R06.png",
+        "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/0cf5bbc3791385c7a7a712a2a2e32e1b.png"
+      },
+      "end_frame": {
+        "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V013\\img2\\V013-R07.png",
+        "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/e2df8ff9dd1e39041669376ab5a789d5.png"
+      },
+      "source_asset_binding": [
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\backgrounds\\OL3D\\T20260812-144226_BG_AUTUMNCAMP_OL3D_master_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/c7a5b86c634ef83dfdb4272c78a7e6f8.png",
+          "sha256": "4ae6b20e7280df254cdb0afb7c46a34d85160575292018f0a93750313f53a14d"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_ROAD_OL3D_sheet_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/9d678a4cf338d189c4dcf5ab6c489960.png",
+          "sha256": "0bdc2e269136c289554a57e6076694dfc59a18d3f05e1c7b3ad9c6f8ceb83c35"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_RIFLE_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/c5a216649145c32aee2868b8d9619305.png",
+          "sha256": "9e0b58c584dad6ba8a9f5dcc13589fda6e903ca82ce4bfa4fc7cb5fcec4da67a"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SHIELD_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/0013f540ac45d52cf8d8d956d3401236.png",
+          "sha256": "0d9f5b7325665f21e32be71063d834e958fe6cb1cfe90667374183c24dea0382"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SNIPER_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/563639081455d7306d9d9645789bccac.png",
+          "sha256": "67a9ba0cc4a93f0941f83f559cc27509036ea0af877006845976b77a555713c6"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_CORE_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/b3752fb2db29e4683ad570172197f6ca.png",
+          "sha256": "133a254dfab836265ba0f35c9a24f8a8c7afdd7f26e08c4325a20134b3efc943"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_MGBUNKER_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/cc17d13ff7a83d0f0bb36410a1c30991.png",
+          "sha256": "720af7d29680602752edd3e81995a97a9decc235a4b5f9ff66bf2a7717b18601"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_ARTILLERY_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/4ea562c01d527a7680a3403381884417.png",
+          "sha256": "436236362d286ad3590d7484d9b43580098f3f3d67fe149316b208cdf24a42f4"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_TRAP_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/a12210297d779ddf422ad24d227b6dae.png",
+          "sha256": "1095e3955164d7502447c57d49dca112fa6489b900d2928933381e3db30347c8"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_BUILD_OL3D_atlas_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/a42697675bbc3f73d0e17a7679677532.png",
+          "sha256": "0691d911822ecc6e3f8f1dd3048b9e6ae31297772cb897f46a5119bc83de4804"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_COMBAT_OL3D_atlas_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/c212a5fc1082baee7bc7df261f85c210.png",
+          "sha256": "a3ce69dbe7b37b721931049422fe8a4742041197d9d3bb35be1534db8f92212f"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_RESULT_OL3D_atlas_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/035ec820330b9a0d99b68ca7e56ce0c8.png",
+          "sha256": "bfbdfff60866c380deeaa0c3755614bb525df0f5a7282c60d9e9d3687adc8bd2"
+        }
+      ]
+    },
+    {
+      "shot_id": "V013-R07",
+      "start_frame": {
+        "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V013\\img2\\V013-R07.png",
+        "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/e2df8ff9dd1e39041669376ab5a789d5.png"
+      },
+      "end_frame": {
+        "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V013\\img2\\V013-R08.png",
+        "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/1098d7104c86a23fc341e620ddf9399d.png"
+      },
+      "source_asset_binding": [
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\backgrounds\\OL3D\\T20260812-144226_BG_AUTUMNCAMP_OL3D_master_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/c7a5b86c634ef83dfdb4272c78a7e6f8.png",
+          "sha256": "4ae6b20e7280df254cdb0afb7c46a34d85160575292018f0a93750313f53a14d"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_ROAD_OL3D_sheet_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/9d678a4cf338d189c4dcf5ab6c489960.png",
+          "sha256": "0bdc2e269136c289554a57e6076694dfc59a18d3f05e1c7b3ad9c6f8ceb83c35"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_RIFLE_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/c5a216649145c32aee2868b8d9619305.png",
+          "sha256": "9e0b58c584dad6ba8a9f5dcc13589fda6e903ca82ce4bfa4fc7cb5fcec4da67a"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SHIELD_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/0013f540ac45d52cf8d8d956d3401236.png",
+          "sha256": "0d9f5b7325665f21e32be71063d834e958fe6cb1cfe90667374183c24dea0382"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SNIPER_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/563639081455d7306d9d9645789bccac.png",
+          "sha256": "67a9ba0cc4a93f0941f83f559cc27509036ea0af877006845976b77a555713c6"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_CORE_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/b3752fb2db29e4683ad570172197f6ca.png",
+          "sha256": "133a254dfab836265ba0f35c9a24f8a8c7afdd7f26e08c4325a20134b3efc943"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_MGBUNKER_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/cc17d13ff7a83d0f0bb36410a1c30991.png",
+          "sha256": "720af7d29680602752edd3e81995a97a9decc235a4b5f9ff66bf2a7717b18601"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_ARTILLERY_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/4ea562c01d527a7680a3403381884417.png",
+          "sha256": "436236362d286ad3590d7484d9b43580098f3f3d67fe149316b208cdf24a42f4"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_TRAP_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/a12210297d779ddf422ad24d227b6dae.png",
+          "sha256": "1095e3955164d7502447c57d49dca112fa6489b900d2928933381e3db30347c8"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_BUILD_OL3D_atlas_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/a42697675bbc3f73d0e17a7679677532.png",
+          "sha256": "0691d911822ecc6e3f8f1dd3048b9e6ae31297772cb897f46a5119bc83de4804"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_COMBAT_OL3D_atlas_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/c212a5fc1082baee7bc7df261f85c210.png",
+          "sha256": "a3ce69dbe7b37b721931049422fe8a4742041197d9d3bb35be1534db8f92212f"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_RESULT_OL3D_atlas_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/035ec820330b9a0d99b68ca7e56ce0c8.png",
+          "sha256": "bfbdfff60866c380deeaa0c3755614bb525df0f5a7282c60d9e9d3687adc8bd2"
+        }
+      ]
+    },
+    {
+      "shot_id": "V013-R08",
+      "start_frame": {
+        "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V013\\img2\\V013-R08.png",
+        "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/1098d7104c86a23fc341e620ddf9399d.png"
+      },
+      "end_frame": {
+        "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V013\\img2\\V013-R09.png",
+        "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/41961bddbd18d498b767ac1730a34517.png"
+      },
+      "source_asset_binding": [
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\backgrounds\\OL3D\\T20260812-144226_BG_AUTUMNCAMP_OL3D_master_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/c7a5b86c634ef83dfdb4272c78a7e6f8.png",
+          "sha256": "4ae6b20e7280df254cdb0afb7c46a34d85160575292018f0a93750313f53a14d"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_ROAD_OL3D_sheet_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/9d678a4cf338d189c4dcf5ab6c489960.png",
+          "sha256": "0bdc2e269136c289554a57e6076694dfc59a18d3f05e1c7b3ad9c6f8ceb83c35"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_RIFLE_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/c5a216649145c32aee2868b8d9619305.png",
+          "sha256": "9e0b58c584dad6ba8a9f5dcc13589fda6e903ca82ce4bfa4fc7cb5fcec4da67a"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SHIELD_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/0013f540ac45d52cf8d8d956d3401236.png",
+          "sha256": "0d9f5b7325665f21e32be71063d834e958fe6cb1cfe90667374183c24dea0382"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SNIPER_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/563639081455d7306d9d9645789bccac.png",
+          "sha256": "67a9ba0cc4a93f0941f83f559cc27509036ea0af877006845976b77a555713c6"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_CORE_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/b3752fb2db29e4683ad570172197f6ca.png",
+          "sha256": "133a254dfab836265ba0f35c9a24f8a8c7afdd7f26e08c4325a20134b3efc943"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_MGBUNKER_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/cc17d13ff7a83d0f0bb36410a1c30991.png",
+          "sha256": "720af7d29680602752edd3e81995a97a9decc235a4b5f9ff66bf2a7717b18601"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_ARTILLERY_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/4ea562c01d527a7680a3403381884417.png",
+          "sha256": "436236362d286ad3590d7484d9b43580098f3f3d67fe149316b208cdf24a42f4"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_TRAP_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/a12210297d779ddf422ad24d227b6dae.png",
+          "sha256": "1095e3955164d7502447c57d49dca112fa6489b900d2928933381e3db30347c8"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_BUILD_OL3D_atlas_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/a42697675bbc3f73d0e17a7679677532.png",
+          "sha256": "0691d911822ecc6e3f8f1dd3048b9e6ae31297772cb897f46a5119bc83de4804"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_COMBAT_OL3D_atlas_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/c212a5fc1082baee7bc7df261f85c210.png",
+          "sha256": "a3ce69dbe7b37b721931049422fe8a4742041197d9d3bb35be1534db8f92212f"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_RESULT_OL3D_atlas_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/035ec820330b9a0d99b68ca7e56ce0c8.png",
+          "sha256": "bfbdfff60866c380deeaa0c3755614bb525df0f5a7282c60d9e9d3687adc8bd2"
+        }
+      ]
+    },
+    {
+      "shot_id": "V013-R09",
+      "start_frame": {
+        "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V013\\img2\\V013-R09.png",
+        "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/41961bddbd18d498b767ac1730a34517.png"
+      },
+      "end_frame": {
+        "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V013\\img2\\V013-R10.png",
+        "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/66500f9498f468f86890596113d302a8.png"
+      },
+      "source_asset_binding": [
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\backgrounds\\OL3D\\T20260812-144226_BG_AUTUMNCAMP_OL3D_master_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/c7a5b86c634ef83dfdb4272c78a7e6f8.png",
+          "sha256": "4ae6b20e7280df254cdb0afb7c46a34d85160575292018f0a93750313f53a14d"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_ROAD_OL3D_sheet_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/9d678a4cf338d189c4dcf5ab6c489960.png",
+          "sha256": "0bdc2e269136c289554a57e6076694dfc59a18d3f05e1c7b3ad9c6f8ceb83c35"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_RIFLE_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/c5a216649145c32aee2868b8d9619305.png",
+          "sha256": "9e0b58c584dad6ba8a9f5dcc13589fda6e903ca82ce4bfa4fc7cb5fcec4da67a"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SHIELD_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/0013f540ac45d52cf8d8d956d3401236.png",
+          "sha256": "0d9f5b7325665f21e32be71063d834e958fe6cb1cfe90667374183c24dea0382"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SNIPER_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/563639081455d7306d9d9645789bccac.png",
+          "sha256": "67a9ba0cc4a93f0941f83f559cc27509036ea0af877006845976b77a555713c6"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_CORE_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/b3752fb2db29e4683ad570172197f6ca.png",
+          "sha256": "133a254dfab836265ba0f35c9a24f8a8c7afdd7f26e08c4325a20134b3efc943"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_MGBUNKER_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/cc17d13ff7a83d0f0bb36410a1c30991.png",
+          "sha256": "720af7d29680602752edd3e81995a97a9decc235a4b5f9ff66bf2a7717b18601"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_ARTILLERY_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/4ea562c01d527a7680a3403381884417.png",
+          "sha256": "436236362d286ad3590d7484d9b43580098f3f3d67fe149316b208cdf24a42f4"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_TRAP_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/a12210297d779ddf422ad24d227b6dae.png",
+          "sha256": "1095e3955164d7502447c57d49dca112fa6489b900d2928933381e3db30347c8"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_BUILD_OL3D_atlas_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/a42697675bbc3f73d0e17a7679677532.png",
+          "sha256": "0691d911822ecc6e3f8f1dd3048b9e6ae31297772cb897f46a5119bc83de4804"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_COMBAT_OL3D_atlas_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/c212a5fc1082baee7bc7df261f85c210.png",
+          "sha256": "a3ce69dbe7b37b721931049422fe8a4742041197d9d3bb35be1534db8f92212f"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_RESULT_OL3D_atlas_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/035ec820330b9a0d99b68ca7e56ce0c8.png",
+          "sha256": "bfbdfff60866c380deeaa0c3755614bb525df0f5a7282c60d9e9d3687adc8bd2"
+        }
+      ]
+    },
+    {
+      "shot_id": "V013-R10",
+      "start_frame": {
+        "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V013\\img2\\V013-R10.png",
+        "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/66500f9498f468f86890596113d302a8.png"
+      },
+      "end_frame": {
+        "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V013\\img2\\V013-R11.png",
+        "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/8ae3798bc9e2e09d1a2b34a59a572bab.png"
+      },
+      "source_asset_binding": [
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\backgrounds\\OL3D\\T20260812-144226_BG_AUTUMNCAMP_OL3D_master_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/c7a5b86c634ef83dfdb4272c78a7e6f8.png",
+          "sha256": "4ae6b20e7280df254cdb0afb7c46a34d85160575292018f0a93750313f53a14d"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_ROAD_OL3D_sheet_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/9d678a4cf338d189c4dcf5ab6c489960.png",
+          "sha256": "0bdc2e269136c289554a57e6076694dfc59a18d3f05e1c7b3ad9c6f8ceb83c35"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_RIFLE_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/c5a216649145c32aee2868b8d9619305.png",
+          "sha256": "9e0b58c584dad6ba8a9f5dcc13589fda6e903ca82ce4bfa4fc7cb5fcec4da67a"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SHIELD_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/0013f540ac45d52cf8d8d956d3401236.png",
+          "sha256": "0d9f5b7325665f21e32be71063d834e958fe6cb1cfe90667374183c24dea0382"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SNIPER_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/563639081455d7306d9d9645789bccac.png",
+          "sha256": "67a9ba0cc4a93f0941f83f559cc27509036ea0af877006845976b77a555713c6"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_CORE_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/b3752fb2db29e4683ad570172197f6ca.png",
+          "sha256": "133a254dfab836265ba0f35c9a24f8a8c7afdd7f26e08c4325a20134b3efc943"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_MGBUNKER_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/cc17d13ff7a83d0f0bb36410a1c30991.png",
+          "sha256": "720af7d29680602752edd3e81995a97a9decc235a4b5f9ff66bf2a7717b18601"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_ARTILLERY_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/4ea562c01d527a7680a3403381884417.png",
+          "sha256": "436236362d286ad3590d7484d9b43580098f3f3d67fe149316b208cdf24a42f4"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_TRAP_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/a12210297d779ddf422ad24d227b6dae.png",
+          "sha256": "1095e3955164d7502447c57d49dca112fa6489b900d2928933381e3db30347c8"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_BUILD_OL3D_atlas_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/a42697675bbc3f73d0e17a7679677532.png",
+          "sha256": "0691d911822ecc6e3f8f1dd3048b9e6ae31297772cb897f46a5119bc83de4804"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_COMBAT_OL3D_atlas_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/c212a5fc1082baee7bc7df261f85c210.png",
+          "sha256": "a3ce69dbe7b37b721931049422fe8a4742041197d9d3bb35be1534db8f92212f"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_RESULT_OL3D_atlas_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/035ec820330b9a0d99b68ca7e56ce0c8.png",
+          "sha256": "bfbdfff60866c380deeaa0c3755614bb525df0f5a7282c60d9e9d3687adc8bd2"
+        }
+      ]
+    },
+    {
+      "shot_id": "V013-R11",
+      "start_frame": {
+        "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V013\\img2\\V013-R11.png",
+        "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/8ae3798bc9e2e09d1a2b34a59a572bab.png"
+      },
+      "end_frame": {
+        "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V013\\img2\\V013-R11.png",
+        "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/8ae3798bc9e2e09d1a2b34a59a572bab.png"
+      },
+      "source_asset_binding": [
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\backgrounds\\OL3D\\T20260812-144226_BG_AUTUMNCAMP_OL3D_master_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/c7a5b86c634ef83dfdb4272c78a7e6f8.png",
+          "sha256": "4ae6b20e7280df254cdb0afb7c46a34d85160575292018f0a93750313f53a14d"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_ROAD_OL3D_sheet_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/9d678a4cf338d189c4dcf5ab6c489960.png",
+          "sha256": "0bdc2e269136c289554a57e6076694dfc59a18d3f05e1c7b3ad9c6f8ceb83c35"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_RIFLE_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/c5a216649145c32aee2868b8d9619305.png",
+          "sha256": "9e0b58c584dad6ba8a9f5dcc13589fda6e903ca82ce4bfa4fc7cb5fcec4da67a"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SHIELD_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/0013f540ac45d52cf8d8d956d3401236.png",
+          "sha256": "0d9f5b7325665f21e32be71063d834e958fe6cb1cfe90667374183c24dea0382"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SNIPER_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/563639081455d7306d9d9645789bccac.png",
+          "sha256": "67a9ba0cc4a93f0941f83f559cc27509036ea0af877006845976b77a555713c6"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_CORE_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/b3752fb2db29e4683ad570172197f6ca.png",
+          "sha256": "133a254dfab836265ba0f35c9a24f8a8c7afdd7f26e08c4325a20134b3efc943"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_MGBUNKER_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/cc17d13ff7a83d0f0bb36410a1c30991.png",
+          "sha256": "720af7d29680602752edd3e81995a97a9decc235a4b5f9ff66bf2a7717b18601"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_ARTILLERY_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/4ea562c01d527a7680a3403381884417.png",
+          "sha256": "436236362d286ad3590d7484d9b43580098f3f3d67fe149316b208cdf24a42f4"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_TRAP_OL3D_turn_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/a12210297d779ddf422ad24d227b6dae.png",
+          "sha256": "1095e3955164d7502447c57d49dca112fa6489b900d2928933381e3db30347c8"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_BUILD_OL3D_atlas_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/a42697675bbc3f73d0e17a7679677532.png",
+          "sha256": "0691d911822ecc6e3f8f1dd3048b9e6ae31297772cb897f46a5119bc83de4804"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_COMBAT_OL3D_atlas_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/c212a5fc1082baee7bc7df261f85c210.png",
+          "sha256": "a3ce69dbe7b37b721931049422fe8a4742041197d9d3bb35be1534db8f92212f"
+        },
+        {
+          "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_RESULT_OL3D_atlas_v001.png",
+          "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/035ec820330b9a0d99b68ca7e56ce0c8.png",
+          "sha256": "bfbdfff60866c380deeaa0c3755614bb525df0f5a7282c60d9e9d3687adc8bd2"
+        }
+      ]
+    }
+  ]
+}

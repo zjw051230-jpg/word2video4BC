@@ -1,0 +1,18 @@
+{
+  "model": "doubao-seedance-2.0",
+  "prompt": "Generate one continuous 4.0-second I2V gameplay shot from the supplied accepted endpoint frames. Use the autumn OL3D assets as the identity and environment authority. Keep a close-range oblique top-down view of one small playable local board: the entrance stays near the top, the core stays near the bottom, and the active lane, target ring, units, facility and immediate feedback remain large enough to read. The viewer must see a tactile mini-game operation, not a zoomed-out SLG map. Animate at most one clear player input and exactly one immediate mechanical feedback, then hold the result. The first frame must match the supplied accepted start frame exactly; the last frame must match the supplied accepted end frame and become the next task's start state. Preserve unit coordinates, facility state, damage or cracks, target-ring color and shape, and abstract resource color blocks unless this shot explicitly changes one. Keep character identity, terrain geometry, camera scale and lighting stable. No readable words, numbers, labels, buttons, health bars, subtitles, logos, watermarks, phone UI, reference_video input, identity transfer from video, motion transfer from video, distant overview, aerial view, zoom-out, tiny subjects, board reset, identity drift, cross-version assets, horizontal banding, scanlines or glitch. Audio generation is enabled for the container, but external TTS is blocked: do not invent narration, dialogue or a voice identity. Variant V008: Fire-seed route revelation. Narrative route: Use one movable fire seed to shift the target ring between two lanes, rescue the leaking side first, then expose the turret; the core keeps a light injury and the fire is replenished before the emergency three-star finish. This shot is beat 7 of 11, 'Turret borrows the light'. Input rule: One tap or short drag on the single named target only; no second input. State continuity: begin from the accepted end state of V008-R06; end on Turret borrows the light as the only planned state change. Bind start to accepted V008-R07 and end to accepted V008-R08; do not synthesize a replacement frame. Use only this version's listed asset binding.",
+  "n": 1,
+  "size": "720x1280",
+  "seconds": "4",
+  "aspect_ratio": "9:16",
+  "quality": "720p",
+  "generate_audio": true,
+  "external_tts_blocked": true,
+  "input_reference": [
+    "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/00982112d3ced44efc76562bef2b1be1.png",
+    "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/67bcfb8631306ae323c2533d1958af40.png"
+  ],
+  "first_frame": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/00982112d3ced44efc76562bef2b1be1.png",
+  "last_frame": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/67bcfb8631306ae323c2533d1958af40.png",
+  "reference_video": null
+}

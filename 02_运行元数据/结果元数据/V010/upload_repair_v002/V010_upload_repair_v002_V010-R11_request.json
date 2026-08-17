@@ -1,0 +1,14 @@
+{
+  "repair_id": "upload_repair_v002",
+  "version": "V010",
+  "shot_id": "V010-R11",
+  "timestamp_utc": "2026-08-14T15:57:24.862244+00:00",
+  "method": "POST",
+  "endpoint": "https://chat.q1.com/api/upload/image",
+  "file_field": "file",
+  "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V010\\img2\\V010-R11.png",
+  "sha256": "8ca826821b19063b70a3929ccf40bcdcb6cad5940ba8cb2039b931fa323c2cee",
+  "byte_size": 1529883,
+  "model_contract": "gpt-5.6-luna/high",
+  "api_key_included": false
+}

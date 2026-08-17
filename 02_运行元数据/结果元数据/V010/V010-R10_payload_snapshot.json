@@ -1,0 +1,18 @@
+{
+  "model": "doubao-seedance-2.0",
+  "prompt": "Generate one continuous 4.0-second I2V gameplay shot from the supplied accepted endpoint frames. Use the autumn OL3D assets as the identity and environment authority. Keep a close-range oblique top-down view of one small playable local board: the entrance stays near the top, the core stays near the bottom, and the active lane, target ring, units, facility and immediate feedback remain large enough to read. The viewer must see a tactile mini-game operation, not a zoomed-out SLG map. Animate at most one clear player input and exactly one immediate mechanical feedback, then hold the result. The first frame must match the supplied accepted start frame exactly; the last frame must match the supplied accepted end frame and become the next task's start state. Preserve unit coordinates, facility state, damage or cracks, target-ring color and shape, and abstract resource color blocks unless this shot explicitly changes one. Keep character identity, terrain geometry, camera scale and lighting stable. No readable words, numbers, labels, buttons, health bars, subtitles, logos, watermarks, phone UI, reference_video input, identity transfer from video, motion transfer from video, distant overview, aerial view, zoom-out, tiny subjects, board reset, identity drift, cross-version assets, horizontal banding, scanlines or glitch. Audio generation is enabled for the container, but external TTS is blocked: do not invent narration, dialogue or a voice identity. Variant V010: Heavy-shield capture puzzle. Narrative route: Tap the first obstacle rock, stop the heavy shield enemy, let the second rock chain into the lane, patch the remaining gap with a trap, and end on a clear core line with visible chain-reaction proof. This shot is beat 10 of 11, 'Core steadies'. Input rule: No player input; let the established board state breathe. State continuity: begin from the accepted end state of V010-R09; end on Core steadies as the only planned state change. Bind start to accepted V010-R10 and end to accepted V010-R11; do not synthesize a replacement frame. Use only this version's listed asset binding.",
+  "n": 1,
+  "size": "720x1280",
+  "seconds": "4",
+  "aspect_ratio": "9:16",
+  "quality": "720p",
+  "generate_audio": true,
+  "external_tts_blocked": true,
+  "input_reference": [
+    "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/0b6cd74c8b71cfab64d4edae8ce1e77f.png",
+    "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/ca14907d4ed141c196b7be2f2c6ae5e7.png"
+  ],
+  "first_frame": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/0b6cd74c8b71cfab64d4edae8ce1e77f.png",
+  "last_frame": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/ca14907d4ed141c196b7be2f2c6ae5e7.png",
+  "reference_video": null
+}

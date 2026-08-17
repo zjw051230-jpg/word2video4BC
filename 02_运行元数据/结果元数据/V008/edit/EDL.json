@@ -1,0 +1,134 @@
+﻿{
+    "version":  1,
+    "edit_type":  "picture_plus_original_game_audio_rough_cut",
+    "version_id":  "V008",
+    "sources":  {
+                    "V008-R01.mp4":  "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V008\\original\\V008-R01.mp4",
+                    "V008-R02.mp4":  "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V008\\original\\V008-R02.mp4",
+                    "V008-R03.mp4":  "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V008\\original\\V008-R03.mp4",
+                    "V008-R04.mp4":  "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V008\\original\\V008-R04.mp4",
+                    "V008-R05.mp4":  "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V008\\original\\V008-R05.mp4",
+                    "V008-R06.mp4":  "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V008\\original\\V008-R06.mp4",
+                    "V008-R07.mp4":  "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V008\\original\\V008-R07.mp4",
+                    "V008-R08.mp4":  "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V008\\original\\V008-R08.mp4",
+                    "V008-R09.mp4":  "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V008\\original\\V008-R09.mp4",
+                    "V008-R10.mp4":  "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V008\\original\\V008-R10.mp4",
+                    "V008-R11.mp4":  "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V008\\original\\V008-R11.mp4"
+                },
+    "ranges":  [
+                   {
+                       "source":  "V008-R01.mp4",
+                       "path":  "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V008\\original\\V008-R01.mp4",
+                       "start":  0,
+                       "end":  4.086009,
+                       "output_start":  0,
+                       "output_end":  4.086009,
+                       "duration_s":  4.086009,
+                       "audio_stream":  true
+                   },
+                   {
+                       "source":  "V008-R02.mp4",
+                       "path":  "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V008\\original\\V008-R02.mp4",
+                       "start":  0,
+                       "end":  4.086009,
+                       "output_start":  4.086009,
+                       "output_end":  8.172018,
+                       "duration_s":  4.086009,
+                       "audio_stream":  true
+                   },
+                   {
+                       "source":  "V008-R03.mp4",
+                       "path":  "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V008\\original\\V008-R03.mp4",
+                       "start":  0,
+                       "end":  4.062993,
+                       "output_start":  8.172018,
+                       "output_end":  12.235011,
+                       "duration_s":  4.062993,
+                       "audio_stream":  true
+                   },
+                   {
+                       "source":  "V008-R04.mp4",
+                       "path":  "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V008\\original\\V008-R04.mp4",
+                       "start":  0,
+                       "end":  4.062993,
+                       "output_start":  12.235011,
+                       "output_end":  16.298004,
+                       "duration_s":  4.062993,
+                       "audio_stream":  true
+                   },
+                   {
+                       "source":  "V008-R05.mp4",
+                       "path":  "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V008\\original\\V008-R05.mp4",
+                       "start":  0,
+                       "end":  4.086009,
+                       "output_start":  16.298004,
+                       "output_end":  20.384013,
+                       "duration_s":  4.086009,
+                       "audio_stream":  true
+                   },
+                   {
+                       "source":  "V008-R06.mp4",
+                       "path":  "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V008\\original\\V008-R06.mp4",
+                       "start":  0,
+                       "end":  4.086009,
+                       "output_start":  20.384013,
+                       "output_end":  24.470022,
+                       "duration_s":  4.086009,
+                       "audio_stream":  true
+                   },
+                   {
+                       "source":  "V008-R07.mp4",
+                       "path":  "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V008\\original\\V008-R07.mp4",
+                       "start":  0,
+                       "end":  4.062993,
+                       "output_start":  24.470022,
+                       "output_end":  28.533015,
+                       "duration_s":  4.062993,
+                       "audio_stream":  true
+                   },
+                   {
+                       "source":  "V008-R08.mp4",
+                       "path":  "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V008\\original\\V008-R08.mp4",
+                       "start":  0,
+                       "end":  4.086009,
+                       "output_start":  28.533015,
+                       "output_end":  32.619024,
+                       "duration_s":  4.086009,
+                       "audio_stream":  true
+                   },
+                   {
+                       "source":  "V008-R09.mp4",
+                       "path":  "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V008\\original\\V008-R09.mp4",
+                       "start":  0,
+                       "end":  4.086009,
+                       "output_start":  32.619024,
+                       "output_end":  36.705033,
+                       "duration_s":  4.086009,
+                       "audio_stream":  true
+                   },
+                   {
+                       "source":  "V008-R10.mp4",
+                       "path":  "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V008\\original\\V008-R10.mp4",
+                       "start":  0,
+                       "end":  4.086009,
+                       "output_start":  36.705033,
+                       "output_end":  40.791042,
+                       "duration_s":  4.086009,
+                       "audio_stream":  true
+                   },
+                   {
+                       "source":  "V008-R11.mp4",
+                       "path":  "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V008\\original\\V008-R11.mp4",
+                       "start":  0,
+                       "end":  4.086009,
+                       "output_start":  40.791042,
+                       "output_end":  44.877051,
+                       "duration_s":  4.086009,
+                       "audio_stream":  true
+                   }
+               ],
+    "total_duration_s":  44.877051,
+    "order":  "R01-R11",
+    "external_tts_blocked":  true,
+    "final_delivery":  false
+}

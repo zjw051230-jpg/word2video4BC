@@ -1,0 +1,241 @@
+{
+  "task_id": "T20260812-144226",
+  "batch": "ol3d_minigame_ads_15versions",
+  "versions": 1,
+  "total_frames": 11,
+  "technical_passed": 11,
+  "semantic_passed": 0,
+  "state_machine_continuity_passed": 0,
+  "records": [
+    {
+      "frame_id": "V002-R01",
+      "version": "V002",
+      "attempt": 1,
+      "reference_count": 9,
+      "log": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V002\\img2\\attempts\\V002-R01\\attempt_01.log",
+      "returncode": 0,
+      "technical_pass": true,
+      "semantic_pass": false,
+      "state_machine_continuity_pass": false,
+      "technical_reason": "technical_pass",
+      "size": [
+        720,
+        1280
+      ],
+      "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V002\\img2\\V002-R01.png",
+      "bytes": 1707692,
+      "sha256": "5b3eced47d795ebd34c5ad1795bd8b2e08e9090af9a805e4025089a9c008f985",
+      "reused_existing": true,
+      "attempt_count": 1
+    },
+    {
+      "frame_id": "V002-R02",
+      "version": "V002",
+      "attempt": 1,
+      "reference_count": 9,
+      "log": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V002\\img2\\attempts\\V002-R02\\attempt_01.log",
+      "returncode": 0,
+      "technical_pass": true,
+      "semantic_pass": false,
+      "state_machine_continuity_pass": false,
+      "technical_reason": "technical_pass",
+      "size": [
+        720,
+        1280
+      ],
+      "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V002\\img2\\V002-R02.png",
+      "bytes": 1642865,
+      "sha256": "561758c766f0d5a5ae9ffb760e1d228f4a5c9f930935407679e545f99af31036",
+      "reused_existing": true,
+      "attempt_count": 1
+    },
+    {
+      "frame_id": "V002-R03",
+      "version": "V002",
+      "attempt": 1,
+      "reference_count": 9,
+      "log": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V002\\img2\\attempts\\V002-R03\\attempt_01.log",
+      "returncode": 0,
+      "technical_pass": true,
+      "semantic_pass": false,
+      "state_machine_continuity_pass": false,
+      "technical_reason": "technical_pass",
+      "size": [
+        720,
+        1280
+      ],
+      "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V002\\img2\\V002-R03.png",
+      "bytes": 1588433,
+      "sha256": "b35504f035a425ff281dfd75929cc38747ed46dad4222e3bd84327cabf824239",
+      "reused_existing": true,
+      "attempt_count": 1
+    },
+    {
+      "frame_id": "V002-R04",
+      "version": "V002",
+      "attempt": 1,
+      "reference_count": 9,
+      "log": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V002\\img2\\attempts\\V002-R04\\attempt_01.log",
+      "returncode": 0,
+      "technical_pass": true,
+      "semantic_pass": false,
+      "state_machine_continuity_pass": false,
+      "technical_reason": "technical_pass",
+      "size": [
+        720,
+        1280
+      ],
+      "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V002\\img2\\V002-R04.png",
+      "bytes": 1548494,
+      "sha256": "494ba19e402c5597ab632e28e6efb1c6b8402d48c6abffb71bc1ad5cc3071d76",
+      "reused_existing": true,
+      "attempt_count": 1
+    },
+    {
+      "frame_id": "V002-R05",
+      "version": "V002",
+      "attempt": 1,
+      "reference_count": 9,
+      "log": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V002\\img2\\attempts\\V002-R05\\attempt_01.log",
+      "returncode": 0,
+      "technical_pass": true,
+      "semantic_pass": false,
+      "state_machine_continuity_pass": false,
+      "technical_reason": "technical_pass",
+      "size": [
+        720,
+        1280
+      ],
+      "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V002\\img2\\V002-R05.png",
+      "bytes": 1515570,
+      "sha256": "6df6508d74bda45a8d9c1615307d2e4929e6e7d4f6acb0c3cc909a66c847b9a6",
+      "reused_existing": true,
+      "attempt_count": 1
+    },
+    {
+      "frame_id": "V002-R06",
+      "version": "V002",
+      "attempt": 1,
+      "reference_count": 9,
+      "log": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V002\\img2\\attempts\\V002-R06\\attempt_01.log",
+      "returncode": 0,
+      "technical_pass": true,
+      "semantic_pass": false,
+      "state_machine_continuity_pass": false,
+      "technical_reason": "technical_pass",
+      "size": [
+        720,
+        1280
+      ],
+      "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V002\\img2\\V002-R06.png",
+      "bytes": 1511035,
+      "sha256": "039d903115d1e41cce0b8a74a916fef87907611a80af94a964b18464d7587245",
+      "reused_existing": true,
+      "attempt_count": 1
+    },
+    {
+      "frame_id": "V002-R07",
+      "version": "V002",
+      "attempt": 1,
+      "reference_count": 9,
+      "log": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V002\\img2\\attempts\\V002-R07\\attempt_01.log",
+      "returncode": 0,
+      "technical_pass": true,
+      "semantic_pass": false,
+      "state_machine_continuity_pass": false,
+      "technical_reason": "technical_pass",
+      "size": [
+        720,
+        1280
+      ],
+      "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V002\\img2\\V002-R07.png",
+      "bytes": 1481759,
+      "sha256": "fa2bb76d86a319c64f8ddeeff59ccab6709ed7a6a95e47af3ba92918132f5001",
+      "reused_existing": true,
+      "attempt_count": 1
+    },
+    {
+      "frame_id": "V002-R08",
+      "version": "V002",
+      "attempt": 1,
+      "reference_count": 9,
+      "log": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V002\\img2\\attempts\\V002-R08\\attempt_01.log",
+      "returncode": 0,
+      "technical_pass": true,
+      "semantic_pass": false,
+      "state_machine_continuity_pass": false,
+      "technical_reason": "technical_pass",
+      "size": [
+        720,
+        1280
+      ],
+      "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V002\\img2\\V002-R08.png",
+      "bytes": 1472520,
+      "sha256": "bfd285e4f02247d521452f191f3f2268f00b9d2c9f9e36153518c3828152922e",
+      "attempt_count": 1
+    },
+    {
+      "frame_id": "V002-R09",
+      "version": "V002",
+      "attempt": 1,
+      "reference_count": 9,
+      "log": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V002\\img2\\attempts\\V002-R09\\attempt_01.log",
+      "returncode": 0,
+      "technical_pass": true,
+      "semantic_pass": false,
+      "state_machine_continuity_pass": false,
+      "technical_reason": "technical_pass",
+      "size": [
+        720,
+        1280
+      ],
+      "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V002\\img2\\V002-R09.png",
+      "bytes": 1442699,
+      "sha256": "335c02870db8baa9703dddef323f8dbfefb40acc8e49303ec7218035e28cb0c4",
+      "attempt_count": 1
+    },
+    {
+      "frame_id": "V002-R10",
+      "version": "V002",
+      "attempt": 1,
+      "reference_count": 9,
+      "log": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V002\\img2\\attempts\\V002-R10\\attempt_01.log",
+      "returncode": 0,
+      "technical_pass": true,
+      "semantic_pass": false,
+      "state_machine_continuity_pass": false,
+      "technical_reason": "technical_pass",
+      "size": [
+        720,
+        1280
+      ],
+      "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V002\\img2\\V002-R10.png",
+      "bytes": 1422121,
+      "sha256": "4039a26a80fea6c9be6b24c3026ddc25202942fca9a61ca3e16aa27b00bc7bad",
+      "attempt_count": 1
+    },
+    {
+      "frame_id": "V002-R11",
+      "version": "V002",
+      "attempt": 1,
+      "reference_count": 9,
+      "log": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V002\\img2\\attempts\\V002-R11\\attempt_01.log",
+      "returncode": 0,
+      "technical_pass": true,
+      "semantic_pass": false,
+      "state_machine_continuity_pass": false,
+      "technical_reason": "technical_pass",
+      "size": [
+        720,
+        1280
+      ],
+      "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V002\\img2\\V002-R11.png",
+      "bytes": 1424201,
+      "sha256": "691993af925dd6099349d75cf7352da94dc2063512a9fed8f6ca7e8fb17752b3",
+      "attempt_count": 1
+    }
+  ],
+  "status": "generated_pending_visual_review",
+  "video_stage_unlocked": false,
+  "external_tts_blocked": true
+}

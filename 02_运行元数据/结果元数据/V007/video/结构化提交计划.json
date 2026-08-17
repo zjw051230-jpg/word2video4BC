@@ -1,0 +1,1240 @@
+{
+  "task_id": "T20260812-144226",
+  "batch": "ol3d_minigame_ads_15versions",
+  "version": "V007",
+  "stage": "video_prompt_static",
+  "planning_only": true,
+  "model_registration": {
+    "thread_id": "01a00043-8776-73e1-aabd-2a430bc2905a",
+    "model": "gpt-5.6-luna",
+    "reasoning": "high",
+    "verify_access": "passed",
+    "register": "passed",
+    "bootstrap_status": "ready",
+    "subagent_used": false
+  },
+  "variant": {
+    "concept": "Fire-seed route revelation",
+    "title": "Light the map zone by zone",
+    "arc": "Light the entrance, middle route, and core fire seeds one at a time; each revealed local lane changes the playable choice, and the ending holds all three stable rather than using a single explosion."
+  },
+  "input_contract": {
+    "mode": "I2V",
+    "aspect_ratio": "9:16",
+    "resolution": "720x1280",
+    "quality": "720p",
+    "reference_video": null,
+    "reference_video_allowed": false,
+    "reference_video_role": "none",
+    "accepted_png_endpoints_only": true
+  },
+  "audio_contract": {
+    "generate_audio": true,
+    "external_tts_blocked": true,
+    "narration_claim": false
+  },
+  "gates": {
+    "video_stage_gate": "waiting_for_entry_review",
+    "rough_cut_gate": false,
+    "all_keyframes_accepted": true,
+    "binding_gate": true,
+    "state_machine_gate": true
+  },
+  "execution_flags": {
+    "keyframes_generated": false,
+    "prompt_written": false,
+    "uploaded": false,
+    "submitted": false,
+    "generated": false,
+    "monitoring": false,
+    "pulled_back": false,
+    "accepted": false,
+    "rough_cut": false
+  },
+  "source_authority": {
+    "plan_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\1.任务策划\\T20260812-144226_抢滩登陆视频策划\\ol3d_minigame_ads_15versions\\V007\\V007_production_plan.json",
+    "storyboard_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\1.任务策划\\T20260812-144226_抢滩登陆视频策划\\ol3d_minigame_ads_15versions\\V007\\V007_策划.md",
+    "img2_acceptance_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V007\\img2\\keyframe_acceptance.json",
+    "binding_manifest_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\img2_binding_manifest.json",
+    "accepted_frames": {
+      "V007-R01": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V007\\img2\\V007-R01.png",
+        "sha256": "28a7db1791e8ee7d762c9032489776a5627b45ce60d51a59aa4a341b3a0d3cb1",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "V007-R02": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V007\\img2\\V007-R02.png",
+        "sha256": "171cc8f8d9635aff1e0d5789848dea65b46ff38d6b33766441050cd55954b031",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "V007-R03": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V007\\img2\\V007-R03.png",
+        "sha256": "8f7ead2caec83ad3ed7147c2ce12acb3d75aaf5117aaa6db444fad7788744b86",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "V007-R04": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V007\\img2\\V007-R04.png",
+        "sha256": "07c06fffeb8f21b04bd5c3f1e1cebceb6cbbc6c5e7a3a149cf921faa8b79583c",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "V007-R05": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V007\\img2\\V007-R05.png",
+        "sha256": "e5e3541ebdae78cbcb3e241317c55ee9eae9becf3a4ef6846c85ba5d8874d819",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "V007-R06": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V007\\img2\\V007-R06.png",
+        "sha256": "8f42ddc8fd718a8d6f145840be4e1261def47524fff2e80930af7f69384617f6",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "V007-R07": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V007\\img2\\V007-R07.png",
+        "sha256": "f00f7b2be75122292c533230eed4e081ef9140dcb1c9823e0f66ec6ae2c78f05",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "V007-R08": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V007\\img2\\V007-R08.png",
+        "sha256": "914d2f874331b3658319fd660c98bf2348adfe4c4f6de886e1efb15bf477def6",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "V007-R09": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V007\\img2\\V007-R09.png",
+        "sha256": "a736c03b9072d3c0a2b974afac17b2a13c3a1dfcb997e239c564717a29992ee6",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "V007-R10": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V007\\img2\\V007-R10.png",
+        "sha256": "c009a1e6559fbeeae87d907cc02167d94f08cf517d992f0c122d6a5e507eae92",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "V007-R11": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V007\\img2\\V007-R11.png",
+        "sha256": "3c0394f2951cc1ad28317f9e9d24faedcc0424e6d8067e4350db3b3d8d11261f",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      }
+    },
+    "real_assets": [
+      {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\backgrounds\\OL3D\\T20260812-144226_BG_AUTUMNCAMP_OL3D_master_v001.png",
+        "exists": true,
+        "sha256": "4ae6b20e7280df254cdb0afb7c46a34d85160575292018f0a93750313f53a14d"
+      },
+      {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_ROAD_OL3D_sheet_v001.png",
+        "exists": true,
+        "sha256": "0bdc2e269136c289554a57e6076694dfc59a18d3f05e1c7b3ad9c6f8ceb83c35"
+      },
+      {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_GROUND_OL3D_sheet_v001.png",
+        "exists": true,
+        "sha256": "660fb196914efe3e2fceff5a677c940673ffa4844489560638cb237298e5581b"
+      },
+      {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_RIFLE_OL3D_turn_v001.png",
+        "exists": true,
+        "sha256": "9e0b58c584dad6ba8a9f5dcc13589fda6e903ca82ce4bfa4fc7cb5fcec4da67a"
+      },
+      {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SHIELD_OL3D_turn_v001.png",
+        "exists": true,
+        "sha256": "0d9f5b7325665f21e32be71063d834e958fe6cb1cfe90667374183c24dea0382"
+      },
+      {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SNIPER_OL3D_turn_v001.png",
+        "exists": true,
+        "sha256": "67a9ba0cc4a93f0941f83f559cc27509036ea0af877006845976b77a555713c6"
+      },
+      {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_CORE_OL3D_turn_v001.png",
+        "exists": true,
+        "sha256": "133a254dfab836265ba0f35c9a24f8a8c7afdd7f26e08c4325a20134b3efc943"
+      },
+      {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_ARTILLERY_OL3D_turn_v001.png",
+        "exists": true,
+        "sha256": "436236362d286ad3590d7484d9b43580098f3f3d67fe149316b208cdf24a42f4"
+      },
+      {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_COMBAT_OL3D_atlas_v001.png",
+        "exists": true,
+        "sha256": "a3ce69dbe7b37b721931049422fe8a4742041197d9d3bb35be1534db8f92212f"
+      },
+      {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_SKILL_OL3D_atlas_v001.png",
+        "exists": true,
+        "sha256": "75d333d5dfa7122299a3f35f11fccdedb131b07948904a62ad080caa220a971b"
+      },
+      {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_RESULT_OL3D_atlas_v001.png",
+        "exists": true,
+        "sha256": "bfbdfff60866c380deeaa0c3755614bb525df0f5a7282c60d9e9d3687adc8bd2"
+      }
+    ],
+    "cross_version_media_allowed": false
+  },
+  "task_count": 11,
+  "target_duration_sec": 44.0,
+  "tasks": [
+    {
+      "task_id": "V007-R01",
+      "sequence_index": 1,
+      "duration_sec": 4.0,
+      "mode": "I2V",
+      "aspect_ratio": "9:16",
+      "resolution": "720x1280",
+      "quality": "720p",
+      "generate_audio": true,
+      "external_tts_blocked": true,
+      "reference_video": null,
+      "start_frame": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V007\\img2\\V007-R01.png",
+        "sha256": "28a7db1791e8ee7d762c9032489776a5627b45ce60d51a59aa4a341b3a0d3cb1",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "end_frame": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V007\\img2\\V007-R02.png",
+        "sha256": "171cc8f8d9635aff1e0d5789848dea65b46ff38d6b33766441050cd55954b031",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "source_asset_binding": [
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\backgrounds\\OL3D\\T20260812-144226_BG_AUTUMNCAMP_OL3D_master_v001.png",
+          "exists": true,
+          "sha256": "4ae6b20e7280df254cdb0afb7c46a34d85160575292018f0a93750313f53a14d"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_ROAD_OL3D_sheet_v001.png",
+          "exists": true,
+          "sha256": "0bdc2e269136c289554a57e6076694dfc59a18d3f05e1c7b3ad9c6f8ceb83c35"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_GROUND_OL3D_sheet_v001.png",
+          "exists": true,
+          "sha256": "660fb196914efe3e2fceff5a677c940673ffa4844489560638cb237298e5581b"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_RIFLE_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "9e0b58c584dad6ba8a9f5dcc13589fda6e903ca82ce4bfa4fc7cb5fcec4da67a"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SHIELD_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "0d9f5b7325665f21e32be71063d834e958fe6cb1cfe90667374183c24dea0382"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SNIPER_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "67a9ba0cc4a93f0941f83f559cc27509036ea0af877006845976b77a555713c6"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_CORE_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "133a254dfab836265ba0f35c9a24f8a8c7afdd7f26e08c4325a20134b3efc943"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_ARTILLERY_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "436236362d286ad3590d7484d9b43580098f3f3d67fe149316b208cdf24a42f4"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_COMBAT_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "a3ce69dbe7b37b721931049422fe8a4742041197d9d3bb35be1534db8f92212f"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_SKILL_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "75d333d5dfa7122299a3f35f11fccdedb131b07948904a62ad080caa220a971b"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_RESULT_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "bfbdfff60866c380deeaa0c3755614bb525df0f5a7282c60d9e9d3687adc8bd2"
+        }
+      ],
+      "prompt": "Generate one continuous 4.0-second I2V gameplay shot from the supplied accepted endpoint frames. Use the autumn OL3D assets as the identity and environment authority. Keep a close-range oblique top-down view of one small playable local board: the entrance stays near the top, the core stays near the bottom, and the active lane, target ring, units, facility and immediate feedback remain large enough to read. The viewer must see a tactile mini-game operation, not a zoomed-out SLG map. Animate at most one clear player input and exactly one immediate mechanical feedback, then hold the result. The first frame must match the supplied accepted start frame exactly; the last frame must match the supplied accepted end frame and become the next task's start state. Preserve unit coordinates, facility state, damage or cracks, target-ring color and shape, and abstract resource color blocks unless this shot explicitly changes one. Keep character identity, terrain geometry, camera scale and lighting stable. No readable words, numbers, labels, buttons, health bars, subtitles, logos, watermarks, phone UI, reference_video input, identity transfer from video, motion transfer from video, distant overview, aerial view, zoom-out, tiny subjects, board reset, identity drift, cross-version assets, horizontal banding, scanlines or glitch. Audio generation is enabled for the container, but external TTS is blocked: do not invent narration, dialogue or a voice identity. Variant V007: Fire-seed route revelation. Narrative route: Light the entrance, middle route, and core fire seeds one at a time; each revealed local lane changes the playable choice, and the ending holds all three stable rather than using a single explosion. This shot is beat 1 of 11, 'Read the dark route'. Input rule: No player input; let the established board state breathe. State continuity: begin from the accepted opening state; end on Read the dark route as the only planned state change. Bind start to accepted V007-R01 and end to accepted V007-R02; do not synthesize a replacement frame. Use only this version's listed asset binding.",
+      "execution": {
+        "upload": false,
+        "submit": false,
+        "generate": false,
+        "monitor": false,
+        "pull_back": false
+      }
+    },
+    {
+      "task_id": "V007-R02",
+      "sequence_index": 2,
+      "duration_sec": 4.0,
+      "mode": "I2V",
+      "aspect_ratio": "9:16",
+      "resolution": "720x1280",
+      "quality": "720p",
+      "generate_audio": true,
+      "external_tts_blocked": true,
+      "reference_video": null,
+      "start_frame": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V007\\img2\\V007-R02.png",
+        "sha256": "171cc8f8d9635aff1e0d5789848dea65b46ff38d6b33766441050cd55954b031",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "end_frame": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V007\\img2\\V007-R03.png",
+        "sha256": "8f7ead2caec83ad3ed7147c2ce12acb3d75aaf5117aaa6db444fad7788744b86",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "source_asset_binding": [
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\backgrounds\\OL3D\\T20260812-144226_BG_AUTUMNCAMP_OL3D_master_v001.png",
+          "exists": true,
+          "sha256": "4ae6b20e7280df254cdb0afb7c46a34d85160575292018f0a93750313f53a14d"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_ROAD_OL3D_sheet_v001.png",
+          "exists": true,
+          "sha256": "0bdc2e269136c289554a57e6076694dfc59a18d3f05e1c7b3ad9c6f8ceb83c35"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_GROUND_OL3D_sheet_v001.png",
+          "exists": true,
+          "sha256": "660fb196914efe3e2fceff5a677c940673ffa4844489560638cb237298e5581b"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_RIFLE_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "9e0b58c584dad6ba8a9f5dcc13589fda6e903ca82ce4bfa4fc7cb5fcec4da67a"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SHIELD_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "0d9f5b7325665f21e32be71063d834e958fe6cb1cfe90667374183c24dea0382"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SNIPER_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "67a9ba0cc4a93f0941f83f559cc27509036ea0af877006845976b77a555713c6"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_CORE_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "133a254dfab836265ba0f35c9a24f8a8c7afdd7f26e08c4325a20134b3efc943"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_ARTILLERY_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "436236362d286ad3590d7484d9b43580098f3f3d67fe149316b208cdf24a42f4"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_COMBAT_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "a3ce69dbe7b37b721931049422fe8a4742041197d9d3bb35be1534db8f92212f"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_SKILL_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "75d333d5dfa7122299a3f35f11fccdedb131b07948904a62ad080caa220a971b"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_RESULT_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "bfbdfff60866c380deeaa0c3755614bb525df0f5a7282c60d9e9d3687adc8bd2"
+        }
+      ],
+      "prompt": "Generate one continuous 4.0-second I2V gameplay shot from the supplied accepted endpoint frames. Use the autumn OL3D assets as the identity and environment authority. Keep a close-range oblique top-down view of one small playable local board: the entrance stays near the top, the core stays near the bottom, and the active lane, target ring, units, facility and immediate feedback remain large enough to read. The viewer must see a tactile mini-game operation, not a zoomed-out SLG map. Animate at most one clear player input and exactly one immediate mechanical feedback, then hold the result. The first frame must match the supplied accepted start frame exactly; the last frame must match the supplied accepted end frame and become the next task's start state. Preserve unit coordinates, facility state, damage or cracks, target-ring color and shape, and abstract resource color blocks unless this shot explicitly changes one. Keep character identity, terrain geometry, camera scale and lighting stable. No readable words, numbers, labels, buttons, health bars, subtitles, logos, watermarks, phone UI, reference_video input, identity transfer from video, motion transfer from video, distant overview, aerial view, zoom-out, tiny subjects, board reset, identity drift, cross-version assets, horizontal banding, scanlines or glitch. Audio generation is enabled for the container, but external TTS is blocked: do not invent narration, dialogue or a voice identity. Variant V007: Fire-seed route revelation. Narrative route: Light the entrance, middle route, and core fire seeds one at a time; each revealed local lane changes the playable choice, and the ending holds all three stable rather than using a single explosion. This shot is beat 2 of 11, 'Light the entrance seed'. Input rule: No player input; let the established board state breathe. State continuity: begin from the accepted end state of V007-R01; end on Light the entrance seed as the only planned state change. Bind start to accepted V007-R02 and end to accepted V007-R03; do not synthesize a replacement frame. Use only this version's listed asset binding.",
+      "execution": {
+        "upload": false,
+        "submit": false,
+        "generate": false,
+        "monitor": false,
+        "pull_back": false
+      }
+    },
+    {
+      "task_id": "V007-R03",
+      "sequence_index": 3,
+      "duration_sec": 4.0,
+      "mode": "I2V",
+      "aspect_ratio": "9:16",
+      "resolution": "720x1280",
+      "quality": "720p",
+      "generate_audio": true,
+      "external_tts_blocked": true,
+      "reference_video": null,
+      "start_frame": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V007\\img2\\V007-R03.png",
+        "sha256": "8f7ead2caec83ad3ed7147c2ce12acb3d75aaf5117aaa6db444fad7788744b86",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "end_frame": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V007\\img2\\V007-R04.png",
+        "sha256": "07c06fffeb8f21b04bd5c3f1e1cebceb6cbbc6c5e7a3a149cf921faa8b79583c",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "source_asset_binding": [
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\backgrounds\\OL3D\\T20260812-144226_BG_AUTUMNCAMP_OL3D_master_v001.png",
+          "exists": true,
+          "sha256": "4ae6b20e7280df254cdb0afb7c46a34d85160575292018f0a93750313f53a14d"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_ROAD_OL3D_sheet_v001.png",
+          "exists": true,
+          "sha256": "0bdc2e269136c289554a57e6076694dfc59a18d3f05e1c7b3ad9c6f8ceb83c35"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_GROUND_OL3D_sheet_v001.png",
+          "exists": true,
+          "sha256": "660fb196914efe3e2fceff5a677c940673ffa4844489560638cb237298e5581b"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_RIFLE_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "9e0b58c584dad6ba8a9f5dcc13589fda6e903ca82ce4bfa4fc7cb5fcec4da67a"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SHIELD_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "0d9f5b7325665f21e32be71063d834e958fe6cb1cfe90667374183c24dea0382"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SNIPER_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "67a9ba0cc4a93f0941f83f559cc27509036ea0af877006845976b77a555713c6"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_CORE_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "133a254dfab836265ba0f35c9a24f8a8c7afdd7f26e08c4325a20134b3efc943"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_ARTILLERY_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "436236362d286ad3590d7484d9b43580098f3f3d67fe149316b208cdf24a42f4"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_COMBAT_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "a3ce69dbe7b37b721931049422fe8a4742041197d9d3bb35be1534db8f92212f"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_SKILL_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "75d333d5dfa7122299a3f35f11fccdedb131b07948904a62ad080caa220a971b"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_RESULT_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "bfbdfff60866c380deeaa0c3755614bb525df0f5a7282c60d9e9d3687adc8bd2"
+        }
+      ],
+      "prompt": "Generate one continuous 4.0-second I2V gameplay shot from the supplied accepted endpoint frames. Use the autumn OL3D assets as the identity and environment authority. Keep a close-range oblique top-down view of one small playable local board: the entrance stays near the top, the core stays near the bottom, and the active lane, target ring, units, facility and immediate feedback remain large enough to read. The viewer must see a tactile mini-game operation, not a zoomed-out SLG map. Animate at most one clear player input and exactly one immediate mechanical feedback, then hold the result. The first frame must match the supplied accepted start frame exactly; the last frame must match the supplied accepted end frame and become the next task's start state. Preserve unit coordinates, facility state, damage or cracks, target-ring color and shape, and abstract resource color blocks unless this shot explicitly changes one. Keep character identity, terrain geometry, camera scale and lighting stable. No readable words, numbers, labels, buttons, health bars, subtitles, logos, watermarks, phone UI, reference_video input, identity transfer from video, motion transfer from video, distant overview, aerial view, zoom-out, tiny subjects, board reset, identity drift, cross-version assets, horizontal banding, scanlines or glitch. Audio generation is enabled for the container, but external TTS is blocked: do not invent narration, dialogue or a voice identity. Variant V007: Fire-seed route revelation. Narrative route: Light the entrance, middle route, and core fire seeds one at a time; each revealed local lane changes the playable choice, and the ending holds all three stable rather than using a single explosion. This shot is beat 3 of 11, 'First lane appears'. Input rule: One tap or short drag on the single named target only; no second input. State continuity: begin from the accepted end state of V007-R02; end on First lane appears as the only planned state change. Bind start to accepted V007-R03 and end to accepted V007-R04; do not synthesize a replacement frame. Use only this version's listed asset binding.",
+      "execution": {
+        "upload": false,
+        "submit": false,
+        "generate": false,
+        "monitor": false,
+        "pull_back": false
+      }
+    },
+    {
+      "task_id": "V007-R04",
+      "sequence_index": 4,
+      "duration_sec": 4.0,
+      "mode": "I2V",
+      "aspect_ratio": "9:16",
+      "resolution": "720x1280",
+      "quality": "720p",
+      "generate_audio": true,
+      "external_tts_blocked": true,
+      "reference_video": null,
+      "start_frame": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V007\\img2\\V007-R04.png",
+        "sha256": "07c06fffeb8f21b04bd5c3f1e1cebceb6cbbc6c5e7a3a149cf921faa8b79583c",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "end_frame": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V007\\img2\\V007-R05.png",
+        "sha256": "e5e3541ebdae78cbcb3e241317c55ee9eae9becf3a4ef6846c85ba5d8874d819",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "source_asset_binding": [
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\backgrounds\\OL3D\\T20260812-144226_BG_AUTUMNCAMP_OL3D_master_v001.png",
+          "exists": true,
+          "sha256": "4ae6b20e7280df254cdb0afb7c46a34d85160575292018f0a93750313f53a14d"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_ROAD_OL3D_sheet_v001.png",
+          "exists": true,
+          "sha256": "0bdc2e269136c289554a57e6076694dfc59a18d3f05e1c7b3ad9c6f8ceb83c35"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_GROUND_OL3D_sheet_v001.png",
+          "exists": true,
+          "sha256": "660fb196914efe3e2fceff5a677c940673ffa4844489560638cb237298e5581b"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_RIFLE_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "9e0b58c584dad6ba8a9f5dcc13589fda6e903ca82ce4bfa4fc7cb5fcec4da67a"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SHIELD_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "0d9f5b7325665f21e32be71063d834e958fe6cb1cfe90667374183c24dea0382"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SNIPER_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "67a9ba0cc4a93f0941f83f559cc27509036ea0af877006845976b77a555713c6"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_CORE_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "133a254dfab836265ba0f35c9a24f8a8c7afdd7f26e08c4325a20134b3efc943"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_ARTILLERY_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "436236362d286ad3590d7484d9b43580098f3f3d67fe149316b208cdf24a42f4"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_COMBAT_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "a3ce69dbe7b37b721931049422fe8a4742041197d9d3bb35be1534db8f92212f"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_SKILL_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "75d333d5dfa7122299a3f35f11fccdedb131b07948904a62ad080caa220a971b"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_RESULT_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "bfbdfff60866c380deeaa0c3755614bb525df0f5a7282c60d9e9d3687adc8bd2"
+        }
+      ],
+      "prompt": "Generate one continuous 4.0-second I2V gameplay shot from the supplied accepted endpoint frames. Use the autumn OL3D assets as the identity and environment authority. Keep a close-range oblique top-down view of one small playable local board: the entrance stays near the top, the core stays near the bottom, and the active lane, target ring, units, facility and immediate feedback remain large enough to read. The viewer must see a tactile mini-game operation, not a zoomed-out SLG map. Animate at most one clear player input and exactly one immediate mechanical feedback, then hold the result. The first frame must match the supplied accepted start frame exactly; the last frame must match the supplied accepted end frame and become the next task's start state. Preserve unit coordinates, facility state, damage or cracks, target-ring color and shape, and abstract resource color blocks unless this shot explicitly changes one. Keep character identity, terrain geometry, camera scale and lighting stable. No readable words, numbers, labels, buttons, health bars, subtitles, logos, watermarks, phone UI, reference_video input, identity transfer from video, motion transfer from video, distant overview, aerial view, zoom-out, tiny subjects, board reset, identity drift, cross-version assets, horizontal banding, scanlines or glitch. Audio generation is enabled for the container, but external TTS is blocked: do not invent narration, dialogue or a voice identity. Variant V007: Fire-seed route revelation. Narrative route: Light the entrance, middle route, and core fire seeds one at a time; each revealed local lane changes the playable choice, and the ending holds all three stable rather than using a single explosion. This shot is beat 4 of 11, 'Light the middle seed'. Input rule: No player input; let the established board state breathe. State continuity: begin from the accepted end state of V007-R03; end on Light the middle seed as the only planned state change. Bind start to accepted V007-R04 and end to accepted V007-R05; do not synthesize a replacement frame. Use only this version's listed asset binding.",
+      "execution": {
+        "upload": false,
+        "submit": false,
+        "generate": false,
+        "monitor": false,
+        "pull_back": false
+      }
+    },
+    {
+      "task_id": "V007-R05",
+      "sequence_index": 5,
+      "duration_sec": 4.0,
+      "mode": "I2V",
+      "aspect_ratio": "9:16",
+      "resolution": "720x1280",
+      "quality": "720p",
+      "generate_audio": true,
+      "external_tts_blocked": true,
+      "reference_video": null,
+      "start_frame": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V007\\img2\\V007-R05.png",
+        "sha256": "e5e3541ebdae78cbcb3e241317c55ee9eae9becf3a4ef6846c85ba5d8874d819",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "end_frame": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V007\\img2\\V007-R06.png",
+        "sha256": "8f42ddc8fd718a8d6f145840be4e1261def47524fff2e80930af7f69384617f6",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "source_asset_binding": [
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\backgrounds\\OL3D\\T20260812-144226_BG_AUTUMNCAMP_OL3D_master_v001.png",
+          "exists": true,
+          "sha256": "4ae6b20e7280df254cdb0afb7c46a34d85160575292018f0a93750313f53a14d"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_ROAD_OL3D_sheet_v001.png",
+          "exists": true,
+          "sha256": "0bdc2e269136c289554a57e6076694dfc59a18d3f05e1c7b3ad9c6f8ceb83c35"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_GROUND_OL3D_sheet_v001.png",
+          "exists": true,
+          "sha256": "660fb196914efe3e2fceff5a677c940673ffa4844489560638cb237298e5581b"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_RIFLE_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "9e0b58c584dad6ba8a9f5dcc13589fda6e903ca82ce4bfa4fc7cb5fcec4da67a"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SHIELD_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "0d9f5b7325665f21e32be71063d834e958fe6cb1cfe90667374183c24dea0382"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SNIPER_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "67a9ba0cc4a93f0941f83f559cc27509036ea0af877006845976b77a555713c6"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_CORE_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "133a254dfab836265ba0f35c9a24f8a8c7afdd7f26e08c4325a20134b3efc943"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_ARTILLERY_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "436236362d286ad3590d7484d9b43580098f3f3d67fe149316b208cdf24a42f4"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_COMBAT_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "a3ce69dbe7b37b721931049422fe8a4742041197d9d3bb35be1534db8f92212f"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_SKILL_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "75d333d5dfa7122299a3f35f11fccdedb131b07948904a62ad080caa220a971b"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_RESULT_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "bfbdfff60866c380deeaa0c3755614bb525df0f5a7282c60d9e9d3687adc8bd2"
+        }
+      ],
+      "prompt": "Generate one continuous 4.0-second I2V gameplay shot from the supplied accepted endpoint frames. Use the autumn OL3D assets as the identity and environment authority. Keep a close-range oblique top-down view of one small playable local board: the entrance stays near the top, the core stays near the bottom, and the active lane, target ring, units, facility and immediate feedback remain large enough to read. The viewer must see a tactile mini-game operation, not a zoomed-out SLG map. Animate at most one clear player input and exactly one immediate mechanical feedback, then hold the result. The first frame must match the supplied accepted start frame exactly; the last frame must match the supplied accepted end frame and become the next task's start state. Preserve unit coordinates, facility state, damage or cracks, target-ring color and shape, and abstract resource color blocks unless this shot explicitly changes one. Keep character identity, terrain geometry, camera scale and lighting stable. No readable words, numbers, labels, buttons, health bars, subtitles, logos, watermarks, phone UI, reference_video input, identity transfer from video, motion transfer from video, distant overview, aerial view, zoom-out, tiny subjects, board reset, identity drift, cross-version assets, horizontal banding, scanlines or glitch. Audio generation is enabled for the container, but external TTS is blocked: do not invent narration, dialogue or a voice identity. Variant V007: Fire-seed route revelation. Narrative route: Light the entrance, middle route, and core fire seeds one at a time; each revealed local lane changes the playable choice, and the ending holds all three stable rather than using a single explosion. This shot is beat 5 of 11, 'Enemy enters the dark corner'. Input rule: One tap or short drag on the single named target only; no second input. State continuity: begin from the accepted end state of V007-R04; end on Enemy enters the dark corner as the only planned state change. Bind start to accepted V007-R05 and end to accepted V007-R06; do not synthesize a replacement frame. Use only this version's listed asset binding.",
+      "execution": {
+        "upload": false,
+        "submit": false,
+        "generate": false,
+        "monitor": false,
+        "pull_back": false
+      }
+    },
+    {
+      "task_id": "V007-R06",
+      "sequence_index": 6,
+      "duration_sec": 4.0,
+      "mode": "I2V",
+      "aspect_ratio": "9:16",
+      "resolution": "720x1280",
+      "quality": "720p",
+      "generate_audio": true,
+      "external_tts_blocked": true,
+      "reference_video": null,
+      "start_frame": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V007\\img2\\V007-R06.png",
+        "sha256": "8f42ddc8fd718a8d6f145840be4e1261def47524fff2e80930af7f69384617f6",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "end_frame": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V007\\img2\\V007-R07.png",
+        "sha256": "f00f7b2be75122292c533230eed4e081ef9140dcb1c9823e0f66ec6ae2c78f05",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "source_asset_binding": [
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\backgrounds\\OL3D\\T20260812-144226_BG_AUTUMNCAMP_OL3D_master_v001.png",
+          "exists": true,
+          "sha256": "4ae6b20e7280df254cdb0afb7c46a34d85160575292018f0a93750313f53a14d"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_ROAD_OL3D_sheet_v001.png",
+          "exists": true,
+          "sha256": "0bdc2e269136c289554a57e6076694dfc59a18d3f05e1c7b3ad9c6f8ceb83c35"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_GROUND_OL3D_sheet_v001.png",
+          "exists": true,
+          "sha256": "660fb196914efe3e2fceff5a677c940673ffa4844489560638cb237298e5581b"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_RIFLE_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "9e0b58c584dad6ba8a9f5dcc13589fda6e903ca82ce4bfa4fc7cb5fcec4da67a"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SHIELD_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "0d9f5b7325665f21e32be71063d834e958fe6cb1cfe90667374183c24dea0382"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SNIPER_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "67a9ba0cc4a93f0941f83f559cc27509036ea0af877006845976b77a555713c6"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_CORE_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "133a254dfab836265ba0f35c9a24f8a8c7afdd7f26e08c4325a20134b3efc943"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_ARTILLERY_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "436236362d286ad3590d7484d9b43580098f3f3d67fe149316b208cdf24a42f4"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_COMBAT_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "a3ce69dbe7b37b721931049422fe8a4742041197d9d3bb35be1534db8f92212f"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_SKILL_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "75d333d5dfa7122299a3f35f11fccdedb131b07948904a62ad080caa220a971b"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_RESULT_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "bfbdfff60866c380deeaa0c3755614bb525df0f5a7282c60d9e9d3687adc8bd2"
+        }
+      ],
+      "prompt": "Generate one continuous 4.0-second I2V gameplay shot from the supplied accepted endpoint frames. Use the autumn OL3D assets as the identity and environment authority. Keep a close-range oblique top-down view of one small playable local board: the entrance stays near the top, the core stays near the bottom, and the active lane, target ring, units, facility and immediate feedback remain large enough to read. The viewer must see a tactile mini-game operation, not a zoomed-out SLG map. Animate at most one clear player input and exactly one immediate mechanical feedback, then hold the result. The first frame must match the supplied accepted start frame exactly; the last frame must match the supplied accepted end frame and become the next task's start state. Preserve unit coordinates, facility state, damage or cracks, target-ring color and shape, and abstract resource color blocks unless this shot explicitly changes one. Keep character identity, terrain geometry, camera scale and lighting stable. No readable words, numbers, labels, buttons, health bars, subtitles, logos, watermarks, phone UI, reference_video input, identity transfer from video, motion transfer from video, distant overview, aerial view, zoom-out, tiny subjects, board reset, identity drift, cross-version assets, horizontal banding, scanlines or glitch. Audio generation is enabled for the container, but external TTS is blocked: do not invent narration, dialogue or a voice identity. Variant V007: Fire-seed route revelation. Narrative route: Light the entrance, middle route, and core fire seeds one at a time; each revealed local lane changes the playable choice, and the ending holds all three stable rather than using a single explosion. This shot is beat 6 of 11, 'Sniper lights the lane'. Input rule: No player input; let the established board state breathe. State continuity: begin from the accepted end state of V007-R05; end on Sniper lights the lane as the only planned state change. Bind start to accepted V007-R06 and end to accepted V007-R07; do not synthesize a replacement frame. Use only this version's listed asset binding.",
+      "execution": {
+        "upload": false,
+        "submit": false,
+        "generate": false,
+        "monitor": false,
+        "pull_back": false
+      }
+    },
+    {
+      "task_id": "V007-R07",
+      "sequence_index": 7,
+      "duration_sec": 4.0,
+      "mode": "I2V",
+      "aspect_ratio": "9:16",
+      "resolution": "720x1280",
+      "quality": "720p",
+      "generate_audio": true,
+      "external_tts_blocked": true,
+      "reference_video": null,
+      "start_frame": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V007\\img2\\V007-R07.png",
+        "sha256": "f00f7b2be75122292c533230eed4e081ef9140dcb1c9823e0f66ec6ae2c78f05",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "end_frame": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V007\\img2\\V007-R08.png",
+        "sha256": "914d2f874331b3658319fd660c98bf2348adfe4c4f6de886e1efb15bf477def6",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "source_asset_binding": [
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\backgrounds\\OL3D\\T20260812-144226_BG_AUTUMNCAMP_OL3D_master_v001.png",
+          "exists": true,
+          "sha256": "4ae6b20e7280df254cdb0afb7c46a34d85160575292018f0a93750313f53a14d"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_ROAD_OL3D_sheet_v001.png",
+          "exists": true,
+          "sha256": "0bdc2e269136c289554a57e6076694dfc59a18d3f05e1c7b3ad9c6f8ceb83c35"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_GROUND_OL3D_sheet_v001.png",
+          "exists": true,
+          "sha256": "660fb196914efe3e2fceff5a677c940673ffa4844489560638cb237298e5581b"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_RIFLE_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "9e0b58c584dad6ba8a9f5dcc13589fda6e903ca82ce4bfa4fc7cb5fcec4da67a"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SHIELD_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "0d9f5b7325665f21e32be71063d834e958fe6cb1cfe90667374183c24dea0382"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SNIPER_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "67a9ba0cc4a93f0941f83f559cc27509036ea0af877006845976b77a555713c6"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_CORE_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "133a254dfab836265ba0f35c9a24f8a8c7afdd7f26e08c4325a20134b3efc943"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_ARTILLERY_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "436236362d286ad3590d7484d9b43580098f3f3d67fe149316b208cdf24a42f4"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_COMBAT_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "a3ce69dbe7b37b721931049422fe8a4742041197d9d3bb35be1534db8f92212f"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_SKILL_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "75d333d5dfa7122299a3f35f11fccdedb131b07948904a62ad080caa220a971b"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_RESULT_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "bfbdfff60866c380deeaa0c3755614bb525df0f5a7282c60d9e9d3687adc8bd2"
+        }
+      ],
+      "prompt": "Generate one continuous 4.0-second I2V gameplay shot from the supplied accepted endpoint frames. Use the autumn OL3D assets as the identity and environment authority. Keep a close-range oblique top-down view of one small playable local board: the entrance stays near the top, the core stays near the bottom, and the active lane, target ring, units, facility and immediate feedback remain large enough to read. The viewer must see a tactile mini-game operation, not a zoomed-out SLG map. Animate at most one clear player input and exactly one immediate mechanical feedback, then hold the result. The first frame must match the supplied accepted start frame exactly; the last frame must match the supplied accepted end frame and become the next task's start state. Preserve unit coordinates, facility state, damage or cracks, target-ring color and shape, and abstract resource color blocks unless this shot explicitly changes one. Keep character identity, terrain geometry, camera scale and lighting stable. No readable words, numbers, labels, buttons, health bars, subtitles, logos, watermarks, phone UI, reference_video input, identity transfer from video, motion transfer from video, distant overview, aerial view, zoom-out, tiny subjects, board reset, identity drift, cross-version assets, horizontal banding, scanlines or glitch. Audio generation is enabled for the container, but external TTS is blocked: do not invent narration, dialogue or a voice identity. Variant V007: Fire-seed route revelation. Narrative route: Light the entrance, middle route, and core fire seeds one at a time; each revealed local lane changes the playable choice, and the ending holds all three stable rather than using a single explosion. This shot is beat 7 of 11, 'Core seed relay'. Input rule: One tap or short drag on the single named target only; no second input. State continuity: begin from the accepted end state of V007-R06; end on Core seed relay as the only planned state change. Bind start to accepted V007-R07 and end to accepted V007-R08; do not synthesize a replacement frame. Use only this version's listed asset binding.",
+      "execution": {
+        "upload": false,
+        "submit": false,
+        "generate": false,
+        "monitor": false,
+        "pull_back": false
+      }
+    },
+    {
+      "task_id": "V007-R08",
+      "sequence_index": 8,
+      "duration_sec": 4.0,
+      "mode": "I2V",
+      "aspect_ratio": "9:16",
+      "resolution": "720x1280",
+      "quality": "720p",
+      "generate_audio": true,
+      "external_tts_blocked": true,
+      "reference_video": null,
+      "start_frame": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V007\\img2\\V007-R08.png",
+        "sha256": "914d2f874331b3658319fd660c98bf2348adfe4c4f6de886e1efb15bf477def6",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "end_frame": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V007\\img2\\V007-R09.png",
+        "sha256": "a736c03b9072d3c0a2b974afac17b2a13c3a1dfcb997e239c564717a29992ee6",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "source_asset_binding": [
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\backgrounds\\OL3D\\T20260812-144226_BG_AUTUMNCAMP_OL3D_master_v001.png",
+          "exists": true,
+          "sha256": "4ae6b20e7280df254cdb0afb7c46a34d85160575292018f0a93750313f53a14d"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_ROAD_OL3D_sheet_v001.png",
+          "exists": true,
+          "sha256": "0bdc2e269136c289554a57e6076694dfc59a18d3f05e1c7b3ad9c6f8ceb83c35"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_GROUND_OL3D_sheet_v001.png",
+          "exists": true,
+          "sha256": "660fb196914efe3e2fceff5a677c940673ffa4844489560638cb237298e5581b"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_RIFLE_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "9e0b58c584dad6ba8a9f5dcc13589fda6e903ca82ce4bfa4fc7cb5fcec4da67a"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SHIELD_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "0d9f5b7325665f21e32be71063d834e958fe6cb1cfe90667374183c24dea0382"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SNIPER_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "67a9ba0cc4a93f0941f83f559cc27509036ea0af877006845976b77a555713c6"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_CORE_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "133a254dfab836265ba0f35c9a24f8a8c7afdd7f26e08c4325a20134b3efc943"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_ARTILLERY_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "436236362d286ad3590d7484d9b43580098f3f3d67fe149316b208cdf24a42f4"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_COMBAT_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "a3ce69dbe7b37b721931049422fe8a4742041197d9d3bb35be1534db8f92212f"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_SKILL_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "75d333d5dfa7122299a3f35f11fccdedb131b07948904a62ad080caa220a971b"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_RESULT_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "bfbdfff60866c380deeaa0c3755614bb525df0f5a7282c60d9e9d3687adc8bd2"
+        }
+      ],
+      "prompt": "Generate one continuous 4.0-second I2V gameplay shot from the supplied accepted endpoint frames. Use the autumn OL3D assets as the identity and environment authority. Keep a close-range oblique top-down view of one small playable local board: the entrance stays near the top, the core stays near the bottom, and the active lane, target ring, units, facility and immediate feedback remain large enough to read. The viewer must see a tactile mini-game operation, not a zoomed-out SLG map. Animate at most one clear player input and exactly one immediate mechanical feedback, then hold the result. The first frame must match the supplied accepted start frame exactly; the last frame must match the supplied accepted end frame and become the next task's start state. Preserve unit coordinates, facility state, damage or cracks, target-ring color and shape, and abstract resource color blocks unless this shot explicitly changes one. Keep character identity, terrain geometry, camera scale and lighting stable. No readable words, numbers, labels, buttons, health bars, subtitles, logos, watermarks, phone UI, reference_video input, identity transfer from video, motion transfer from video, distant overview, aerial view, zoom-out, tiny subjects, board reset, identity drift, cross-version assets, horizontal banding, scanlines or glitch. Audio generation is enabled for the container, but external TTS is blocked: do not invent narration, dialogue or a voice identity. Variant V007: Fire-seed route revelation. Narrative route: Light the entrance, middle route, and core fire seeds one at a time; each revealed local lane changes the playable choice, and the ending holds all three stable rather than using a single explosion. This shot is beat 8 of 11, 'Turret lights and clears'. Input rule: No player input; let the established board state breathe. State continuity: begin from the accepted end state of V007-R07; end on Turret lights and clears as the only planned state change. Bind start to accepted V007-R08 and end to accepted V007-R09; do not synthesize a replacement frame. Use only this version's listed asset binding.",
+      "execution": {
+        "upload": false,
+        "submit": false,
+        "generate": false,
+        "monitor": false,
+        "pull_back": false
+      }
+    },
+    {
+      "task_id": "V007-R09",
+      "sequence_index": 9,
+      "duration_sec": 4.0,
+      "mode": "I2V",
+      "aspect_ratio": "9:16",
+      "resolution": "720x1280",
+      "quality": "720p",
+      "generate_audio": true,
+      "external_tts_blocked": true,
+      "reference_video": null,
+      "start_frame": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V007\\img2\\V007-R09.png",
+        "sha256": "a736c03b9072d3c0a2b974afac17b2a13c3a1dfcb997e239c564717a29992ee6",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "end_frame": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V007\\img2\\V007-R10.png",
+        "sha256": "c009a1e6559fbeeae87d907cc02167d94f08cf517d992f0c122d6a5e507eae92",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "source_asset_binding": [
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\backgrounds\\OL3D\\T20260812-144226_BG_AUTUMNCAMP_OL3D_master_v001.png",
+          "exists": true,
+          "sha256": "4ae6b20e7280df254cdb0afb7c46a34d85160575292018f0a93750313f53a14d"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_ROAD_OL3D_sheet_v001.png",
+          "exists": true,
+          "sha256": "0bdc2e269136c289554a57e6076694dfc59a18d3f05e1c7b3ad9c6f8ceb83c35"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_GROUND_OL3D_sheet_v001.png",
+          "exists": true,
+          "sha256": "660fb196914efe3e2fceff5a677c940673ffa4844489560638cb237298e5581b"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_RIFLE_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "9e0b58c584dad6ba8a9f5dcc13589fda6e903ca82ce4bfa4fc7cb5fcec4da67a"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SHIELD_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "0d9f5b7325665f21e32be71063d834e958fe6cb1cfe90667374183c24dea0382"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SNIPER_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "67a9ba0cc4a93f0941f83f559cc27509036ea0af877006845976b77a555713c6"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_CORE_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "133a254dfab836265ba0f35c9a24f8a8c7afdd7f26e08c4325a20134b3efc943"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_ARTILLERY_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "436236362d286ad3590d7484d9b43580098f3f3d67fe149316b208cdf24a42f4"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_COMBAT_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "a3ce69dbe7b37b721931049422fe8a4742041197d9d3bb35be1534db8f92212f"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_SKILL_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "75d333d5dfa7122299a3f35f11fccdedb131b07948904a62ad080caa220a971b"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_RESULT_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "bfbdfff60866c380deeaa0c3755614bb525df0f5a7282c60d9e9d3687adc8bd2"
+        }
+      ],
+      "prompt": "Generate one continuous 4.0-second I2V gameplay shot from the supplied accepted endpoint frames. Use the autumn OL3D assets as the identity and environment authority. Keep a close-range oblique top-down view of one small playable local board: the entrance stays near the top, the core stays near the bottom, and the active lane, target ring, units, facility and immediate feedback remain large enough to read. The viewer must see a tactile mini-game operation, not a zoomed-out SLG map. Animate at most one clear player input and exactly one immediate mechanical feedback, then hold the result. The first frame must match the supplied accepted start frame exactly; the last frame must match the supplied accepted end frame and become the next task's start state. Preserve unit coordinates, facility state, damage or cracks, target-ring color and shape, and abstract resource color blocks unless this shot explicitly changes one. Keep character identity, terrain geometry, camera scale and lighting stable. No readable words, numbers, labels, buttons, health bars, subtitles, logos, watermarks, phone UI, reference_video input, identity transfer from video, motion transfer from video, distant overview, aerial view, zoom-out, tiny subjects, board reset, identity drift, cross-version assets, horizontal banding, scanlines or glitch. Audio generation is enabled for the container, but external TTS is blocked: do not invent narration, dialogue or a voice identity. Variant V007: Fire-seed route revelation. Narrative route: Light the entrance, middle route, and core fire seeds one at a time; each revealed local lane changes the playable choice, and the ending holds all three stable rather than using a single explosion. This shot is beat 9 of 11, 'All three seeds glow'. Input rule: One tap or short drag on the single named target only; no second input. State continuity: begin from the accepted end state of V007-R08; end on All three seeds glow as the only planned state change. Bind start to accepted V007-R09 and end to accepted V007-R10; do not synthesize a replacement frame. Use only this version's listed asset binding.",
+      "execution": {
+        "upload": false,
+        "submit": false,
+        "generate": false,
+        "monitor": false,
+        "pull_back": false
+      }
+    },
+    {
+      "task_id": "V007-R10",
+      "sequence_index": 10,
+      "duration_sec": 4.0,
+      "mode": "I2V",
+      "aspect_ratio": "9:16",
+      "resolution": "720x1280",
+      "quality": "720p",
+      "generate_audio": true,
+      "external_tts_blocked": true,
+      "reference_video": null,
+      "start_frame": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V007\\img2\\V007-R10.png",
+        "sha256": "c009a1e6559fbeeae87d907cc02167d94f08cf517d992f0c122d6a5e507eae92",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "end_frame": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V007\\img2\\V007-R11.png",
+        "sha256": "3c0394f2951cc1ad28317f9e9d24faedcc0424e6d8067e4350db3b3d8d11261f",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "source_asset_binding": [
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\backgrounds\\OL3D\\T20260812-144226_BG_AUTUMNCAMP_OL3D_master_v001.png",
+          "exists": true,
+          "sha256": "4ae6b20e7280df254cdb0afb7c46a34d85160575292018f0a93750313f53a14d"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_ROAD_OL3D_sheet_v001.png",
+          "exists": true,
+          "sha256": "0bdc2e269136c289554a57e6076694dfc59a18d3f05e1c7b3ad9c6f8ceb83c35"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_GROUND_OL3D_sheet_v001.png",
+          "exists": true,
+          "sha256": "660fb196914efe3e2fceff5a677c940673ffa4844489560638cb237298e5581b"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_RIFLE_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "9e0b58c584dad6ba8a9f5dcc13589fda6e903ca82ce4bfa4fc7cb5fcec4da67a"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SHIELD_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "0d9f5b7325665f21e32be71063d834e958fe6cb1cfe90667374183c24dea0382"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SNIPER_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "67a9ba0cc4a93f0941f83f559cc27509036ea0af877006845976b77a555713c6"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_CORE_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "133a254dfab836265ba0f35c9a24f8a8c7afdd7f26e08c4325a20134b3efc943"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_ARTILLERY_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "436236362d286ad3590d7484d9b43580098f3f3d67fe149316b208cdf24a42f4"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_COMBAT_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "a3ce69dbe7b37b721931049422fe8a4742041197d9d3bb35be1534db8f92212f"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_SKILL_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "75d333d5dfa7122299a3f35f11fccdedb131b07948904a62ad080caa220a971b"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_RESULT_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "bfbdfff60866c380deeaa0c3755614bb525df0f5a7282c60d9e9d3687adc8bd2"
+        }
+      ],
+      "prompt": "Generate one continuous 4.0-second I2V gameplay shot from the supplied accepted endpoint frames. Use the autumn OL3D assets as the identity and environment authority. Keep a close-range oblique top-down view of one small playable local board: the entrance stays near the top, the core stays near the bottom, and the active lane, target ring, units, facility and immediate feedback remain large enough to read. The viewer must see a tactile mini-game operation, not a zoomed-out SLG map. Animate at most one clear player input and exactly one immediate mechanical feedback, then hold the result. The first frame must match the supplied accepted start frame exactly; the last frame must match the supplied accepted end frame and become the next task's start state. Preserve unit coordinates, facility state, damage or cracks, target-ring color and shape, and abstract resource color blocks unless this shot explicitly changes one. Keep character identity, terrain geometry, camera scale and lighting stable. No readable words, numbers, labels, buttons, health bars, subtitles, logos, watermarks, phone UI, reference_video input, identity transfer from video, motion transfer from video, distant overview, aerial view, zoom-out, tiny subjects, board reset, identity drift, cross-version assets, horizontal banding, scanlines or glitch. Audio generation is enabled for the container, but external TTS is blocked: do not invent narration, dialogue or a voice identity. Variant V007: Fire-seed route revelation. Narrative route: Light the entrance, middle route, and core fire seeds one at a time; each revealed local lane changes the playable choice, and the ending holds all three stable rather than using a single explosion. This shot is beat 10 of 11, 'Core holds'. Input rule: No player input; let the established board state breathe. State continuity: begin from the accepted end state of V007-R09; end on Core holds as the only planned state change. Bind start to accepted V007-R10 and end to accepted V007-R11; do not synthesize a replacement frame. Use only this version's listed asset binding.",
+      "execution": {
+        "upload": false,
+        "submit": false,
+        "generate": false,
+        "monitor": false,
+        "pull_back": false
+      }
+    },
+    {
+      "task_id": "V007-R11",
+      "sequence_index": 11,
+      "duration_sec": 4.0,
+      "mode": "I2V",
+      "aspect_ratio": "9:16",
+      "resolution": "720x1280",
+      "quality": "720p",
+      "generate_audio": true,
+      "external_tts_blocked": true,
+      "reference_video": null,
+      "start_frame": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V007\\img2\\V007-R11.png",
+        "sha256": "3c0394f2951cc1ad28317f9e9d24faedcc0424e6d8067e4350db3b3d8d11261f",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "end_frame": {
+        "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V007\\img2\\V007-R11.png",
+        "sha256": "3c0394f2951cc1ad28317f9e9d24faedcc0424e6d8067e4350db3b3d8d11261f",
+        "exists": true,
+        "technical_pass": true,
+        "semantic_pass": true,
+        "state_machine_continuity_pass": true
+      },
+      "source_asset_binding": [
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\backgrounds\\OL3D\\T20260812-144226_BG_AUTUMNCAMP_OL3D_master_v001.png",
+          "exists": true,
+          "sha256": "4ae6b20e7280df254cdb0afb7c46a34d85160575292018f0a93750313f53a14d"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_ROAD_OL3D_sheet_v001.png",
+          "exists": true,
+          "sha256": "0bdc2e269136c289554a57e6076694dfc59a18d3f05e1c7b3ad9c6f8ceb83c35"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_GROUND_OL3D_sheet_v001.png",
+          "exists": true,
+          "sha256": "660fb196914efe3e2fceff5a677c940673ffa4844489560638cb237298e5581b"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_RIFLE_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "9e0b58c584dad6ba8a9f5dcc13589fda6e903ca82ce4bfa4fc7cb5fcec4da67a"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SHIELD_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "0d9f5b7325665f21e32be71063d834e958fe6cb1cfe90667374183c24dea0382"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SNIPER_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "67a9ba0cc4a93f0941f83f559cc27509036ea0af877006845976b77a555713c6"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_CORE_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "133a254dfab836265ba0f35c9a24f8a8c7afdd7f26e08c4325a20134b3efc943"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_ARTILLERY_OL3D_turn_v001.png",
+          "exists": true,
+          "sha256": "436236362d286ad3590d7484d9b43580098f3f3d67fe149316b208cdf24a42f4"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_COMBAT_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "a3ce69dbe7b37b721931049422fe8a4742041197d9d3bb35be1534db8f92212f"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_SKILL_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "75d333d5dfa7122299a3f35f11fccdedb131b07948904a62ad080caa220a971b"
+        },
+        {
+          "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_RESULT_OL3D_atlas_v001.png",
+          "exists": true,
+          "sha256": "bfbdfff60866c380deeaa0c3755614bb525df0f5a7282c60d9e9d3687adc8bd2"
+        }
+      ],
+      "prompt": "Generate one continuous 4.0-second I2V gameplay shot from the supplied accepted endpoint frames. Use the autumn OL3D assets as the identity and environment authority. Keep a close-range oblique top-down view of one small playable local board: the entrance stays near the top, the core stays near the bottom, and the active lane, target ring, units, facility and immediate feedback remain large enough to read. The viewer must see a tactile mini-game operation, not a zoomed-out SLG map. Animate at most one clear player input and exactly one immediate mechanical feedback, then hold the result. The first frame must match the supplied accepted start frame exactly; the last frame must match the supplied accepted end frame and become the next task's start state. Preserve unit coordinates, facility state, damage or cracks, target-ring color and shape, and abstract resource color blocks unless this shot explicitly changes one. Keep character identity, terrain geometry, camera scale and lighting stable. No readable words, numbers, labels, buttons, health bars, subtitles, logos, watermarks, phone UI, reference_video input, identity transfer from video, motion transfer from video, distant overview, aerial view, zoom-out, tiny subjects, board reset, identity drift, cross-version assets, horizontal banding, scanlines or glitch. Audio generation is enabled for the container, but external TTS is blocked: do not invent narration, dialogue or a voice identity. Variant V007: Fire-seed route revelation. Narrative route: Light the entrance, middle route, and core fire seeds one at a time; each revealed local lane changes the playable choice, and the ending holds all three stable rather than using a single explosion. This shot is beat 11 of 11, 'Fire-seed three-star result'. Input rule: No player input; let the established board state breathe. State continuity: begin from the accepted end state of V007-R10; end on Fire-seed three-star result as the only planned state change. Bind start to accepted V007-R11 and end to accepted V007-R11; do not synthesize a replacement frame. Use only this version's listed asset binding.",
+      "execution": {
+        "upload": false,
+        "submit": false,
+        "generate": false,
+        "monitor": false,
+        "pull_back": false
+      }
+    }
+  ],
+  "submission_boundary": {
+    "static_plan_only": true,
+    "submit_ready": false,
+    "requires_entry_review": true
+  }
+}

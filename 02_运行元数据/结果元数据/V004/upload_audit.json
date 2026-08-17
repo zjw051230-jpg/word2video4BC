@@ -1,0 +1,8 @@
+{
+  "version": "V004",
+  "uploaded": 22,
+  "required": 22,
+  "passed": true,
+  "asset_ids_are_returned_filenames": true,
+  "reference_video": null
+}

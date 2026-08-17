@@ -1,0 +1,20 @@
+{
+  "frame_id": "V012-R11",
+  "version": "V012",
+  "attempt": 1,
+  "reference_count": 9,
+  "log": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V012\\img2\\attempts\\V012-R11\\attempt_01.log",
+  "returncode": 0,
+  "technical_pass": true,
+  "semantic_pass": false,
+  "state_machine_continuity_pass": false,
+  "technical_reason": "technical_pass",
+  "size": [
+    720,
+    1280
+  ],
+  "path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V012\\img2\\V012-R11.png",
+  "bytes": 1506089,
+  "sha256": "ddde4687c7e6cc1541ca15b40d8310446ffed587df572f7a5a46dafcff141b52",
+  "attempt_count": 1
+}

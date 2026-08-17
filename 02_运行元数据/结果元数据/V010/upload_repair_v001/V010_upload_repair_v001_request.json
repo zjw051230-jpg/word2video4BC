@@ -1,0 +1,15 @@
+{
+  "repair_id": "upload_repair_v001",
+  "version": "V010",
+  "timestamp_utc": "2026-08-14T15:51:13.353514+00:00",
+  "method": "POST",
+  "endpoint": "https://chat.q1.com/api/upload/image",
+  "file_field": "file",
+  "requested_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_抢滩登陆视频策划\\backgrounds\\OL3D\\T20260812-144226_BG_AUTUMNCAMP_OL3D_master_v001.png",
+  "resolved_plan_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\backgrounds\\OL3D\\T20260812-144226_BG_AUTUMNCAMP_OL3D_master_v001.png",
+  "resolved_path_exists": true,
+  "sha256": "4ae6b20e7280df254cdb0afb7c46a34d85160575292018f0a93750313f53a14d",
+  "byte_size": 2019189,
+  "model_contract": "gpt-5.6-luna/high",
+  "api_key_included": false
+}

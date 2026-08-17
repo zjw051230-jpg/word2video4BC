@@ -1,0 +1,12 @@
+{
+  "repair_id": "upload_repair_v002",
+  "version": "V010",
+  "shot_id": "V010-R03",
+  "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V010\\img2\\V010-R03.png",
+  "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/870f5d0e406d4b11f76fbe3fef215d2d.png",
+  "returned_filename": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/870f5d0e406d4b11f76fbe3fef215d2d.png",
+  "sha256": "9b705f5466b2f6e7e27bf54d2e591a2749adbdad8379851987e5ae85c3d37c7f",
+  "byte_size": 1666192,
+  "status": "success",
+  "timestamp_utc": "2026-08-14T15:57:12.180746+00:00"
+}

@@ -1,0 +1,95 @@
+﻿{
+    "version_id":  "V007",
+    "output":  "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V007\\edit\\rough_cut.mp4",
+    "boundaries":  [
+                       {
+                           "source":  "V007-R01.mp4",
+                           "start_frame":  "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V007\\edit\\boundary_frames\\V007-R01_start.png",
+                           "end_frame":  "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V007\\edit\\boundary_frames\\V007-R01_end.png",
+                           "output_start":  0,
+                           "output_end":  4.086009,
+                           "decoded":  true
+                       },
+                       {
+                           "source":  "V007-R02.mp4",
+                           "start_frame":  "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V007\\edit\\boundary_frames\\V007-R02_start.png",
+                           "end_frame":  "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V007\\edit\\boundary_frames\\V007-R02_end.png",
+                           "output_start":  4.086009,
+                           "output_end":  8.172018,
+                           "decoded":  true
+                       },
+                       {
+                           "source":  "V007-R03.mp4",
+                           "start_frame":  "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V007\\edit\\boundary_frames\\V007-R03_start.png",
+                           "end_frame":  "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V007\\edit\\boundary_frames\\V007-R03_end.png",
+                           "output_start":  8.172018,
+                           "output_end":  12.258027,
+                           "decoded":  true
+                       },
+                       {
+                           "source":  "V007-R04.mp4",
+                           "start_frame":  "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V007\\edit\\boundary_frames\\V007-R04_start.png",
+                           "end_frame":  "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V007\\edit\\boundary_frames\\V007-R04_end.png",
+                           "output_start":  12.258027,
+                           "output_end":  16.32102,
+                           "decoded":  true
+                       },
+                       {
+                           "source":  "V007-R05.mp4",
+                           "start_frame":  "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V007\\edit\\boundary_frames\\V007-R05_start.png",
+                           "end_frame":  "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V007\\edit\\boundary_frames\\V007-R05_end.png",
+                           "output_start":  16.32102,
+                           "output_end":  20.407029,
+                           "decoded":  true
+                       },
+                       {
+                           "source":  "V007-R06.mp4",
+                           "start_frame":  "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V007\\edit\\boundary_frames\\V007-R06_start.png",
+                           "end_frame":  "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V007\\edit\\boundary_frames\\V007-R06_end.png",
+                           "output_start":  20.407029,
+                           "output_end":  24.470022,
+                           "decoded":  true
+                       },
+                       {
+                           "source":  "V007-R07.mp4",
+                           "start_frame":  "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V007\\edit\\boundary_frames\\V007-R07_start.png",
+                           "end_frame":  "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V007\\edit\\boundary_frames\\V007-R07_end.png",
+                           "output_start":  24.470022,
+                           "output_end":  28.556031,
+                           "decoded":  true
+                       },
+                       {
+                           "source":  "V007-R08.mp4",
+                           "start_frame":  "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V007\\edit\\boundary_frames\\V007-R08_start.png",
+                           "end_frame":  "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V007\\edit\\boundary_frames\\V007-R08_end.png",
+                           "output_start":  28.556031,
+                           "output_end":  32.619024,
+                           "decoded":  true
+                       },
+                       {
+                           "source":  "V007-R09.mp4",
+                           "start_frame":  "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V007\\edit\\boundary_frames\\V007-R09_start.png",
+                           "end_frame":  "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V007\\edit\\boundary_frames\\V007-R09_end.png",
+                           "output_start":  32.619024,
+                           "output_end":  36.705033,
+                           "decoded":  true
+                       },
+                       {
+                           "source":  "V007-R10.mp4",
+                           "start_frame":  "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V007\\edit\\boundary_frames\\V007-R10_start.png",
+                           "end_frame":  "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V007\\edit\\boundary_frames\\V007-R10_end.png",
+                           "output_start":  36.705033,
+                           "output_end":  40.791042,
+                           "decoded":  true
+                       },
+                       {
+                           "source":  "V007-R11.mp4",
+                           "start_frame":  "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V007\\edit\\boundary_frames\\V007-R11_start.png",
+                           "end_frame":  "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V007\\edit\\boundary_frames\\V007-R11_end.png",
+                           "output_start":  40.791042,
+                           "output_end":  44.877051,
+                           "decoded":  true
+                       }
+                   ],
+    "continuity":  "strict R01-R11; 22 boundary frames present (start/end for all 11 clips); no black-frame/aspect-change findings"
+}

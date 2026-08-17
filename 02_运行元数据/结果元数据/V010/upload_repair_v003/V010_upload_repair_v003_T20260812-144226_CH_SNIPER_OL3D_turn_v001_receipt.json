@@ -1,0 +1,13 @@
+{
+  "repair_id": "upload_repair_v003",
+  "version": "V010",
+  "asset_name": "T20260812-144226_CH_SNIPER_OL3D_turn_v001",
+  "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SNIPER_OL3D_turn_v001.png",
+  "asset_id": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/563639081455d7306d9d9645789bccac.png",
+  "returned_filename": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/563639081455d7306d9d9645789bccac.png",
+  "sha256": "67a9ba0cc4a93f0941f83f559cc27509036ea0af877006845976b77a555713c6",
+  "planned_sha256": "67a9ba0cc4a93f0941f83f559cc27509036ea0af877006845976b77a555713c6",
+  "byte_size": 1007527,
+  "status": "success",
+  "timestamp_utc": "2026-08-14T16:04:54.958710+00:00"
+}

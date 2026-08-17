@@ -1,0 +1,30 @@
+{
+  "repair_id": "upload_repair_v003",
+  "version": "V010",
+  "asset_name": "T20260812-144226_VFX_COMBAT_OL3D_atlas_v001",
+  "timestamp_utc": "2026-08-14T16:04:58.824101+00:00",
+  "method": "POST",
+  "endpoint": "https://chat.q1.com/api/upload/image",
+  "file_field": "file",
+  "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_COMBAT_OL3D_atlas_v001.png",
+  "resolved_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_COMBAT_OL3D_atlas_v001.png",
+  "resolved_path_exists": true,
+  "sha256": "a3ce69dbe7b37b721931049422fe8a4742041197d9d3bb35be1534db8f92212f",
+  "planned_sha256": "a3ce69dbe7b37b721931049422fe8a4742041197d9d3bb35be1534db8f92212f",
+  "byte_size": 1044443,
+  "source_roles": [
+    "V010-R01",
+    "V010-R02",
+    "V010-R03",
+    "V010-R04",
+    "V010-R05",
+    "V010-R06",
+    "V010-R07",
+    "V010-R08",
+    "V010-R09",
+    "V010-R10",
+    "V010-R11"
+  ],
+  "model_contract": "gpt-5.6-luna/high",
+  "api_key_included": false
+}

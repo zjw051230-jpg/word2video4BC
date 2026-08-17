@@ -1,0 +1,16 @@
+{
+  "timestamp_utc": "2026-08-14T16:04:58.824101+00:00",
+  "response": {
+    "status": "success",
+    "http_status": 200,
+    "filename": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/c212a5fc1082baee7bc7df261f85c210.png",
+    "response": {
+      "filename": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/c212a5fc1082baee7bc7df261f85c210.png",
+      "requestId": null,
+      "converted": false,
+      "width": 1536,
+      "height": 1024,
+      "format": "png"
+    }
+  }
+}

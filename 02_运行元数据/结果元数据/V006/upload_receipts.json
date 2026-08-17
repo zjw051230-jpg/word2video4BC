@@ -1,0 +1,354 @@
+[
+  {
+    "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V006\\img2\\V006-R01.png",
+    "sha256": "555b7acd66062d3604f9b7ee15e16af2974254cc8f9a21772927d1ce8d007e81",
+    "byte_size": 1755205,
+    "status": "success",
+    "http_status": 200,
+    "filename": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/9328a50eb37cc0061210f8b90b204d28.png",
+    "response": {
+      "filename": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/9328a50eb37cc0061210f8b90b204d28.png",
+      "requestId": null,
+      "converted": false,
+      "width": 720,
+      "height": 1280,
+      "format": "png"
+    }
+  },
+  {
+    "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V006\\img2\\V006-R02.png",
+    "sha256": "75d149c6d5fbcb520ad8f4bb96b76456c753201881b37823a15c1a15ec103344",
+    "byte_size": 1669240,
+    "status": "success",
+    "http_status": 200,
+    "filename": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/537114e1ee016eeb988e5898159eae2d.png",
+    "response": {
+      "filename": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/537114e1ee016eeb988e5898159eae2d.png",
+      "requestId": null,
+      "converted": false,
+      "width": 720,
+      "height": 1280,
+      "format": "png"
+    }
+  },
+  {
+    "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\backgrounds\\OL3D\\T20260812-144226_BG_AUTUMNCAMP_OL3D_master_v001.png",
+    "sha256": "4ae6b20e7280df254cdb0afb7c46a34d85160575292018f0a93750313f53a14d",
+    "byte_size": 2019189,
+    "status": "success",
+    "http_status": 200,
+    "filename": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/c7a5b86c634ef83dfdb4272c78a7e6f8.png",
+    "response": {
+      "filename": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/c7a5b86c634ef83dfdb4272c78a7e6f8.png",
+      "requestId": null,
+      "converted": false,
+      "width": 768,
+      "height": 1360,
+      "format": "png"
+    }
+  },
+  {
+    "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_ROAD_OL3D_sheet_v001.png",
+    "sha256": "0bdc2e269136c289554a57e6076694dfc59a18d3f05e1c7b3ad9c6f8ceb83c35",
+    "byte_size": 1581929,
+    "status": "success",
+    "http_status": 200,
+    "filename": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/9d678a4cf338d189c4dcf5ab6c489960.png",
+    "response": {
+      "filename": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/9d678a4cf338d189c4dcf5ab6c489960.png",
+      "requestId": null,
+      "converted": false,
+      "width": 832,
+      "height": 1248,
+      "format": "png"
+    }
+  },
+  {
+    "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\terrain\\OL3D\\T20260812-144226_TER_COAST_OL3D_sheet_v001.png",
+    "sha256": "49171be81271fb53f97a85dac51c53115bb827ec66c1327a4f565e17a6a873e8",
+    "byte_size": 1986031,
+    "status": "success",
+    "http_status": 200,
+    "filename": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/e60e0b176b728e52a3fdb442888f6e74.png",
+    "response": {
+      "filename": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/e60e0b176b728e52a3fdb442888f6e74.png",
+      "requestId": null,
+      "converted": false,
+      "width": 832,
+      "height": 1248,
+      "format": "png"
+    }
+  },
+  {
+    "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_RIFLE_OL3D_turn_v001.png",
+    "sha256": "9e0b58c584dad6ba8a9f5dcc13589fda6e903ca82ce4bfa4fc7cb5fcec4da67a",
+    "byte_size": 972158,
+    "status": "success",
+    "http_status": 200,
+    "filename": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/c5a216649145c32aee2868b8d9619305.png",
+    "response": {
+      "filename": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/c5a216649145c32aee2868b8d9619305.png",
+      "requestId": null,
+      "converted": false,
+      "width": 832,
+      "height": 1248,
+      "format": "png"
+    }
+  },
+  {
+    "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\characters\\OL3D\\T20260812-144226_CH_SHIELD_OL3D_turn_v001.png",
+    "sha256": "0d9f5b7325665f21e32be71063d834e958fe6cb1cfe90667374183c24dea0382",
+    "byte_size": 882132,
+    "status": "success",
+    "http_status": 200,
+    "filename": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/0013f540ac45d52cf8d8d956d3401236.png",
+    "response": {
+      "filename": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/0013f540ac45d52cf8d8d956d3401236.png",
+      "requestId": null,
+      "converted": false,
+      "width": 832,
+      "height": 1248,
+      "format": "png"
+    }
+  },
+  {
+    "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_CORE_OL3D_turn_v001.png",
+    "sha256": "133a254dfab836265ba0f35c9a24f8a8c7afdd7f26e08c4325a20134b3efc943",
+    "byte_size": 962079,
+    "status": "success",
+    "http_status": 200,
+    "filename": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/b3752fb2db29e4683ad570172197f6ca.png",
+    "response": {
+      "filename": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/b3752fb2db29e4683ad570172197f6ca.png",
+      "requestId": null,
+      "converted": false,
+      "width": 832,
+      "height": 1248,
+      "format": "png"
+    }
+  },
+  {
+    "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_MGBUNKER_OL3D_turn_v001.png",
+    "sha256": "720af7d29680602752edd3e81995a97a9decc235a4b5f9ff66bf2a7717b18601",
+    "byte_size": 1032702,
+    "status": "success",
+    "http_status": 200,
+    "filename": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/cc17d13ff7a83d0f0bb36410a1c30991.png",
+    "response": {
+      "filename": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/cc17d13ff7a83d0f0bb36410a1c30991.png",
+      "requestId": null,
+      "converted": false,
+      "width": 832,
+      "height": 1248,
+      "format": "png"
+    }
+  },
+  {
+    "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\buildings\\OL3D\\T20260812-144226_BLD_ARTILLERY_OL3D_turn_v001.png",
+    "sha256": "436236362d286ad3590d7484d9b43580098f3f3d67fe149316b208cdf24a42f4",
+    "byte_size": 908418,
+    "status": "success",
+    "http_status": 200,
+    "filename": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/4ea562c01d527a7680a3403381884417.png",
+    "response": {
+      "filename": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/4ea562c01d527a7680a3403381884417.png",
+      "requestId": null,
+      "converted": false,
+      "width": 832,
+      "height": 1248,
+      "format": "png"
+    }
+  },
+  {
+    "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_BUILD_OL3D_atlas_v001.png",
+    "sha256": "0691d911822ecc6e3f8f1dd3048b9e6ae31297772cb897f46a5119bc83de4804",
+    "byte_size": 1640440,
+    "status": "success",
+    "http_status": 200,
+    "filename": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/a42697675bbc3f73d0e17a7679677532.png",
+    "response": {
+      "filename": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/a42697675bbc3f73d0e17a7679677532.png",
+      "requestId": null,
+      "converted": false,
+      "width": 1536,
+      "height": 1024,
+      "format": "png"
+    }
+  },
+  {
+    "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_COMBAT_OL3D_atlas_v001.png",
+    "sha256": "a3ce69dbe7b37b721931049422fe8a4742041197d9d3bb35be1534db8f92212f",
+    "byte_size": 1044443,
+    "status": "success",
+    "http_status": 200,
+    "filename": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/c212a5fc1082baee7bc7df261f85c210.png",
+    "response": {
+      "filename": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/c212a5fc1082baee7bc7df261f85c210.png",
+      "requestId": null,
+      "converted": false,
+      "width": 1536,
+      "height": 1024,
+      "format": "png"
+    }
+  },
+  {
+    "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\0.资产库\\T20260812-144226_秋季抢滩登陆\\vfx\\OL3D\\T20260812-144226_VFX_RESULT_OL3D_atlas_v001.png",
+    "sha256": "bfbdfff60866c380deeaa0c3755614bb525df0f5a7282c60d9e9d3687adc8bd2",
+    "byte_size": 1060265,
+    "status": "success",
+    "http_status": 200,
+    "filename": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/035ec820330b9a0d99b68ca7e56ce0c8.png",
+    "response": {
+      "filename": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/035ec820330b9a0d99b68ca7e56ce0c8.png",
+      "requestId": null,
+      "converted": false,
+      "width": 1024,
+      "height": 1536,
+      "format": "png"
+    }
+  },
+  {
+    "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V006\\img2\\V006-R03.png",
+    "sha256": "19d38fbaec1c2b1a6d6571e7b71ef0f396b883b0a3362bf80f3854f02a4f9996",
+    "byte_size": 1731665,
+    "status": "success",
+    "http_status": 200,
+    "filename": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/239aac6195ee50743bcce962b659faa0.png",
+    "response": {
+      "filename": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/239aac6195ee50743bcce962b659faa0.png",
+      "requestId": null,
+      "converted": false,
+      "width": 720,
+      "height": 1280,
+      "format": "png"
+    }
+  },
+  {
+    "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V006\\img2\\V006-R04.png",
+    "sha256": "6ff37784c8c7b554a320939402e061a9016a7d8f27f286fc67013f2426da7ac7",
+    "byte_size": 1697600,
+    "status": "success",
+    "http_status": 200,
+    "filename": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/efcd2ca85f1a122745d6907b8d0ce6f1.png",
+    "response": {
+      "filename": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/efcd2ca85f1a122745d6907b8d0ce6f1.png",
+      "requestId": null,
+      "converted": false,
+      "width": 720,
+      "height": 1280,
+      "format": "png"
+    }
+  },
+  {
+    "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V006\\img2\\V006-R05.png",
+    "sha256": "caaa8541d8ee9fea8233e24f386f62217a4d065f8a082fafa8d5d3f32508dc38",
+    "byte_size": 1623226,
+    "status": "success",
+    "http_status": 200,
+    "filename": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/6acd973ee3d683cc3c757a9363a6b0ab.png",
+    "response": {
+      "filename": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/6acd973ee3d683cc3c757a9363a6b0ab.png",
+      "requestId": null,
+      "converted": false,
+      "width": 720,
+      "height": 1280,
+      "format": "png"
+    }
+  },
+  {
+    "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V006\\img2\\V006-R06.png",
+    "sha256": "8f54c4c51137b7b85941bad24e2d78459f18bb5b00f45284a0a1f2f89ba04a2b",
+    "byte_size": 1620229,
+    "status": "success",
+    "http_status": 200,
+    "filename": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/53dd79d78a38e2f08bf0f81798b043e2.png",
+    "response": {
+      "filename": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/53dd79d78a38e2f08bf0f81798b043e2.png",
+      "requestId": null,
+      "converted": false,
+      "width": 720,
+      "height": 1280,
+      "format": "png"
+    }
+  },
+  {
+    "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V006\\img2\\V006-R07.png",
+    "sha256": "2f195a09bb9ec6228debe16fe12d51bf458c19dd3f221c1979772d57e6b445b2",
+    "byte_size": 1588384,
+    "status": "success",
+    "http_status": 200,
+    "filename": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/b807e560187fa3f8a16554590dd06c77.png",
+    "response": {
+      "filename": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/b807e560187fa3f8a16554590dd06c77.png",
+      "requestId": null,
+      "converted": false,
+      "width": 720,
+      "height": 1280,
+      "format": "png"
+    }
+  },
+  {
+    "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V006\\img2\\V006-R08.png",
+    "sha256": "ef3ae1e63c0df8dce4d1474d0c95b0c79d235d09432f566c8919394f267099f8",
+    "byte_size": 1586342,
+    "status": "success",
+    "http_status": 200,
+    "filename": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/69eafc9c00d39a1962feaa3b20d1a590.png",
+    "response": {
+      "filename": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/69eafc9c00d39a1962feaa3b20d1a590.png",
+      "requestId": null,
+      "converted": false,
+      "width": 720,
+      "height": 1280,
+      "format": "png"
+    }
+  },
+  {
+    "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V006\\img2\\V006-R09.png",
+    "sha256": "cf6c7359e9c0c8b6f4ae8702e3daed474cdfb6d99e268beb4466cba2adfa7fbb",
+    "byte_size": 1572514,
+    "status": "success",
+    "http_status": 200,
+    "filename": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/def597d751bfdf076d21a13ed7818e7f.png",
+    "response": {
+      "filename": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/def597d751bfdf076d21a13ed7818e7f.png",
+      "requestId": null,
+      "converted": false,
+      "width": 720,
+      "height": 1280,
+      "format": "png"
+    }
+  },
+  {
+    "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V006\\img2\\V006-R10.png",
+    "sha256": "938012a9b9f1e80d21fcbad476d9011f5fbda202b3a9f0cd5c23f61760b3de6c",
+    "byte_size": 1594213,
+    "status": "success",
+    "http_status": 200,
+    "filename": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/3c9517aec3cd8181d3f1f9e646fbd2d5.png",
+    "response": {
+      "filename": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/3c9517aec3cd8181d3f1f9e646fbd2d5.png",
+      "requestId": null,
+      "converted": false,
+      "width": 720,
+      "height": 1280,
+      "format": "png"
+    }
+  },
+  {
+    "local_path": "D:\\孵化-上岛\\1.projects\\孵化-上岛\\6.生成结果\\T20260812-144226\\ol3d_minigame_ads_15versions\\V006\\img2\\V006-R11.png",
+    "sha256": "189cfb3bc8fe4a1678b6f19ea8367e558324b6abeecc3e47222d0707267febcc",
+    "byte_size": 1554136,
+    "status": "success",
+    "http_status": 200,
+    "filename": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/0d56d94e87cdca695360ed1dedf83739.png",
+    "response": {
+      "filename": "https://bcgpt-cn.oss-cn-beijing.aliyuncs.com/upload/image/2026/08/20260814/0d56d94e87cdca695360ed1dedf83739.png",
+      "requestId": null,
+      "converted": false,
+      "width": 720,
+      "height": 1280,
+      "format": "png"
+    }
+  }
+]
