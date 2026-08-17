@@ -1,0 +1,35 @@
+﻿{
+    "task_id":  "T20260812-144226",
+    "snapshot_date":  "2026-08-17",
+    "tools":  [
+                  {
+                      "file":  "ol3d_minigame_ads_15versions_media.py",
+                      "sha256":  "d4571e191036f33de7f5f38f6e15f0b7903fc160905f40920eb926f8c66f223b",
+                      "source":  "D:\\孵化-上岛\\1.projects\\孵化-上岛\\ol3d_minigame_ads_15versions_media.py",
+                      "contains_secret_configuration":  false,
+                      "role":  "media_upload_and_submit_core"
+                  },
+                  {
+                      "file":  "ol3d_minigame_ads_15versions_submit.py",
+                      "sha256":  "c07a8088e22ab7b0b3935bfb13c27f305a5aa226be9837aa4efadc1427fe53fa",
+                      "source":  "D:\\孵化-上岛\\1.projects\\孵化-上岛\\ol3d_minigame_ads_15versions_submit.py",
+                      "contains_secret_configuration":  false,
+                      "role":  "submit_orchestrator"
+                  },
+                  {
+                      "file":  "ol3d_minigame_ads_15versions_poll.py",
+                      "sha256":  "381bee47b67b3af64ac14f4f30ec83d9a834b6fc9282a9b1cf91fb2d9fd76fda",
+                      "source":  "D:\\孵化-上岛\\1.projects\\孵化-上岛\\ol3d_minigame_ads_15versions_poll.py",
+                      "contains_secret_configuration":  false,
+                      "role":  "monitor_only"
+                  },
+                  {
+                      "file":  "ol3d_minigame_ads_15versions_pull_qc.py",
+                      "sha256":  "b9eb0d3e6cd346bd707b86980699bd514d0967d50e114b1b5aa7f65850125a68",
+                      "source":  "D:\\孵化-上岛\\1.projects\\孵化-上岛\\ol3d_minigame_ads_15versions_pull_qc.py",
+                      "contains_secret_configuration":  false,
+                      "role":  "pullback_and_qc"
+                  }
+              ],
+    "run_boundary":  "Requires separate local API configuration; configuration and credentials are not packaged."
+}
