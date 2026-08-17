@@ -21,7 +21,7 @@ param(
 $ErrorActionPreference = 'Stop'
 
 if ([string]::IsNullOrWhiteSpace($WorkspaceRoot)) {
-    $WorkspaceRoot = [System.IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..\..\..\..'))
+    $WorkspaceRoot = [System.IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..\..\..\..\..\..'))
 }
 
 function Test-SafeName {
@@ -59,12 +59,21 @@ foreach ($value in @($Project, $TaskId, $Summary)) {
 }
 
 $workspacePath = [System.IO.Path]::GetFullPath($WorkspaceRoot)
-$projectsRoot = [System.IO.Path]::GetFullPath((Join-Path $workspacePath '1.projects'))
+$resourceRoot = Join-Path $workspacePath '项目资源'
+if (Test-Path -LiteralPath $resourceRoot -PathType Container) {
+    $projectsRoot = [System.IO.Path]::GetFullPath((Join-Path $resourceRoot '1.projects'))
+    $snapshotRoot = Join-Path $resourceRoot '6.snapshot'
+}
+else {
+    # Compatibility fallback while an old workspace is awaiting migration.
+    $projectsRoot = [System.IO.Path]::GetFullPath((Join-Path $workspacePath '1.projects'))
+    $snapshotRoot = Join-Path $workspacePath '6.snapshot'
+}
 $projectPath = [System.IO.Path]::GetFullPath((Join-Path $projectsRoot $Project))
 $projectsPrefix = $projectsRoot.TrimEnd([System.IO.Path]::DirectorySeparatorChar) + [System.IO.Path]::DirectorySeparatorChar
 
 if (-not $projectPath.StartsWith($projectsPrefix, [System.StringComparison]::OrdinalIgnoreCase)) {
-    throw 'Resolved project path escaped 1.projects.'
+    throw 'Resolved project path escaped the canonical projects root.'
 }
 
 if (-not (Test-Path -LiteralPath $projectPath -PathType Container)) {
@@ -72,7 +81,7 @@ if (-not (Test-Path -LiteralPath $projectPath -PathType Container)) {
 }
 
 $taskFolder = '{0}_{1}_{2}' -f $TaskDate, $TaskId, $Summary
-$taskRoot = Join-Path (Join-Path (Join-Path $workspacePath '6.snapshot') $Project) $taskFolder
+$taskRoot = Join-Path (Join-Path $snapshotRoot $Project) $taskFolder
 New-Item -ItemType Directory -Path $taskRoot -Force | Out-Null
 
 $versions = Get-ChildItem -LiteralPath $taskRoot -Directory -ErrorAction SilentlyContinue |

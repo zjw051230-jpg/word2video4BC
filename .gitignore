@@ -17,4 +17,6 @@ task-log.jsonl
 *.zip
 release/
 test-output/
+视频本体/
+项目资源/
 

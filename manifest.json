@@ -1,8 +1,8 @@
 {
   "name": "word2video4BC",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "environment_dependency": "env4BC",
-  "workspace_schema": 1,
+  "workspace_schema": 2,
   "skills": [
     "maintain-task-log",
     "manage-video-production",

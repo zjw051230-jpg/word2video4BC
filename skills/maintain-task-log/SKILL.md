@@ -1,11 +1,11 @@
 ---
 name: maintain-task-log
-description: Maintain the append-only global task log at D:\视频生成\task-log.jsonl. Use for every task performed anywhere under D:\视频生成, regardless of task type, to read prior history before work, identify whether the request continues an existing task or starts a new one, record task start/progress/end, and preserve what was done, artifact locations, user evaluation, review/复盘 locations, and notes or annotations.
+description: Maintain the append-only global task log at D:\视频生成\视频本体\03_运行日志\task-log.jsonl. Use for every task performed anywhere under D:\视频生成, regardless of task type, to read prior history before work, identify whether the request continues an existing task or starts a new one, record task start/progress/end, and preserve what was done, artifact locations, user evaluation, review/复盘 locations, and notes or annotations.
 ---
 
 # Maintain Task Log
 
-Use `scripts/task_log.py` as the only writer for `D:\视频生成\task-log.jsonl`. Keep the log append-only; never rewrite or delete old records.
+Use `scripts/task_log.py` as the only writer for `D:\视频生成\视频本体\03_运行日志\task-log.jsonl`. Keep the log append-only; never rewrite or delete old records. The hidden root `task-log.jsonl` is only a compatibility hard link, never a second log.
 
 ## At task start
 
@@ -55,8 +55,8 @@ python scripts/task_log.py append `
   --task-id T20260723-164111 --phase 开始 --project 王国大作战 `
   --summary 创建全局任务日志 `
   --did "读取历史并初始化日志技能" `
-  --file "D:\视频生成\3.skills\global\maintain-task-log" `
-  --review "D:\视频生成\5.summary\global\lessons.md" `
+  --file "D:\视频生成\视频本体\01_程序与工具\3.skills\global\maintain-task-log" `
+  --review "D:\视频生成\视频本体\03_运行日志\全局复盘\lessons.md" `
   --note "新任务"
 ```
 

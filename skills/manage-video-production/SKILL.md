@@ -7,20 +7,22 @@ description: Manage the D:\视频生成 production workspace, including project 
 
 ## Handle toolkit update requests
 
-When the user says `更新视频工具`, `视频工具需要更新`, or an equivalent request, use the registered Git checkout only—not a downloaded archive. Read `<WorkspaceRoot>\.word2video4BC\update-source.json`; verify `repository` is exactly `https://github.com/zjw051230-jpg/word2video4BC`, `main_branch` is `main`, and `checkout_root` is an existing clean Git checkout whose `origin` is that repository. Then run `git -C <checkout_root> pull --ff-only origin main` and run that checkout's `install.ps1 -UpdateOnly -Force` (or the recorded local `Update-Toolkit.ps1`, which performs those same steps). The updater may modify only the declared tool scope. It must never scan, sync, move, rename, overwrite, or delete projects, materials, submissions, API configuration, summaries, snapshots, or task logs. Ask for the official repository link only when the hidden update record does not exist; after the first verified installation the link must not be needed again.
+When the user says `更新视频工具`, `视频工具需要更新`, or an equivalent request, use the registered Git checkout only—not a downloaded archive. Read `<WorkspaceRoot>\视频本体\01_程序与工具\.word2video4BC\update-source.json`; verify `repository` is exactly `https://github.com/zjw051230-jpg/word2video4BC`, `main_branch` is `main`, and `checkout_root` is an existing clean Git checkout whose `origin` is that repository. Then run `git -C <checkout_root> pull --ff-only origin main` and run that checkout's `install.ps1 -UpdateOnly -Force` (or the recorded local `Update-Toolkit.ps1`, which performs those same steps). The updater may modify only the declared tool scope. It must never scan, sync, move, rename, overwrite, or delete projects, materials, submissions, API configuration, summaries, snapshots, or task logs. The one-time v2.2.0 migration may create hidden compatibility mappings but must not duplicate or change resource contents. Ask for the official repository link only when the update record does not exist; after the first verified installation the link must not be needed again.
 
 ## Honor the workspace contract
 
 Use these paths exactly:
 
-- `D:\视频生成\1.projects\<project>`: canonical working copy and latest state; keep that project's tasks and source materials inside it.
-- `D:\视频生成\2.submission\<project>\<task-folder>`: completed deliverables, grouped by project first and task second.
-- `D:\视频生成\3.skills\global\<skill>`: skills shared by every project.
-- `D:\视频生成\3.skills\<project>\<skill>`: skills dedicated to one project.
-- `D:\视频生成\4.apis`: local Seedance API configuration and credentials.
-- `D:\视频生成\5.summary\global\lessons.md`: cross-project lessons.
-- `D:\视频生成\5.summary\<project>\lessons.md`: lessons dedicated to one project.
-- `D:\视频生成\6.snapshot\<project>\<task-folder>\vNNN-<label>`: immutable history.
+- `D:\视频生成\项目资源\1.projects\<project>`: canonical working copy and latest state; keep that project's tasks and source materials inside it.
+- `D:\视频生成\项目资源\2.submission\<project>\<task-folder>`: completed deliverables, grouped by project first and task second.
+- `D:\视频生成\视频本体\01_程序与工具\3.skills\global\<skill>`: reusable skills shared by every project.
+- `D:\视频生成\项目资源\3.skills\<project>\<skill>`: skills dedicated to one project.
+- `D:\视频生成\项目资源\4.apis`: local Seedance API configuration and credentials.
+- `D:\视频生成\视频本体\03_运行日志\全局复盘\lessons.md`: cross-project lessons.
+- `D:\视频生成\项目资源\5.summary\<project>\lessons.md`: lessons dedicated to one project.
+- `D:\视频生成\项目资源\6.snapshot\<project>\<task-folder>\vNNN-<label>`: immutable history.
+
+The root-level legacy paths (`1.projects`, `2.submission`, `3.skills`, `4.apis`, `5.summary`, `6.snapshot`, `tmp`, `task-log.jsonl`, and `New-VideoProject.ps1`) are hidden compatibility mappings only. Never treat them as a second store or put new real files beside them.
 
 Never edit a snapshot. Modify the canonical project in place only after preserving its current state.
 
@@ -46,14 +48,14 @@ Use the same atomic status, unique thread ID, lease, feedback, and five-minute b
 
 ### 0. Read and maintain the global task log
 
-Invoke `$maintain-task-log` for every task under `D:\视频生成`, regardless of task type. Before task actions, read `D:\视频生成\task-log.jsonl`, determine whether the request continues an existing task or starts a new one, and append a start record. Before the final response, read that task's records again and append an end record with work performed, artifact locations, evaluation if any, review/复盘 locations, and notes or annotations. Append progress records for meaningful intermediate artifacts, feedback, failures, or decisions.
+Invoke `$maintain-task-log` for every task under `D:\视频生成`, regardless of task type. Before task actions, read `D:\视频生成\视频本体\03_运行日志\task-log.jsonl`, determine whether the request continues an existing task or starts a new one, and append a start record. Before the final response, read that task's records again and append an end record with work performed, artifact locations, evaluation if any, review/复盘 locations, and notes or annotations. Append progress records for meaningful intermediate artifacts, feedback, failures, or decisions.
 
 ### 1. Read lessons first
 
 Before changing or generating anything, read these files when present:
 
-- `D:\视频生成\5.summary\global\lessons.md`
-- `D:\视频生成\5.summary\<project>\lessons.md`
+- `D:\视频生成\视频本体\03_运行日志\全局复盘\lessons.md`
+- `D:\视频生成\项目资源\5.summary\<project>\lessons.md`
 
 Convert applicable lessons into a short preflight checklist. Do not silently ignore a conflicting lesson; explain the conflict and follow the user's latest explicit instruction.
 
@@ -63,7 +65,7 @@ Before the first modification in a task or feedback cycle, run:
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass `
-  -File 'D:\视频生成\3.skills\global\manage-video-production\scripts\snapshot-project.ps1' `
+  -File 'D:\视频生成\视频本体\01_程序与工具\3.skills\global\manage-video-production\scripts\snapshot-project.ps1' `
   -Project '<project>' -TaskId '<task-id>' -TaskDate '<yyyy-MM-dd>' `
   -Summary '<summary>' -Label 'before'
 ```
@@ -72,27 +74,27 @@ For a new project, create its directory and capture the empty baseline before ad
 
 ### 3. Work only in the project
 
-Perform the requested operations inside `1.projects\<project>`. Keep the working project as the latest version. Preserve unrelated user files and never use `2.submission` or `6.snapshot` as a working directory.
+Perform the requested operations inside `项目资源\1.projects\<project>`. Keep the working project as the latest version. Preserve unrelated user files and never use `项目资源\2.submission` or `项目资源\6.snapshot` as a working directory.
 
 ### 4. Close every revision cycle
 
 After each meaningful revision or user-requested modification:
 
 1. Capture the resulting state with the snapshot script and label it `after`, `review-1`, `review-2`, or another short stage name.
-2. Append at least one concise requirement learned or reconfirmed in this cycle to `5.summary\<project>\lessons.md`.
+2. Append at least one concise requirement learned or reconfirmed in this cycle to `项目资源\5.summary\<project>\lessons.md`.
 3. Format each lesson as `- [yyyy-MM-dd][task-id] requirement`.
 4. Keep only actionable constraints, avoid narrative, and do not duplicate an existing rule.
 
-Use `5.summary\global\lessons.md` only for requirements that genuinely apply to every project.
+Use `视频本体\03_运行日志\全局复盘\lessons.md` only for requirements that genuinely apply to every project.
 
 ### 5. Generate Seedance work safely
 
 Before each video generation, re-read global and project lessons and check the prompt against them.
 
 - Invoke `$seedance-20` for every Seedance request. Follow its root operating loop and load its relative sub-skills only when routed by that loop.
-- For API, provider, pricing, model-ID, or platform-limit claims, follow `$seedance-20`'s source gate and pipeline references, then read the relevant local client or credentials under `4.apis`.
+- For API, provider, pricing, model-ID, or platform-limit claims, follow `$seedance-20`'s source gate and pipeline references, then read the relevant local client or credentials under `项目资源\4.apis`.
 - Never invent endpoints, model IDs, authentication fields, or provider capabilities.
-- Keep credentials in `4.apis`; never echo, commit, copy into submissions, snapshots, prompts, logs, or final messages.
+- Keep credentials in `项目资源\4.apis`; never echo, commit, copy into submissions, snapshots, prompts, logs, or final messages.
 - Record generated artifacts and the exact non-secret parameters in the canonical project.
 
 ### 5a. Lock shared backgrounds before character keyframes
@@ -105,7 +107,7 @@ Partition generated shots into background-continuity groups according to story a
 4. Label the character turnaround separately as the sole identity and design authority; label action frames as pose and motion only.
 5. Require at least five planned and generated keyframes for every video: setup, preparation, action peak, visible consequence, and changed end state. Give every keyframe its own detailed image prompt, camera, composition, motion phase, and continuity endpoint.
 6. Do not generate character keyframes until the background is selected. Do not silently substitute or redesign the selected background in later passes.
-7. After selection, archive both candidates under `1.projects\<project>\0.背景参考\<character-or-group>` as `背景1` (selected) and `背景2` (alternate), unless the project has a stricter naming convention. Use `背景1` as the environment-authority input for every keyframe and final video in that group, while retaining batch-local originals as task history.
+7. After selection, archive both candidates under `项目资源\1.projects\<project>\0.背景参考\<character-or-group>` as `背景1` (selected) and `背景2` (alternate), unless the project has a stricter naming convention. Use `背景1` as the environment-authority input for every keyframe and final video in that group, while retaining batch-local originals as task history.
 
 ### 5b. Preserve continuous shots in one generation
 
@@ -120,7 +122,7 @@ For avoidance of doubt, five planned keyframes are temporal anchors within one S
 After approval or completion:
 
 1. Capture a `final` snapshot.
-2. Create `2.submission\<project>\yyyy-MM-dd_<task-id>_<summary>`.
+2. Create `项目资源\2.submission\<project>\yyyy-MM-dd_<task-id>_<summary>`.
 3. Copy only final deliverables into it; leave editable sources in the project.
 4. Preserve existing submissions. Do not overwrite a same-named folder without explicit user approval.
 
@@ -128,9 +130,9 @@ Apply only this folder convention for now. Leave detailed submission renaming an
 
 ## Guardrails
 
-- Keep `3.skills` as the single source of truth. Put shared skills under `3.skills\global`, project-only skills under `3.skills\<project>`, and never place a skill directly in `3.skills`.
+- Keep global skills under `视频本体\01_程序与工具\3.skills\global` and project-only skills under `项目资源\3.skills\<project>`; never place a skill directly in either parent directory.
 - Expose global and applicable project skills to Codex with directory junctions instead of maintaining copies.
-- Keep summaries under `5.summary\global` or `5.summary\<project>`; never place a summary file directly in `5.summary`.
-- Keep all versions under `6.snapshot`; never prune them unless the user explicitly requests deletion.
+- Keep global summaries under `视频本体\03_运行日志\全局复盘` and project summaries under `项目资源\5.summary\<project>`.
+- Keep all versions under `项目资源\6.snapshot`; never prune them unless the user explicitly requests deletion.
 - Never place secrets or large generated media inside a skill folder.
 - Report the project path, created snapshot versions, submission path, and appended lessons at handoff.

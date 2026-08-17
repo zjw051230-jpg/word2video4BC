@@ -14,7 +14,23 @@ if ([string]::IsNullOrWhiteSpace($ProjectName) -or $ProjectName -in '.', '..' -o
   throw "项目名为空或包含非法字符。"
 }
 
-$projectsRoot = [IO.Path]::GetFullPath((Join-Path $WorkspaceRoot '1.projects'))
+$resourceRoot = Join-Path $WorkspaceRoot '项目资源'
+if (Test-Path -LiteralPath $resourceRoot -PathType Container) {
+  $projectsRoot = [IO.Path]::GetFullPath((Join-Path $resourceRoot '1.projects'))
+  $submissionsRoot = Join-Path $resourceRoot '2.submission'
+  $projectSkillsRoot = Join-Path $resourceRoot '3.skills'
+  $projectSummaryRoot = Join-Path $resourceRoot '5.summary'
+  $snapshotRoot = Join-Path $resourceRoot '6.snapshot'
+  $bodyGlobalSkills = Join-Path $WorkspaceRoot '视频本体\01_程序与工具\3.skills\global'
+} else {
+  # Compatibility fallback for a legacy workspace that has not yet been initialized.
+  $projectsRoot = [IO.Path]::GetFullPath((Join-Path $WorkspaceRoot '1.projects'))
+  $submissionsRoot = Join-Path $WorkspaceRoot '2.submission'
+  $projectSkillsRoot = Join-Path $WorkspaceRoot '3.skills'
+  $projectSummaryRoot = Join-Path $WorkspaceRoot '5.summary'
+  $snapshotRoot = Join-Path $WorkspaceRoot '6.snapshot'
+  $bodyGlobalSkills = Join-Path $WorkspaceRoot '3.skills\global'
+}
 $projectRoot = [IO.Path]::GetFullPath((Join-Path $projectsRoot $ProjectName))
 $prefix = $projectsRoot.TrimEnd([IO.Path]::DirectorySeparatorChar) + [IO.Path]::DirectorySeparatorChar
 if (-not $projectRoot.StartsWith($prefix, [StringComparison]::OrdinalIgnoreCase)) {
@@ -31,12 +47,12 @@ $dirs = @(
 New-Item -ItemType Directory -Force -Path $projectRoot | Out-Null
 foreach ($dir in $dirs) { New-Item -ItemType Directory -Force -Path (Join-Path $projectRoot $dir) | Out-Null }
 New-Item -ItemType Directory -Force -Path `
-  (Join-Path $WorkspaceRoot "2.submission\$ProjectName"), `
-  (Join-Path $WorkspaceRoot "3.skills\$ProjectName"), `
-  (Join-Path $WorkspaceRoot "5.summary\$ProjectName"), `
-  (Join-Path $WorkspaceRoot "6.snapshot\$ProjectName") | Out-Null
+  (Join-Path $submissionsRoot $ProjectName), `
+  (Join-Path $projectSkillsRoot $ProjectName), `
+  (Join-Path $projectSummaryRoot $ProjectName), `
+  (Join-Path $snapshotRoot $ProjectName) | Out-Null
 
-$lessons = Join-Path $WorkspaceRoot "5.summary\$ProjectName\lessons.md"
+$lessons = Join-Path $projectSummaryRoot "$ProjectName\lessons.md"
 if (-not (Test-Path -LiteralPath $lessons)) {
   [IO.File]::WriteAllText($lessons, "# $ProjectName 项目复盘`r`n", [Text.UTF8Encoding]::new($false))
 }
@@ -55,7 +71,7 @@ $readme = @"
 这是项目的当前工作版本。素材按类型放入 0-3 目录，原始任务放入 4.rawtask，审核后的提示词放入 5.提示词包，生成结果放入 6.生成结果。
 "@
 [IO.File]::WriteAllText((Join-Path $projectRoot 'README.md'), $readme, [Text.UTF8Encoding]::new($false))
-$chatInitializer = Join-Path $WorkspaceRoot '3.skills\global\manage-video-production\scripts\init_video_chat_workflow.py'
+$chatInitializer = Join-Path $bodyGlobalSkills 'manage-video-production\scripts\init_video_chat_workflow.py'
 if (Test-Path -LiteralPath $chatInitializer) {
   & py -3 -B -X utf8 $chatInitializer --project-root $projectRoot
   if ($LASTEXITCODE -ne 0) { throw "视频多Chat工作流初始化失败：$LASTEXITCODE" }
